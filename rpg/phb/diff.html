@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Differences from Third Edition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Differences from Third Edition</h1>
+
+<p>
+  The “official” version of <em>D&amp;D</em> that my ruleset most closely resembles is the Third Edition of the game (specifically, 3.5), so if you’re already familiar with that, you can imagine starting with it and making the changes listed below.
+</p>
+<!-- Try to order things roughly by decreasing importance, so the big stuff is first.  Also, keep an eye out for places where I opt for the 3.0 rule over 3.5, as that counts as a change!  (Some kind soul catalogued all the significant differences, archived at <https://web.archive.org/web/20060613103919/http://www.users.bigpond.com/steven_cooper/dnd/dnd-revised.htm>.)  As I create the linked documents, I should probably move all the bracketed text to there, typically in BtC blocks.  That's where it belongs anyway, and that'll help clean up this list that's getting really hard to scan. -->
+<ul>
+  <li><a href="combat.html#rounds">Initiative system<a> (if you can call it that) borrowed from <a class="offsite" href="http://schwalbentertainment.com/shadow-of-the-demon-lord/"><em>Shadow of the Demon Lord</em></a>.</li>
+  <li>The <a href="skills.html">skill</a> and <a href="proficiencies.html">proficiency</a> systems are tweaked a bit, blending ideas from several editions, and are hopefully both simpler and more flexible than in 3e.  Perhaps most notably, the skill list is “open” (as opposed to “closed”, or exclusive), and there is no concern with class skills and cross-class skills.  Every character gets 2 + Int mod skill points per level (quadrupled at first level); those few classes that rely more heavily on skills can achieve the desired results with bonus skills granted by the class itself.</li>
+  <li>Feats, per se, <a href="what-happened-to-feats.html">no longer exist</a>.  Some were incorporated into class features, built into the core system, or adapted in other ways; others were rendered obsolete by other changes.  [TODO: In that document, describe how some are just minor mathy things that aren’t really needed, some are best made into class features, some have been made into combat proficiencies, some metamagic feats are rendered obsolete by changes to the spell power system, other metamagic feats have been turned into metamagic <em>spells</em>, item creation feats are no longer required (as in previous editions, if you are a spellcaster, you can research the creation of items appropriate to your class, with rules in the DMG), etc.]</li>
+  <li>A character’s raw Constitution score is included in <a href="hit-points.html">hit point calculations</a>.  This slightly increases the hit point totals of most baseline creatures, and more significantly increases the hit points of characters who have a modest number of class levels.</li>
+  <li>The rules for <a href="hit-points.html#damage">death and dying</a> are almost entirely replaced with situational adjudication.</li>
+  <li>In combat, <a href="combat.html#attacks">players roll all the dice</a>.  Well, most of them, anyway.  For example, when a monster attacks a PC, the DM doesn’t roll to attack—rather, the player rolls to defend.  The DM might still roll for damage (or might delegate that to the players as well), and can certainly make secret rolls for hidden information, but most d20 rolls are in the players’ hands (literally).</li>
+  <li>The <a href="combat.html#critical-hits">critical hit rules</a> have been tremendously simplified.</li>
+  <li id="spontaneous">
+    <a href="cleric.html">Clerics</a> and most other divine spellcasters are spontaneous spellcasters (see class descriptions for details).  <!-- TODO: In those class descriptions' BtC, refer back to this note. -->
+    <details><summary>Behind the Curtain</summary>
+      <p>
+        These rules are based on the 3.5 <em>Unearthed Arcana</em> pp.&nbsp;64–65, also with influence from 5e’s version of “preparing” spells.  I’ve done this for both logic and simplicity.
+      </p>
+      <p>
+        Logically, it doesn’t make sense to me that characters channeling divine power (whatever that means) have to select in advance exactly which effects they’re going to invoke each day, and <em>how many times</em>.  That feels very Vancian, and is appropriate for wizards, but less so for most other classes.  (This is roughly analogous to how, at the time of this writing, wizards and wizard-like classes are the only casters whose somatic components are impaired by armor.)
+      </p>
+      <p>
+        This is also done for simplicity.  Wizards have always been thought of as the most complicated class, but clerics and druids give them a run for their money if they have to prepare spells the same way.  Spellcasting is itself more complex than what fighters and rogues do; may as well keep it as simple as possible by having a divine caster’s player sitting at the table just have a short menu of spells to select from, and mark off spell slots as they’re used.
+      </p>
+      <p>
+        This has a side benefit for design, which is that it’s now much less important for domains to have exactly one spell at each level!  Ideally, most domains should have at least one spell at nearly all levels, but it’s okay if some have more than that, since that only provides more options for character customization, not during play—the number of spells known is fixed.
+      </p>
+    </details>
+  </li>
+  <li>The influence of armor on spellcasting is described in each affected class, not specified in the core.  Wizards, for instance, cannot cast spells with somatic components while wearing armor; druids are prohibited from wearing metal armor or using metal shields.  Etc.  (The gestures of sorcerers and warlocks are not so precise, so armor does not impair their arcane magic.)  [This is a return to the conventions of classic editions.  The attempt to codify arcane spell failure in the core system introduced needless complexity.]</li>
+  <li>Instead of Taking 10, unstressed checks are made by taking the ability score as the replacement for the roll + modifier.  (Taking 20 rules are unchanged.)</li>
+  <li>Pending further review, 3.5’s five-foot step is eliminated; if you want to move through or out of a threatened area, try the Acrobatics skill (Tumble in 3.5) or the Disengage action (imported from 5e).</li>  <!-- TODO: Work on this! -->
+  <li>Bonus spell slots for high ability scores (PHB pg. 8, Table 1-1) are moved back by a single point, and also extended to include minor spells.  In other words, a score of 11 provides a bonus minor spell; at 13, also a bonus Level I spell; etc.</li>
+  <!-- NB: If using multiclass rules, adopt the fractional base bonuses from 3.5 <em>Unearthed Arcana</em> pg. 73, but perhaps with a lower baseline on good saves for non-primary classes?  (I'm thinking pulling it down by 1.5, so it starts at a flat +1 but goes up at the same rate from there.  Perhaps point out in the text that both Good scales increase at the same rate; the difference is simply that your primary class grants an extra +1.5 at first level.)  Also, abolish XP penalties for level gaps, and with them, favored classes. -->
+  <!-- TODO: Implement a simpler form of the facing rules on pp. 124–128 of the 3.5 UA. -->
+</ul>
+
+</body>
+</html>
