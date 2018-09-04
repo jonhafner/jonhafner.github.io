@@ -45,6 +45,12 @@ tbody tr:nth-child(even) { background: #FFF }
   It seems even and odd are shortcuts for, I'm guessing, 2n and 2n+1, respectively.  Other expressions are possible, like 5n+3 for every fifth row, starting with the third.  It can also be a constant, like 2 for just the second.  Etc.
 */
 
+caption {
+  text-align: left;
+  font-weight: bold;
+}
+
 /*
 TODO: I think I can ditch the footer styling, and instead, style a nav element dropped into both header and footer, with breadcrumbs (see ~/Documents/notes/html.txt).
 */
+footer { font-size: small; }

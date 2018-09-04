@@ -10,98 +10,87 @@
 
 <h1>Hit Points</h1>
 
-
-
-
-
-<h2>Maximum Hit Points</h2>
-<p>
-  Every creature begins play with a hit point maximum equal to its Constitution score, scaled by size, as noted below.  Characters with levels add their rolled hit die (plus Constitution modifier) for each level as usual.  (Hit points from levels are not scaled by size; the scaling applies only to the “base” hit points from the raw Constitution score.)
-</p>
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Size</th><th>Base hp Multiplier</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Fine</td><td>×1/8</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Diminutive</td><td>×1/4</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Tiny</td><td>×1/2</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Small</td><td>×3/4</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Medium</td><td>×1</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Large</td><td>×4/3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Huge</td><td>×2</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Gargantuan</td><td>×4</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Colossal</td><td>×8</td>
-    </tr>
-  </tbody>
-</table>
-<p>
-  When rolling a hit die to determine your hit points for that level, you may reroll a result you dislike, but at a –1 penalty on the reroll (minimum 1).  You can repeat this as desired, but the penalty is cumulative.  (This applies only to elite characters, such as player characters using 4d6 or an elite point buy for ability scores.  Non-elite characters take their hit dice as rolled.)
-</p>
-<details><summary>Behind the Curtain</summary>
+<h2 id="max">Maximum Hit Points</h2>
   <p>
-    But for a couple changes to scaling based on creature size, this is essentially the Vitality and Wound Points system from 3.5 <em>Unearthed Arcana</em> pp. 115–119, except with wound and vitality points lumped into a single pool.  This also nudges toward the greater survivability of characters in 4e, though not nearly to the extent seen in that edition.  This inflation of hit points is partially counterbalanced by the much slower natural healing of classic editions.
+    Every creature begins play with a hit point maximum equal to its Constitution score, scaled by size, as noted in the table below.  Characters with levels add their rolled hit die (plus Constitution modifier) for each level as usual.  (Hit points from levels are not scaled by size—the scaling applies only to the “base” hit points from the raw Constitution score.)
   </p>
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Size</th><th>Base hp Multiplier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">Fine</td><td>×1/8</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Diminutive</td><td>×1/4</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Tiny</td><td>×1/2</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Small</td><td>×3/4</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Medium</td><td>×1</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Large</td><td>×4/3</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Huge</td><td>×2</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Gargantuan</td><td>×4</td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Colossal</td><td>×8</td>
+      </tr>
+    </tbody>
+  </table>
   <p>
-    The choice to add scaling factors for Small and Large creatures was made for several reasons (not least of which being the many advantages of Small size); the only question was whether to use 3/4 and 4/3 or 2/3 and 3/2.  For average scores (10 or 11), the former yields effective adjustments of ±3&nbsp;hp, which feels about right.  (When I was considering static adjustments, I was leaning toward ±2, so that’s close enough.)  However, the latter would produce –4&nbsp;hp for Small and +5&nbsp;hp for Large; that feels like it’s pushing it.  Hence, my choice of the former.
+    When rolling a hit die to determine your hit points for that level, you may reroll a result you dislike, but at a –1 penalty on the reroll (minimum 1).  You can repeat this as desired, but the penalty is cumulative.  (This applies only to elite characters, such as player characters using 4d6 or an elite point buy for ability scores.  Non-elite characters take their hit dice as rolled.)
   </p>
-  <p>
-    The system of rerolling low results on hit dice exists to reduce the chances of being stuck with a punishingly low hit point total after several levels of bad luck, while still retaining the threat of suboptimal outcomes.
-  </p>
-</details>
-
-
-
-
+  <details><summary>Behind the Curtain</summary>
+    <p>
+      But for a couple changes to scaling based on creature size, this is essentially the Vitality and Wound Points system from 3.5 <em>Unearthed Arcana</em> pp.&nbsp;115–119, except with wound and vitality points lumped into a single pool.  This also nudges toward the greater survivability of characters in 4e, though not nearly to the extent seen in that edition.  This inflation of hit points is partially counterbalanced by the much slower natural healing of classic editions.
+    </p>
+    <p>
+      The choice to add scaling factors for Small and Large creatures was made for several reasons (not least of which being the many advantages of Small size); the only question was whether to use 3/4 and 4/3 or 2/3 and 3/2.  For average scores (10 or 11), the former yields effective adjustments of ±3&nbsp;hp, which feels about right.  (When I was considering static adjustments, I was leaning toward ±2, so that’s close enough.)  However, the latter would produce –4&nbsp;hp for Small and +5&nbsp;hp for Large; that feels like it’s pushing it.  Hence, my choice of the former.
+    </p>
+    <p>
+      The system of rerolling low results on hit dice exists to reduce the chances of being stuck with a punishingly low hit point total after several levels of bad luck, while still retaining the threat of suboptimal outcomes.
+    </p>
+  </details>
 
 <h2 id="damage">Damage</h2>
-<p>
-  Your maximum hit points measure how many points of damage you can suffer before being removed from combat (v.i.).  There are two common ways of tracking this: One is to subtract damage taken from your “current hit points”, with increasing concern as your “remaining” health approaches 0.  The other is to total up how much damage has been dealt to you, with worry creeping in as that total approaches your hit point maximum.  These two approaches are mathematically equivalent; use whichever you feel more comfortable with.  (If the second option sounds strange to you, there are still a couple reasons you might consider it.  For one thing, addition is usually easier than subtraction; consider the relative frequency and circumstances under which you would typically suffer or heal damage.  For another, as your adventuring career progresses, you might be increasingly likely to encounter effects [such as transformations or necromancy] that can alter your hit point maximum without affecting the amount of damage you have suffered.  This can be confusing if you track hp remaining, but it’s usually quite transparent if you track damage taken.  But again, either approach is fine, as long as you’re careful.)
-</p>
-<p>
-  When a character accumulates damage equaling or exceeding their hit points, they are removed from active participation in combat.  The precise consequences of this depend upon circumstances: they might be knocked unconscious, still conscious but incapacitated, gravely wounded and in danger of dying, or outright dead, all depending on the source of the damage, the intent of the attacker, etc.  If the character does survive, temporary (or permanent!) ability score damage is not uncommon.
-</p>
-<details><summary>Behind the Curtain</summary>
   <p>
-    Most of this is fairly standard from the classic editions, with just a bit of additional abstraction and flexibility inserted.  For some ideas for creative things that can be done with incapacitation, see the optional rules for lasting and permanent damage on pg. 114 of the <em>Numenera</em> core book.
+    Your maximum hit points measure how many points of damage you can suffer before being removed from combat.  There are two common ways of tracking this: One is to subtract damage taken from your “current hit points”, with increasing concern as your “remaining” health approaches 0.  The other is to total up how much damage has been dealt to you, with worry creeping in as that total approaches your hit point maximum.  These two approaches are mathematically equivalent, and each has its advantages and disadvantages in different situations; use whichever you feel more comfortable with.
   </p>
-</details>
-
-
-
-
+  <p>
+    When you accumulate damage equaling or exceeding your hit points, you are removed from active participation in combat.  The precise consequences of this depend upon circumstances: you might be knocked unconscious, still conscious but incapacitated, gravely wounded and in danger of dying, and so on, all depending on the source of the damage, the intent of the attacker, etc.  If you do survive, temporary (or permanent!) ability score damage is not uncommon.
+  </p>
+  <p>
+    Damage taken in excess of your hit points carries over to be applied as ability score damage instead.  The ability score affected may be determined by circumstances, but typically defaults to Constitution for non-subdual damage.  If your Constitution score reaches 0, you die.
+  </p>
+  <details><summary>Behind the Curtain</summary>
+    <p>
+      Most of this is fairly standard from the classic editions, with just a bit of additional abstraction and flexibility inserted.  For some ideas for creative things that can be done with incapacitation, see the optional rules for lasting and permanent damage on pg.&nbsp;114 of the <em>Numenera</em> core book.
+    </p>
+  </details>
 
 <h2 id="temp-hp">Temporary Hit Points</h2>
-<p>
-  Some effects can grant temporary hit points; these are effectively a separate pool of health that absorbs damage taken first.  (In a reversal of tracking damage normally, when temporary hit points are in play, it is much simpler to subtract damage dealt from your current total of temporary hit points remaining.)  When your temporary hit points are exhausted, any surplus damage is dealt to your character as normal.
-</p>
-<p>
-  Temporary hit points do not “stack”: if you are granted temporary hit points by some effect while you have a positive number of temporary hit points already, your new temporary hit point total is the greater of the two values, <em>not</em> their sum.
-</p>
+  <p>
+    Some effects can grant temporary hit points.  These are effectively a separate pool of health that absorbs damage taken first.  When you take damage, subtract it from your current total of temporary hit points remaining.  When those are exhausted, any surplus damage is dealt to your character as normal.
+  </p>
+  <p>
+    Temporary hit points do not “stack”: if some effect grants you temporary hit points while you have some already, you must choose whether to keep your current total or to discard them and accept the new ones in their place.  You may <em>not</em> combine them.
+  </p>
 
 </body>
 </html>
-
-
 
 
 

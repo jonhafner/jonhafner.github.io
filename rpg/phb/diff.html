@@ -9,43 +9,303 @@
 <body>
 
 <h1>Differences from Third Edition</h1>
+  <p>
+    The “official” version of <em>D&amp;D</em> that my ruleset most closely resembles is the Third Edition of the game (specifically, 3.5), so if you’re already familiar with that (or at least have a <em>PHB</em> on hand for reference), you can imagine starting with it and making the changes listed below.
+  </p>
 
-<p>
-  The “official” version of <em>D&amp;D</em> that my ruleset most closely resembles is the Third Edition of the game (specifically, 3.5), so if you’re already familiar with that, you can imagine starting with it and making the changes listed below.
-</p>
-<!-- Try to order things roughly by decreasing importance, so the big stuff is first.  Also, keep an eye out for places where I opt for the 3.0 rule over 3.5, as that counts as a change!  (Some kind soul catalogued all the significant differences, archived at <https://web.archive.org/web/20060613103919/http://www.users.bigpond.com/steven_cooper/dnd/dnd-revised.htm>.)  As I create the linked documents, I should probably move all the bracketed text to there, typically in BtC blocks.  That's where it belongs anyway, and that'll help clean up this list that's getting really hard to scan. -->
-<ul>
-  <li><a href="combat.html#rounds">Initiative system<a> (if you can call it that) borrowed from <a class="offsite" href="http://schwalbentertainment.com/shadow-of-the-demon-lord/"><em>Shadow of the Demon Lord</em></a>.</li>
-  <li>The <a href="skills.html">skill</a> and <a href="proficiencies.html">proficiency</a> systems are tweaked a bit, blending ideas from several editions, and are hopefully both simpler and more flexible than in 3e.  Perhaps most notably, the skill list is “open” (as opposed to “closed”, or exclusive), and there is no concern with class skills and cross-class skills.  Every character gets 2 + Int mod skill points per level (quadrupled at first level); those few classes that rely more heavily on skills can achieve the desired results with bonus skills granted by the class itself.</li>
-  <li>Feats, per se, <a href="what-happened-to-feats.html">no longer exist</a>.  Some were incorporated into class features, built into the core system, or adapted in other ways; others were rendered obsolete by other changes.  [TODO: In that document, describe how some are just minor mathy things that aren’t really needed, some are best made into class features, some have been made into combat proficiencies, some metamagic feats are rendered obsolete by changes to the spell power system, other metamagic feats have been turned into metamagic <em>spells</em>, item creation feats are no longer required (as in previous editions, if you are a spellcaster, you can research the creation of items appropriate to your class, with rules in the DMG), etc.]</li>
-  <li>A character’s raw Constitution score is included in <a href="hit-points.html">hit point calculations</a>.  This slightly increases the hit point totals of most baseline creatures, and more significantly increases the hit points of characters who have a modest number of class levels.</li>
-  <li>The rules for <a href="hit-points.html#damage">death and dying</a> are almost entirely replaced with situational adjudication.</li>
-  <li>In combat, <a href="combat.html#attacks">players roll all the dice</a>.  Well, most of them, anyway.  For example, when a monster attacks a PC, the DM doesn’t roll to attack—rather, the player rolls to defend.  The DM might still roll for damage (or might delegate that to the players as well), and can certainly make secret rolls for hidden information, but most d20 rolls are in the players’ hands (literally).</li>
-  <li>The <a href="combat.html#critical-hits">critical hit rules</a> have been tremendously simplified.</li>
-  <li id="spontaneous">
-    <a href="cleric.html">Clerics</a> and most other divine spellcasters are spontaneous spellcasters (see class descriptions for details).  <!-- TODO: In those class descriptions' BtC, refer back to this note. -->
+<h2>General mood and visual aesthetic</h2>
+  <p>
+    Third Edition is sometimes credited with popularizing the “dungeonpunk” aesthetic, which can be fine if done intentionally (e.g., Eberron), but I’m not keen on it being the default.  My first <em>D&amp;D</em> book was the Second Edition <em>PHB</em>, in which the first full-color interior illustration was
+    <a href="https://i.warosu.org/data/tg/img/0280/18/1383122417294.jpg">a particular piece by Larry Elmore</a>.
+    This went a long way toward setting the mood of the game for me.  It might look a little old-fashioned now, but this is an example of the sort of thing I still think of when I imagine a typical world of <em>Dungeons &amp; Dragons</em>—something that, despite its fantastical elements, is a bit more realistic and grounded than one in which it seems like every other fighter wears armor with spikes as big as their head and carries a sword as long as they are tall.  So, in short, the illustrations in the Third Edition books are sometimes useful, but should not be taken as accurate representations of the game world.
+  </p>
+
+<h2>Introduction</h2>
+  <h3>Character Creation</h3>
+    <h4>Record Combat Numbers</h4>
+      <p>
+        <strong>Hit Points:</strong> A character’s raw Constitution score is included in <a href="hit-points.html#max">hit point calculations</a> (q.v.).  This slightly increases the hit point totals of most baseline creatures, and more significantly increases the hit points of characters who have a modest number of class levels.  [For DMs, this means that most creatures and characters in the world have no levels or Hit Dice.]
+      </p>
+      <p>
+        <strong>Initiative:</strong> With the changes to the initiative system, it shouldn’t be necessary to record a separate statistic for your Initiative bonus.  You can ignore this paragraph.
+      </p>
+
+<h2>Chapter 1: Abilities</h2>
+  <h3>Ability Scores</h3>
+    <h4>Score Generation</h4>
+      <p>
+        In the interest of maintaining balanced power levels between PCs, instead of the semi-random method presented in the PHB, we’ll use a more deterministic approach as presented in the DMG.
+      </p>
+      <p>
+        <strong>Quick Start: Elite Array.</strong>  Use the following scores, arranged as desired: 15, 14, 13, 12, 10, and 8.
+      </p>
+      <p>
+        <strong>Detailed Option: Standard Point Buy.</strong>  All ability scores start at 8.  Take 25 points to spread out among all abilities.  For ability scores of 14 or lower, you buy additional points on a 1-for-1 basis.  For ability scores higher than 14, it costs a little more (see the table below).
+      </p>
+      <table>
+        <thead>
+          <tr><th>Ability<br>Score</th><th>Point<br>Cost</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>9</td><td>1</td></tr>
+          <tr><td>10</td><td>2</td></tr>
+          <tr><td>11</td><td>3</td></tr>
+          <tr><td>12</td><td>4</td></tr>
+          <tr><td>13</td><td>5</td></tr>
+          <tr><td>14</td><td>6</td></tr>
+          <tr><td>15</td><td>8</td></tr>
+          <tr><td>16</td><td>10</td></tr>
+          <tr><td>17</td><td>13</td></tr>
+          <tr><td>18</td><td>16</td></tr>
+        </tbody>
+      </table>
+      <p>
+        (Observe that the Elite Array is just one of many possible score spreads obtainable through the Standard Point Buy.)
+      </p>
+      <p>
+        For a more authentically “old-school” experience, consider first drafting a “target” set of scores by using the method described in the PHB (roll 4d6, drop the lowest, six times), but record the scores <em>in order</em>, assigning the first to Strength, the second to Dexterity, etc.  Then use an array or point buy system to try to get as close as possible to that score spread.  (Optionally, if you're willing to take a bit of a risk, you can get an even more traditional experience by asking your DM to allow you to use the scores you rolled straight.  If so, expect to be required to roll them while your DM witnesses.)
+      </p>
+      <details><summary>Behind the Curtain</summary>
+        <p>
+          The Standard Point Buy generally yields ability score sets that are fairly typical of those you would expect from the 4d6–L method.  (I once did a very detailed analysis and independently arrived at a point budget and scale that were only very slightly different from what’s given in the DMG—close enough that I didn’t see the point in changing it.)
+        </p>
+        <p>
+          For non-elite characters (whether PCs in a gritty campaign, or ordinary NPCs), either use the Average Array of 13, 12, 11, 10, 9, and 8, or apply the point-buy with only 15 points.  This produces results closer to what might be expected from the original 3d6 method.
+        </p>
+        <p>
+          The DMG lists other possible point budgets, depending on your campaign style.  I’ll reproduce those here, together with a couple extras for the 3e default (4d6–L) and the 5d6–2L method, for comparison purposes.
+        </p>
+        <table>
+          <thead>
+            <tr><th>Points</th><th style="text-align:left">Campaign Style</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>15</td><td style="text-align:left">Low-powered (3d6) [original]</td></tr>
+            <tr><td>22</td><td style="text-align:left">Challenging</td></tr>
+            <tr><td>25</td><td style="text-align:left">Standard (4d6–L) [3e default]</td></tr>
+            <tr><td>28</td><td style="text-align:left">Tougher [Living Greyhawk]</td></tr>
+            <tr><td>32</td><td style="text-align:left">High-powered [4e default]</td></tr>
+            <tr><td>36</td><td style="text-align:left">Super-powered (5d6–2L)</td></tr>
+          </tbody>
+        </table>
+      </details>
+    <h4>Abilities and Spellcasters</h4>
+      <p>
+        Bonus spell slots for high ability scores (PHB pg.&nbsp;8, Table&nbsp;1-1) are moved back by a single point, and also extended to include minor spells (cantrips and orisons, called 0-level in 3e).  In other words, a score of 11 provides a bonus minor spell; at 13, also a bonus Level I spell; etc.  To wit:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th></th><th colspan="6" style="border-bottom: solid 1px black">Bonus Spells (by Spell Level)<th>
+          </tr>
+          <tr>
+            <th>Score</th><th>M</th><th>I</th><th>II</th><th>III</th><th>IV</th><th>V</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+          </tr>
+          <tr>
+            <td>11–12</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+          </tr>
+          <tr>
+            <td>13–14</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td>
+          </tr>
+          <tr>
+            <td>15–16</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td>
+          </tr>
+          <tr>
+            <td>17–18</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td>
+          </tr>
+          <tr>
+            <td>19–20</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td>
+          </tr>
+          <tr>
+            <td>21–22</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <td>etc.…</td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </tbody>
+      </table>
+      <details><summary>Behind the Curtain</summary>
+        <p>
+          Regarding bonus minor spells, this is one of many places where I simply extend existing patterns in the natural fashion: why <em>don’t</em> more talented spellcasters get more cantrips/<wbr>orisons?
+        </p>
+        <p>
+          As for pushing everything back one step, this is one of a few areas where it’s easy to make odd-numbered ability scores more significant, in response to the dominance of even-numbered scores for the ability score modifiers.  (Standard DCs and unstressed checks are another place where I feel I’ve made progress on this.)
+        </p>
+      </details>
+  <h3>The Abilities</h3>
+    <p>
+      Many specific applications (most notably the business about half your Strength bonus to off-hand attacks and 1.5× to two-handed attacks, as well as the assorted skills) are likely to change during the process of simplifying rules.  Focus on general concepts, not specifics.
+    </p>
+  <h3>Changing Ability Scores</h3>
+    <p>
+      The stated increase to an ability score at every fourth level is not necessarily automatic, depending on the campaign; check with your DM.
+    </p>
+
+<h2>Chapter 2: Races</h2>
+  <p>
+    As in the previous chapter, many references to specific skill checks will change due to the changes to the skill system (see below).  Focus on general concepts, not specific skills.
+  </p>
+  <h3>Racial Characteristics</h3>
+    <h4>Favored Class</h2>
+      <p>
+        Ignore this section, as well as any future reference to favored classes.  The Favored Class rules are an unnecessary complication to the multiclassing system.
+      </p>
+  <h3>Humans</h3>
+    <p>
+      Feats are no longer in use (see below).  Instead, if you play a human, you choose any two ability scores, and add +1 to each.  (This applies only to “elite” humans, but in most campaigns, that includes player characters.)
+    </p>
+  <h3>Dwarves</h3>
+    <p>
+      Observe that several of the listed racial traits can be condensed to a +2 bonus to any ability/<wbr>skill checks related to stone or metal.
+    </p>
+  <h3>Gnomes</h3>
+    <p>
+      Gnomes are complicated, and I still haven't worked out how to resolve the differences between forest gnomes, rock gnomes, and tinker gnomes.  Please try to avoid them for now, but if they really speak to you, check with me before doing any significant amount of work with them.
+    </p>
+  <h3>Halflings</h3>
+    <p>
+      Halflings will require a serious revision to flavor, but their mechanics are probably mostly fine, and can work as-is for now.  If interested, perhaps talk with me so we can discuss their “fluff”.
+    </p>
+    <!--
+    TODO: figure out what I want to do about all the flavor; compare with 2e and 5e - can they be salvaged?  It seems like 3e is trying to make them a race of roguish adventurers, which seems a bit absurd.  Like humans, most should prefer to just stay at home and live a simple life, earning an honest living!  Their whole point is that they *seem* like the least heroic, but their stout hearts hold great hidden strength.  Remember that Bilbo was absolutely not a burglar by nature - he just got dragged into it, and his smallness, nimbleness, and luck all worked in his favor.  For more interesting and adventurous types, perhaps consider one or more of the gnome varieties?  Though the rare hobbit adventurer could be quite interesting, since on the whole, hobbits are like humans, except without ambition.  What makes this one different?  [Also, it looks like perhaps some early 5e concept art might look more hobbit-y than what made it into the PHB?  Though some say the halfling pickpocket on p176 is adorable and wonderful, so who knows.]
+    <p>
+      Members of this race call themselves “hobbits”.  Many human societies refer to hobbits as “halflings” due to their short stature.  Most hobbits aren’t bothered by this, but some do find it derogatory; caution is advised.
+    </p>
     <details><summary>Behind the Curtain</summary>
       <p>
-        These rules are based on the 3.5 <em>Unearthed Arcana</em> pp.&nbsp;64–65, also with influence from 5e’s version of “preparing” spells.  I’ve done this for both logic and simplicity.
+        In the earliest <em>D&amp;D</em> materials, this race was called “hobbits”, but after a legal challenge from the rights-holders of Tolkien’s IP, they changed the name.  However, I’m not using this for public or commercial purposes, and it doesn’t make sense for a race to call themselves by a name in reference to their height relative to another race!
       </p>
+    </details> -->
+
+<h2>Chapter 3: Classes</h2>
+  <h3>Class and Level Bonuses</h3>
+    <p>
+      A minor point, but note that the lower save bonus isn’t truly “poor”, but merely <em>average</em>.  (For any given save, the <em>majority</em> of classes have the lower bonus progression.  This effect is even stronger if one includes the NPC classes from the DMG.)
+    </p>
+    <p>
+      Regarding the base attack bonuses, ignore the system of iterative attacks at lower bonuses.  Multiple attacks per round will be handled by other means.  Only pay attention to the first number, not those after slashes.
+    </p>
+  <h3>Level-Dependent Benefits</h3>
+    <p>
+      The precise XP chart is likely to change, in keeping with the exponential progression of earlier editions.
+    </p>
+    <p>
+      Also, no distinction will be made between class skills and cross-class skills: the Class Skill Max Ranks apply to all skills, regardless of your class.  Furthermore, recall that feats and ability score increases are no longer part of the system in the form presented here.  In other words, the only useful part of Table 3–2 is the maximum skill ranks, which can be summarized as simply character level + 3.
+    </p>
+  <h3>Class Descriptions</h3>
+    <p>
+      <strong>Class Skills:</strong> Again, no game-mechanical distinction is drawn between class skills and cross-class skills.  When reading individual class entries, treat this item as merely a list of suggested or recommended skills.
+    </p>
+  <h3>Barbarian, Bard, Druid, Monk, Paladin, Ranger, Sorcerer</h3>
+    <p>
+      I have not yet reviewed these classes; if interested, check with me first.
+    </p>
+  <h3>Cleric</h3>
+    <p>
+      <a href="cleric.html">Clerics</a> are now <a href="div-spont.html">spontaneous spellcasters</a>.  Furthermore, some adjustments will likely be made to their ability to channel energy (such as to turn or rebuke undead).  Stay tuned.
+    </p>
+  <h3>Fighter</h3>
+    <p>
+      <strong>Saving Throws:</strong> A fighter may choose whether to have their “good” save in Fortitude <em>or</em> Reflex.
+    </p>
+    <p>
+      <strong>Bonus Feats:</strong> As noted elsewhere, feats per se are being eliminated.  Some of them will be replaced with a system of combat proficiencies, of which fighters will receive the most slots.
+    </p>
+    <p>
+      Furthermore, a fighter will receive one additional attack per round at 5th level and every fourth level thereafter.
+    </p>
+  <h3>Rogue</h3>
+    <p>
+      <strong>Skill Points:</strong> Rogues receive bonus skill points.  (+2 per level?  +8 at 1st level?)
+    </p>
+    <p>
+      <strong>Sneak Attack:</strong> This feature will soon be folded into the critical hit mechanics and simplified.
+    </p>
+    <p>
+      Most other class abilities can either be dropped or incorporated into the system of combat proficiencies.
+    </p>
+  <h3>Wizard</h3>
+    <p>
+      <strong>Familiar:</strong> Not all arcanists have familiars; to allow some flexibility (and for other reasons), the binding of a familiar is moved to the purview of a spell, as in other editions.
+    </p>
+    <p>
+      <strong>Bonus Feats:</strong> These are no longer necessary.  Metamagic feats will be incorporated into the spellcasting system, and item creation feats are no longer needed, as the ability to craft appropriate items is now part of the scope of any spellcasting class.
+    </p>
+  <h3>Multiclass Characters</h3>
+    <p>
+      As noted elsewhere, certain parts of the multiclassing system don’t work entirely correctly.  If multiclassing, you must use the fractional bonus tables (to be provided soon).
+    </p>
+    <p>
+      Also, related to the irrelevance of favored classes, there are no XP penalties for multiclassing with uneven levels.
+    </p>
+    <!-- NB: If using multiclass rules, adopt the fractional base bonuses from 3.5 <em>Unearthed Arcana</em> pg. 73, but perhaps with a lower baseline on good saves for non-primary classes?  (I'm thinking pulling it down by 1.5, so it starts at a flat +1 but goes up at the same rate from there.  Perhaps point out in the text that both Good scales increase at the same rate; the difference is simply that your primary class grants an extra +1.5 at first level.)  Also, abolish XP penalties for level gaps, and with them, favored classes. -->
+
+<h2>Chapter 4: Skills</h2>
+  <p>
+    While the basic approach to skills remains much the same at the highest level, skills are undergoing <a href="diff-skills.html">enough changes</a> to warrant <a href="skills.html">their own document</a>.
+  </p>
+
+<h2>Chapter 5: Feats</h2>
+  <p>
+    Feats, per se, <a href="what-happened-to-feats.html">no longer exist</a>.  Some were incorporated into class features, built into the core system, or adapted in other ways; others were rendered obsolete by other changes.  The chief remnant is the system of <a href="proficiencies.html">combat proficiencies</a>, which in many ways resembles the system of earlier editions, before it was swallowed up by feats.
+  </p>
+
+<h2>Chapter 6: Description</h2>
+
+<h2>Chapter 7: Equipment</h2>
+  <h3>Equipping a Character</h3>
+    <p>
+      If you don’t use a starting package for your class, instead purchase your equipment out of the average starting gold indicated.  (Do not roll randomly.)
+    </p>
+  <h3>Weapons</h3>
+    <p>
+      The rules for weapons will be simplified somewhat in the future; for now, ignore the rules for critical hits (including the “Critical” column on the weapon table), as they are superceded by <a href="combat.html#critical-hits">my own</a>.
+    </p>
+  <h3>Armor</h3>
+    <p>
+      Arcane spell failure only applies to some casters, so will be dealt with in those class descriptions when they are written.  For now, assume wizards cannot cast spells with somatic components while wearing armor, while sorcerers and warlocks have no such constraints, as their gestures are not so precise.
+    </p>
+    <details><summary>Behind the Curtain</summary>
       <p>
-        Logically, it doesn’t make sense to me that characters channeling divine power (whatever that means) have to select in advance exactly which effects they’re going to invoke each day, and <em>how many times</em>.  That feels very Vancian, and is appropriate for wizards, but less so for most other classes.  (This is roughly analogous to how, at the time of this writing, wizards and wizard-like classes are the only casters whose somatic components are impaired by armor.)
-      </p>
-      <p>
-        This is also done for simplicity.  Wizards have always been thought of as the most complicated class, but clerics and druids give them a run for their money if they have to prepare spells the same way.  Spellcasting is itself more complex than what fighters and rogues do; may as well keep it as simple as possible by having a divine caster’s player sitting at the table just have a short menu of spells to select from, and mark off spell slots as they’re used.
-      </p>
-      <p>
-        This has a side benefit for design, which is that it’s now much less important for domains to have exactly one spell at each level!  Ideally, most domains should have at least one spell at nearly all levels, but it’s okay if some have more than that, since that only provides more options for character customization, not during play—the number of spells known is fixed.
+        This is a return to the conventions of classic editions.  The attempt to codify arcane spell failure in the core system introduced needless complexity.
       </p>
     </details>
-  </li>
-  <li>The influence of armor on spellcasting is described in each affected class, not specified in the core.  Wizards, for instance, cannot cast spells with somatic components while wearing armor; druids are prohibited from wearing metal armor or using metal shields.  Etc.  (The gestures of sorcerers and warlocks are not so precise, so armor does not impair their arcane magic.)  [This is a return to the conventions of classic editions.  The attempt to codify arcane spell failure in the core system introduced needless complexity.]</li>
-  <li>Instead of Taking 10, unstressed checks are made by taking the ability score as the replacement for the roll + modifier.  (Taking 20 rules are unchanged.)</li>
-  <li>Pending further review, 3.5’s five-foot step is eliminated; if you want to move through or out of a threatened area, try the Acrobatics skill (Tumble in 3.5) or the Disengage action (imported from 5e).</li>  <!-- TODO: Work on this! -->
-  <li>Bonus spell slots for high ability scores (PHB pg. 8, Table 1-1) are moved back by a single point, and also extended to include minor spells.  In other words, a score of 11 provides a bonus minor spell; at 13, also a bonus Level I spell; etc.</li>
-  <!-- NB: If using multiclass rules, adopt the fractional base bonuses from 3.5 <em>Unearthed Arcana</em> pg. 73, but perhaps with a lower baseline on good saves for non-primary classes?  (I'm thinking pulling it down by 1.5, so it starts at a flat +1 but goes up at the same rate from there.  Perhaps point out in the text that both Good scales increase at the same rate; the difference is simply that your primary class grants an extra +1.5 at first level.)  Also, abolish XP penalties for level gaps, and with them, favored classes. -->
-  <!-- TODO: Implement a simpler form of the facing rules on pp. 124–128 of the 3.5 UA. -->
-</ul>
 
+<h2>Chapter 8: Combat</h2>
+  <p>
+    Much of this material has already changed, and more is sure to come.  For details, see my documents presenting some revised rules for <a href="combat.html">combat</a> and <a href="hit-points.html">hit points</a>.  (These are in early draft stages currently, nowhere near complete; where <em>PHB</em> material is not contradicted, it likely still holds.)  A few major differences:
+  </p>
+  <ul>
+    <li><a href="combat.html#rounds">Initiative system<a> (if you can call it that) borrowed from <a class="offsite" href="http://schwalbentertainment.com/shadow-of-the-demon-lord/"><em>Shadow of the Demon Lord</em></a>.</li>
+    <li>In combat, <a href="combat.html#attacks">players roll most of the dice</a>, both to attack and defend.</li>
+    <li>The <a href="combat.html#critical-hits">critical hit rules</a> have been tremendously simplified.</li>
+    <li>A character’s raw Constitution score is included in <a href="hit-points.html#max">hit point calculations</a>.  This slightly increases the hit point totals of most baseline creatures, and more significantly increases the hit points of characters who have a modest number of class levels.</li>
+    <li>The rules for <a href="hit-points.html#damage">death and dying</a> are almost entirely replaced with situational adjudication.</li>
+    <li>Saving throws are not subject to automatic failures and successes: a natural 1 and a natural 20 have their usual numerical values with no special effects.</li>
+    <!-- <li>Pending further review, 3.5’s five-foot step is eliminated; if you want to move through or out of a threatened area, try the Acrobatics skill (Tumble in 3.5) or the Disengage action (imported from 5e).</li>  TODO: Work on this!  Update: 3.5 has a withdraw action; does that do what I want?  And is the 5-foot step so bad? -->
+    <li>With revisions to systems for multiple attacks, there is no longer a need for a full-round “Full Attack” action; the “Attack” standard action covers it.</li>
+    <li>For characters with class levels, many (or most) of their hit points are more abstract than physical—so damage is damage, whether it is intended to kill or subdue.  There is no need to track nonlethal damage separately from the regular sort; the difference only matters when handling a character who has run out of hit points.</li>
+    <!-- TODO: Implement a simpler form of the facing rules on pp. 124–128 of the 3.5 UA. -->
+    <!-- Hm.  It seems that if you simply precompute your Grapple Check bonus, the grappling rules aren't nearly as complex as they have a reputation for.  The sequence is pretty short and straightforward; most of the rules are for covering assorted options and variations! -->
+  </ul>
+  <p>
+  </p>
+
+<h2>Chapter 9: Adventuring</h2>
+
+<h2>Chapter 10: Magic</h2>
+
+<h2>Chapter 11: Spells</h2>
+
+<h2>Miscellany</h2>
+
+<footer>
+<p><nav><a href=".">Main</a></nav></p>
+</footer>
 </body>
 </html>
