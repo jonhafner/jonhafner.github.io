@@ -1,0 +1,52 @@
+body {
+  font-size: 100%;
+  max-width: 70ex;
+  margin: 0 auto 1em;
+}
+
+details {
+  background-color: #ddd;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  padding: 5px;
+}
+
+/*
+  Recall that this is the element titling <details> elements, which I chiefly use for Behind the Curtain boxes.
+*/
+summary { font-weight: bold }
+
+dt { font-weight: bold }
+
+/* TODO: add styling for .offsite links */
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.25em 1em;
+  text-align: center;
+  vertical-align: top;
+}
+
+/*
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+*/
+
+tbody tr:nth-child(odd) { background: #f4e9ce }
+tbody tr:nth-child(even)  { background: #FFF }
+/*
+  It seems even and odd are shortcuts for, I'm guessing, 2n and 2n+1, respectively.  Other expressions are possible, like 5n+3 for every fifth row, starting with the third.  It can also be a constant, like 2 for just the second.  Etc.
+*/
+
+/*
+TODO: I think I can ditch the footer styling, and instead, style a nav element dropped into both header and footer, with breadcrumbs (see ~/Documents/notes/html.txt).
+*/
