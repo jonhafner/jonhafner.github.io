@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ability Scores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Ability Scores</h1>
+  <p>
+    Just about every die roll you make is going to be modified based on your character’s abilities.  A tough character has a better chance of surviving a wyvern’s poison sting.  A perceptive character is more likely to notice bugbears sneaking up from behind.  A stupid character is not as likely to find a secret door that leads to a hidden treasure chamber.  Your ability scores tell you what your modifiers are for rolls such as these.
+  </p>
+  <p>
+    Your character has six abilities: Strength (abbreviated Str), Dexterity (Dex), Constitution (Con), Intelligence (Int), Wisdom (Wis), and Charisma (Cha).
+    When creating your character, you generate and assign your scores as described below, and raise and lower them according to the character’s ancestry.
+  </p>
+  <p>
+    For a normal human, these can range from 3 (horrible) to 18 (tremendous).  The average ability score for a typical human commoner is 10 or 11, but your character is not typical: the most common ability scores for player characters (PCs) are 12 and 13.  Each of your character’s above-average abilities gives you a benefit on certain die rolls, and each below-average ability gives you a disadvantage on other die rolls.
+  </p>
+  <p>
+    This is reflected by the corresponding modifier, a number ranging from –5 to +5, given in the table below.  This modifier is the number you apply to the die roll when you try to do something related to that ability.
+    For instance, you apply your Strength modifier to your roll when you try to hit someone with a sword.
+    You also use the modifier with some numbers that aren’t die rolls—for example, you apply your Intelligence modifier to the number of skill points you gain at each level.  A positive modifier is called a bonus, and a negative modifier is called a penalty.
+  </p>
+
+  <h2>Generating Ability Scores</h2>
+    <p>
+      Over the history of the game, many methods have been developed for generating ability scores for characters, most of which are random and highly variable.  In the interest of maintaining balanced power levels between PCs, we’ll instead use one of the more common deterministic approaches.
+    </p>
+    <p>
+      <strong>Quick Start: Elite Array.</strong>  Use the following scores, arranged as desired: 15, 14, 13, 12, 10, and 8.
+    </p>
+    <p>
+      <strong>Detailed Option: Standard Point Buy.</strong>  All ability scores start at 8.  Take 25 points to spread out among all abilities.  For ability scores of 14 or lower, you buy additional points on a 1-for-1 basis.  For ability scores higher than 14, it costs a little more (see the table below).  This table also shows the modifier corresponding to each score.  (These modifiers are determined after you have adjusted your scores based on your ancestry—hence the inclusion of scores outside the usual base range.)
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Ability<br>Score</th>
+          <th>Point<br>Cost</th>
+          <th style="vertical-align:bottom">Modifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>6</td><td>—</td><td>–2</td></tr>
+        <tr><td>7</td><td>—</td><td>–2</td></tr>
+        <tr><td>8</td><td>0</td><td>–1</td></tr>
+        <tr><td>9</td><td>1</td><td>–1</td></tr>
+        <tr><td>10</td><td>2</td><td>+0</td></tr>
+        <tr><td>11</td><td>3</td><td>+0</td></tr>
+        <tr><td>12</td><td>4</td><td>+1</td></tr>
+        <tr><td>13</td><td>5</td><td>+1</td></tr>
+        <tr><td>14</td><td>6</td><td>+2</td></tr>
+        <tr><td>15</td><td>8</td><td>+2</td></tr>
+        <tr><td>16</td><td>10</td><td>+3</td></tr>
+        <tr><td>17</td><td>13</td><td>+3</td></tr>
+        <tr><td>18</td><td>16</td><td>+4</td></tr>
+        <tr><td>19</td><td>—</td><td>+4</td></tr>
+        <tr><td>20</td><td>—</td><td>+5</td></tr>
+      </tbody>
+    </table>
+    <p>
+      (Observe that the Elite Array is just one of many possible score spreads obtainable through the Standard Point Buy.)
+    </p>
+    <p>
+      For a more authentically “old-school” experience, consider first drafting a “target” set of scores by using the method described in the PHB (roll 4d6, drop the lowest, six times), but record the scores <em>in order</em>, assigning the first to Strength, the second to Dexterity, etc.  Then use an array or point buy system to try to get as close as possible to that score spread.  (Optionally, if you’re willing to take a bit of a risk, you can get an even more traditional experience by asking your DM to allow you to use the scores you roll straight.  If so, expect to be required to roll them while your DM witnesses.)
+    </p>
+    <details><summary>Behind the Curtain</summary>
+      <p>
+        The Standard Point Buy generally yields ability score sets that are fairly typical of those you would expect from the 4d6–L method.  (I once did a very detailed analysis and independently arrived at a point budget and scale that were only very slightly different from what’s given in the DMG—close enough that I didn’t see the point in changing it.)
+      </p>
+      <p>
+        For non-elite characters (whether PCs in a gritty campaign, or ordinary NPCs), either use the Average Array of 13, 12, 11, 10, 9, and 8, or apply the point-buy with only 15 points.  This produces results closer to what might be expected from the original 3d6 method.
+      </p>
+      <p>
+        The DMG lists other possible point budgets, depending on your campaign style.  I’ll reproduce those here, together with a couple extras for the 3e default (4d6–L) and the 5d6–2L method, for comparison purposes.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Points</th><th style="text-align:left">Campaign Style</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>15</td><td style="text-align:left">Low-powered (3d6) [original]</td></tr>
+          <tr><td>22</td><td style="text-align:left">Challenging</td></tr>
+          <tr><td>25</td><td style="text-align:left">Standard (4d6–L) [3e/5e default]</td></tr>
+          <tr><td>28</td><td style="text-align:left">Tougher [Living Greyhawk]</td></tr>
+          <tr><td>32</td><td style="text-align:left">High-powered [4e default]</td></tr>
+          <tr><td>36</td><td style="text-align:left">Super-powered (5d6–2L)</td></tr>
+        </tbody>
+      </table>
+    </details>
+
+  <h2>Abilities and Spellcasters</h2>
+    <p>
+      The ability that governs bonus spells depends on what type of spellcaster your character is: Intelligence for wizards; Wisdom for clerics, druids, paladins, and rangers; or Charisma for sorcerers and bards.  In addition to having a high ability score, a spellcaster must be of high enough class level to be able to cast spells of a given spell level.  (See the class descriptions for details.)  For instance, the wizard Mialee has an Intelligence score of 15, so she’s smart enough to get three bonus spell slots: one bonus cantrip (a minor spell, indicated with “M” in the table below), one bonus Level&nbsp;I spell, and one bonus Level&nbsp;II spell.  (She will not actually get the Level&nbsp;II spell until she is a 3rd-level wizard, since that’s the minimum level a wizard must be to cast Level&nbsp;II spells.)
+    </p>
+    <p>
+      If your character’s ability score is 9 or lower, you can’t cast spells tied to that ability.  For example, if Mialee’s Intelligence score dropped to 9 because of a poison that reduces intellect, she would not be able to cast even her simplest spells until cured.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th></th><th colspan="6" style="border-bottom: solid 1px black">Bonus Spells (by Spell Level)<th>
+        </tr>
+        <tr>
+          <th>Score</th><th>M</th><th>I</th><th>II</th><th>III</th><th>IV</th><th>V</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>11–12</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>13–14</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>15–16</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>17–18</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td><td>—</td>
+        </tr>
+        <tr>
+          <td>19–20</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>—</td>
+        </tr>
+        <tr>
+          <td>21–22</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td>
+        </tr>
+        <tr>
+          <td>etc.…</td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <h2>The Abilities</h2>
+    <p>
+      <strong>Strength (Str):</strong> Strength measures your character’s muscle and physical power.  This ability is especially important for fighters, barbarians, paladins, rangers, and monks because it helps them prevail in combat.  Strength also limits the amount of equipment your character can carry.  You apply your character’s Strength modifier to melee attack rolls, damage rolls when using a melee or thrown weapon, and checks to climb, jump, swim, break down doors, etc.  (A Strength penalty, but not a bonus, applies to attacks made with a bow that is not a composite bow.)
+    </p>
+    <p>
+      <strong>Dexterity (Dex):</strong> Dexterity measures hand-eye coördination, agility, reflexes, and balance.  This ability is the most important ability for rogues, but it’s also high on the list for characters who typically wear light or medium armor (rangers and barbarians) or no armor at all (monks, wizards, and sorcerers), and for anyone who wants to be a skilled archer.  You apply your character’s Dexterity modifier to ranged attack rolls, Defense (provided that the character can react to the attack), Reflex saving throws (for avoiding fireballs and other attacks that you can escape by moving quickly), and checks to balance, move silently, open locks, pick pockets, etc.
+    </p>
+    <p>
+      <strong>Constitution (Con):</strong> Constitution represents your character’s health and stamina.  A Constitution bonus increases a character’s hit points, so the ability is important for all classes.  You apply your character’s Constitution modifier to Fortitude saving throws (for resisting poison and similar threats) and endurance checks.  If your Constitution score changes, your hit points also increase or decrease accordingly.
+    </p>
+    <p>
+      <strong>Intelligence (Int):</strong> Intelligence determines how well your character learns and reasons.  This ability is important for wizards because it affects how many spells they can cast, how hard their spells are to resist, and how powerful their spells can be.  It’s also important for any character who wants to have a wide assortment of skills.  You apply your character’s Intelligence modifier to the number of <a href="languages.html">languages</a> your character knows at the start of the game, the number of skill points gained each level (but your character always gets at least 1 skill point per level), knowledge and lore checks, and checks to craft an item, disable a trap or other device, search for an object, etc.
+    </p>
+    <p>
+      <strong>Wisdom (Wis):</strong> Wisdom describes a character’s willpower, common sense, perception, and intuition.  While Intelligence represents one’s ability to analyze information, Wisdom represents being in tune with and aware of one’s surroundings.  An “absentminded professor” has low Wisdom and high Intelligence.  A simpleton (low Intelligence) might still have great insight (high Wisdom).  Wisdom is the most important ability for clerics and druids, and it is also important for paladins and rangers.  If you want your character to have acute senses, put a high score in Wisdom.  You apply your character’s Wisdom modifier to Will saving throws (for negating the effect of <em>charm person</em> and other spells) and checks for medicine, survival, perception, etc.
+    </p>
+    <p>
+      <strong>Charisma (Cha):</strong> Charisma measures a character’s force of personality, persuasiveness, personal magnetism, ability to lead, and physical attractiveness.  This ability represents actual strength of personality, not merely how one is perceived by others in a social setting.  Charisma is most important for paladins, sorcerers, and bards.  It is also important for clerics, since it affects their ability to turn undead.  You apply your character’s Charisma modifier to checks for deception, diplomacy, intimidation, performance, animal handling, etc.
+    </p>
+    <h3>Intelligence, Wisdom, and Charisma</h3>
+      <p>
+        You can use your character’s Intelligence, Wisdom, and Charisma scores to guide you in roleplaying your character.  Here is some background (just guidelines) about what these scores can mean.
+      </p>
+      <p>
+        A smart character (one with high Intelligence) is curious, knowledgeable, and prone to using big words.  A character with a high Intelligence but low Wisdom may be smart but absentminded, or knowledgeable but lacking in common sense.  A character with a high Intelligence but a low Charisma may be a know-it-all or a reclusive scholar.  A smart character lacking in both Wisdom and Charisma may put her foot in her mouth often.
+      </p>
+      <p>
+        A character with a low Intelligence mispronounces and misuses words, has trouble following directions, or fails to get the joke.
+      </p>
+      <p>
+        A character with a high Wisdom score may be sensible, serene, “in tune,” alert, or centered.  A character with a high Wisdom but low Intelligence may be aware, but simple.  A character with high Wisdom but low Charisma knows enough to speak carefully and may become an advisor (or “power behind the throne”) rather than a leader.  The wise character lacking in both Intelligence and Charisma is uncouth and unsophisticated.
+      </p>
+      <p>
+        A character with a low Wisdom score may be rash, imprudent, irresponsible, or “out of it.”
+      </p>
+      <p>
+        A character with high Charisma may be attractive, striking, personable, and confident.  A character with high Charisma but a low Intelligence can usually pass herself off as knowledgeable, until she meets a true expert.  A charismatic character lacking in both Intelligence and Wisdom is likely to be shallow and unaware of others’ feelings.
+      </p>
+      <p>
+        A character with low Charisma may be reserved, gruff, rude, fawning, or simply nondescript.
+      </p>
+
+<footer>
+<p><nav><a href=".">Main</a></nav></p>
+</footer>
+</body>
+</html>
