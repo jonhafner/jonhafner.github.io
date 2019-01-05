@@ -9,12 +9,91 @@
 <body>
 
 <h1>Rogue</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Level</th><th>BAB</th><th>Fort</th><th>Ref</th><th>Will</th>
+      <th style="text-align:left">Special</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1st</td><td>+0</td><td>+0</td><td>+2</td><td>+0</td>
+      <td style="text-align:left">Sneak Attack +1 crit</td>
+    </tr>
+    <tr>
+      <td>2nd</td><td>+1</td><td>+0</td><td>+3</td><td>+0</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td>3rd</td><td>+2</td><td>+1</td><td>+3</td><td>+1</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td>4th</td><td>+3</td><td>+1</td><td>+4</td><td>+1</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td>5th</td><td>+3</td><td>+1</td><td>+4</td><td>+1</td>
+      <td style="text-align:left">Sneak Attack +2 crit</td>
+    </tr>
+    <tr>
+      <td>6th</td><td>+4</td><td>+2</td><td>+5</td><td>+2</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td>7th</td><td>+5</td><td>+2</td><td>+5</td><td>+2</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td>8th</td><td>+6</td><td>+2</td><td>+6</td><td>+2</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td>9th</td><td>+6</td><td>+3</td><td>+6</td><td>+3</td>
+      <td style="text-align:left">Sneak Attack +3 crit</td>
+    </tr>
+    <tr>
+      <td>10th</td><td>+7</td><td>+3</td><td>+7</td><td>+3</td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <strong>Hit Die:</strong> d6; <strong>Base Attack Bonus:</strong> average; <strong>Good Saving Throws:</strong> Reflex
+</p>
+<p>
+  <strong>Combat Proficiencies:</strong>  Rogues are proficient with all simple weapons, plus the hand crossbow, rapier, sap, shortbow, and short short sword.  Rogues are proficient with light armor, but not with shields.
+</p>
+<p>
+  <strong>Bonus Skills:</strong>  Rogues receive 4 bonus skill points per level (16 at first level).
+  <!-- NB: This only works because of my simplified skill system, with skills like Stealth, Security, and Legerdemain together covering most applications of Hide, Move Silently, Listen, Spot, Search, Disable Device, Open Locks, Pick Pockets, etc.  A total of 6 points per level then is *plenty*, and even allows a background skill or two.  If you split those skills up more finely, you might need to offer more bonus skills! -->
+</p>
+<p>
+  <strong>Sneak Attack:</strong>  If you can catch an opponent when they are unable to defend themselves, you can strike a vital spot for extra damage.  Once per round, you get an automatic critical when you hit a creature that is flat-footed to your attack with a Finesse melee weapon or a ranged weapon.  (Common ways to catch a target flat-footed are to attack from hiding or from behind, or when the target is surprised, balancing, or climbing.)
+</p>
+<p>
+  At first level, a sneak attack acts as an ordinary critical.  At 5th level and every four levels thereafter, it increases in power: a double-crit, a triple-crit, etc.  (See the Rogue class table above.)  These are additive with an attack that is already a critical hit.  (Note: Critical hits from sneak attack must be used to deal damage or other effects against that target; they cannot be converted into extra attacks.)
+</p>
+<p>
+  In order to strike with deadly accuracy, you must be able to see the target well enough to pick out a vital spot, and you must be able to reach such a spot.  You cannot sneak attack while striking a creature with concealment or striking the limbs of a creature whose vitals are beyond reach.  If attacking with a ranged weapon, your target must be within 30&nbsp;feet.
+</p>
+<p>
+  Note that some creatures are immune to critical hits, and thus are unaffected by your sneak attack.  Incorporeal creatures like ghosts and wraiths have no physical form, and oozes and jellies have no discernable anatomies.  Even some creatures with solid form might still lack vulnerable areas, such as certain kinds of plants, constructs, or undead.  Check with your DM if you are uncertain whether you can find a weak spot in your target.
+</p>
+<p>
+  <strong>Thieves’ Cant:</strong>  Through your experience as a rogue you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation.  Only another creature that knows thieves’ cant understands such messages.  It takes four times longer to convey such a message than it does to speak the same idea plainly.
+</p>
+<p>
+  In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.
+</p>
+<details><summary>Behind the Curtain</summary>
+  <p>
+    Regarding the class name: For quite some time, I was calling this class “Thief”.  That might be wonderfully old-school, but it’s also potentially problematic, as it encourages players to steal from their fellow party members.  (The only class that's worse in that regard is “assassin”.)  “Rogue” is a much better name, supporting a broader range of archetypes, like scouts and spies.  In my pregens, I used archetype names like “burglar” and “street ruffian” to emphasize their skill sets without overtly encouraging intra-party conflict.
+  </p>
+</details>
 
-<!-- TODO: Consider describing Thieves' Cant as a dialect (or rather, set of dialects or system of linguistic obfuscation), rather than a language: it is generally only known by thieves, and when communicating with a thief in a language you share, you can speak in a way that others don't grasp your meaning. -->
-
-<!-- TODO: Express the thief skill system in this class description, by specifying bonus skill points to be allocated to the Thief Skills; they should include the classics (with a mix of new and old, taking advantage of innovations like Stealth and Handle Traps), but may also include newer skills, such as Gather Information or whatever.  (I was afraid for a while that I might need +6 skill points per level to recreate the 8/level from 3e, but in the pregens, I got it down to +4!  My merging of certain skills was instrumental to this....) -->
-
-<!-- Behind the Curtain, regarding the class name: For quite some time, this was called “Thief”.  That might be wonderfully old-school, but it's also potentially problematic, as it encourages players to steal from their party members.  The only class that's worse is “assassin”.  “Rogue” is a much better name.  In my pregens, instead of a “thief”, I have a “burglar” to play up the breaking-and-entering aspect, with lockpicking and trap handling, rather than picking pockets.  (It's also its own old-school reference, since that's what Bilbo Baggins was called, wasn't it?) -->
+<!-- TODO: Consider which Rogue abilities from 3e and later can be smoothly integrated.  Some are unnecessary, some can probably be turned into combat proficiency options, and some can probably be established as high-level uses of, say, the Acrobatics skill. -->
 
 </body>
 </html>

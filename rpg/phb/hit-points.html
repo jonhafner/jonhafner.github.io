@@ -9,10 +9,16 @@
 <body>
 
 <h1>Hit Points</h1>
+  <p>
+    Hit points are an abstract measure of a creature’s “staying power” in combat.  Physical health and hardiness obviously play a role, but so do combat skill, willpower, luck, divine grace, magical protections, and countless other factors.
+  </p>
 
 <h2 id="max">Maximum Hit Points</h2>
   <p>
-    Every creature begins play with a hit point maximum equal to its Constitution score, scaled by size, as noted in the table below.  Characters with levels add their rolled hit die (plus Constitution modifier) for each level as usual.  (Hit points from levels are not scaled by size—the scaling applies only to the “base” hit points from the raw Constitution score.)
+    The size of your hit point pool is determined by your Constitution score, your physical size, and your experience level.
+  </p>
+  <p>
+    Every living creature begins with a base hit point maximum equal to its Constitution score, scaled by size, as noted in the following table.  So, for example, a human with a Constitution score of 13 begins with 13 hit points; as a Small creature, a hobbit with the same Constitution starts with 9&nbsp;hp (13&nbsp;× 3/4, rounded down).
   </p>
   <table>
     <thead>
@@ -51,20 +57,23 @@
     </tbody>
   </table>
   <p>
+    In addition, each level you have in a class supplies a Hit Die of a type specified in the class description.  When you gain a level, roll the indicated die and add your Constitution modifier (minimum 1); add this to your hit point maximum.  (Obviously, at character creation, do this for each level you begin with.)  Hit points from levels are not scaled by size—the scaling applies only to the “base” hit points from your raw Constitution score.
+  </p>
+  <p>
     When rolling a hit die to determine your hit points for that level, you may reroll a result you dislike, but at a –1 penalty on the reroll (minimum 1).  You can repeat this as desired, but the penalty is cumulative.  (This applies only to elite characters, such as player characters using 4d6 or an elite point buy for ability scores.  Non-elite characters take their hit dice as rolled.)
   </p>
   <details><summary>Behind the Curtain</summary>
     <p>
-      But for a couple changes to scaling based on creature size, this is essentially the Vitality and Wound Points system from 3.5 <em>Unearthed Arcana</em> pp.&nbsp;115–119, except with wound and vitality points lumped into a single pool.  This also nudges toward the greater survivability of characters in 4e, though not nearly to the extent seen in that edition.  This inflation of hit points is partially counterbalanced by the much slower natural healing of classic editions.
+      Aside from a couple changes to scaling based on creature size, this is essentially the Vitality and Wound Points system from 3.5 <em>Unearthed Arcana</em> pp.&nbsp;115–119, except with wound and vitality points lumped into a single pool.  This also nudges toward the greater survivability of characters in 4e, though not nearly to the extent seen in that edition.  This inflation of hit points is partially counterbalanced by the much slower natural healing of classic editions.
     </p>
     <p>
       The choice to add scaling factors for Small and Large creatures was made for several reasons (not least of which being the many advantages of Small size); the only question was whether to use 3/4 and 4/3 or 2/3 and 3/2.  For average scores (10 or 11), the former yields effective adjustments of ±3&nbsp;hp, which feels about right.  (When I was considering static adjustments, I was leaning toward ±2, so that’s close enough.)  However, the latter would produce –4&nbsp;hp for Small and +5&nbsp;hp for Large; that feels like it’s pushing it.  Hence, my choice of the former.
     </p>
     <p>
-      The system of rerolling low results on hit dice exists to reduce the chances of being stuck with a punishingly low hit point total after several levels of bad luck, while still retaining the threat of suboptimal outcomes.
+      The system of rerolling low results on hit dice exists to reduce the chances of being stuck with a punishingly low hit point total after several levels of bad luck, while still retaining some amount of risk and the associated excitement.
     </p>
     <p>
-      For DMs: Note that this slightly increases the hit point totals of most baseline creatures (which would now have no levels or Hit Dice), and more significantly increases the hit points of characters who have a modest number of class levels if the number of levels is not reduced accordingly.
+      For DMs: Note that this <em>significantly</em> increases the hit point totals of most creatures unless their HD/levels are reduced accordingly.  (Under this system, many baseline creatures should have no levels or Hit Dice at all, instead drawing upon their ability scores and size.)
     </p>
   </details>
 
@@ -84,12 +93,29 @@
     </p>
   </details>
 
+<h2>Healing</h2>
+  <p>
+    When you heal some amount of damage, whether this healing is from natural or magical causes, you recover the specified number of hit points, not to exceed your maximum.  (Equivalently, the amount of damage you currently suffer cannot drop below zero.)
+  </p>
+  <p>
+    A common source of natural healing is your Hit Dice, if you have levels in a class (as most player characters do).  As noted above, your Hit Dice contribute to your <a href="#max">maximum hit point total</a>.  They also provide a healing resource.  So, e.g., a third-level fighter has a pool of 3d10 HD upon which to draw.  No more than once per hour, you can “take a breather” to spend one hit die: rest for a few minutes, mark off one die from your pool, roll that die, and heal that many hit points.  You can also spend as many hit dice as you want (and have remaining) during or after your eight-hour nightly rest.
+  </p>
+  <p>
+    After a long rest, you naturally heal 1&nbsp;hp and regain 1 spent HD, up to your maximum of each.  (With bed rest and/or medical care, you may heal at a faster rate.)
+    <!-- TODO: Copy those rules into here. -->
+  </p>
+  <details><summary>Behind the Curtain</summary>
+    <p>
+      The mechanics here are clearly a simplified, restricted version of 5e’s Hit Dice, which in turn evolved from 4e’s Healing Surges.  Systems like this do not significantly increase the durability of a party within a single encounter, but they do allow them to extend their adventuring day, even without access to significant quantities of healing magic.  Keeping the recovery rates down, however, still retains some longer-term cost to taking significant damage.  The problem of attrition is substantially lessened compared to early editions, but not entirely eliminated, unlike standard 4e and 5e in which a party is back up to full capacity after a single night’s rest.
+    </p>
+  </details>
+
 <h2 id="temp-hp">Temporary Hit Points</h2>
   <p>
     Some effects can grant temporary hit points.  These are effectively a separate pool of health that absorbs damage taken first.  When you take damage, subtract it from your current total of temporary hit points remaining.  When those are exhausted, any surplus damage is dealt to your character as normal.
   </p>
   <p>
-    Temporary hit points do not “stack”: if some effect grants you temporary hit points while you have some already, you must choose whether to keep your current total or to discard them and accept the new ones in their place.  You may <em>not</em> combine them.
+    Temporary hit points do not “stack”: if some effect grants you temporary hit points while you have some already, you must choose whether to keep your current total or to discard them and accept the new ones in their place.  You may <em>not</em> combine them or otherwise retain both amounts.
   </p>
 
 </body>
@@ -98,6 +124,7 @@
 
 
 <!--
+TODO: Move most of this to a Theory document!
 
 A bit of theory:  At times, I've considered borrowing Numenera's recovery roll mechanic to handle healing.  Thing is, in Numenera, the recovery roll lets you restore points to your Might, Speed, and Intellect pools.  In D&D, that would have to just be hp.  Is that okay?  Well, yes, because hp encompasses physical toughness, physical energy (the opposite of fatigue), luck, and so on.  In the article I have saved somewhere, Monte talks about spending Speed points as effort to increase your chance to dodge an attack, as a way to avoid it hitting you and inflicting Might damage.  This is fine – more than fine, it's pretty cool, and it works great in that system: a quick but frail character might make that calculated exertion to reduce the risk of taking more physical damage than he can handle.  Conversely, a big tough guy would just stand there and take it instead.  (He could try to dodge, but effort spent on it would be more costly in a relative sense.)  Don't overlook, though, that since hp describes so much, we can skin it however is necessary!  If a character takes damage but is still pretty healthy, this could be described in any way that's appropriate to the character's traits: a brute might take a blunt hit but barely notice, a rogue might deftly turn it into a near miss (or just a slight scratch or grazing blow) but be a little worn down by it, or a scholar might anticipate the attack and position himself to minimize its effects at the exertion of mental effort.  Then, of course, as hp get lower and lower, the narration turns more and more to physical damage....
 
@@ -110,4 +137,3 @@ With something like this, there's no need for negative hit points; they don't ev
 In summary: hit points are too elegant of an abstraction to ruin with crude attempts at simulationism.
 [Side note, so I don't get too wrapped up in the abstraction and forget this point: sometimes, hit points \emph{are} mostly physical.  This is particularly true with zero-hit-die creatures (including first-level heroes), and with big brutes.  Pretty much any time you deal damage to an ogre, for instance, it's physical, but at the beginning, it's mostly on the surface; it's able to absorb blows, or turn strikes into scrapes, until one finally does it in.  Something more agile, though, most damage is more about just nicking it while wearing it down.]
 [Update: Holy crap, this is something else addressed by Numenera.  See pg. 114 (116 of the PDF) in the Optional Rules chapter of the core rulebook, where there is discussion and examples of lasting and permanent damage, as well as the use of these as a ``death replacement''.  It will take some adaptation, of course.  For example, perhaps a concussion inflicts 1d6 points each of Intelligence and Wisdom damage (which heals at a rate of one point per day), while brain damage permanently reduces one random mental ability score by 1d4?  Or, if an old-school slower healing rate is used, like 1hp/day, maybe ability score damage heals at something more like a point per week?  Whatever.]
-

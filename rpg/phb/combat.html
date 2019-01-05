@@ -14,24 +14,23 @@
 
 <h2 id="rounds">Rounds</h2>
   <p>
-    In combat, the action happens in a series of <em>rounds</em>, each representing roughly six seconds of in-game time.  During each round, each combatant gets to take a single <em>turn</em>.  During the first phase, characters can take Fast Turns; following this, anyone who has not yet acted can take a Slow Turn during the second phase.  Once all turns are completed and actions are resolved, you have the End of the Round, during which certain special effects may begin or end, durations measured in rounds are decremented, etc.
+    In combat, the action happens in a series of <em>rounds</em>, each representing roughly six seconds of in-game time.  During each round, each combatant gets to take a single <em>turn</em>, and possibly a single <em>reaction</em>.  Within a round, turns are resolved in the logical order.  If the order of action matters and it is not clear who should act first, the DM may call for an Initiative Check.  This is usually a Dexterity check, but not always: you might roll Intelligence if casting a wizard spell, or Charisma for social interaction, for instance.
   </p>
   <p>
-    Within a phase, turns are resolved in the logical order.  If the order of action matters and it is not clear who should act first, the DM may call for an Initiative Check.  This is usually a Dexterity check, but not always: you might roll Intelligence if casting a wizard spell, or Charisma for social interaction, for instance.
+    On your turn, you can generally take one <em>standard action</em>, one <em>move action</em>, and one <em>swift action</em>.  You can exchange your standard action for an extra move action, or either or both of these for extra swift actions, but you cannot “trade up” in the other direction.
   </p>
   <p>
-    On a Fast Turn, you can take a standard action <em>or</em> a move action, but not both.  On a Slow Turn, you can take both a standard action <em>and</em> a move action.  On either type of turn, you can also take a swift action.  (Most move actions involve movement, but not all of them do; this is a briefer name for what 3e calls “move-equivalent actions”.)
+    A standard action is your “main action” for the turn—usually something like attacking with a weapon or casting a spell.  On a normal move action, you can walk a distance up to your Speed.  This can be modified by special conditions like navigating difficult terrain, or can include special types of movement like climbing a rough surface or standing up from a prone position.  (Most move actions involve movement, but not all of them do; this is a briefer name for what 3e calls “move-equivalent actions”.)  Swift actions are quick, minor acts, like drawing or sheathing a weapon, casting a Quickened spell, etc.
   </p>
   <p>
-    A move action can be thought of as slightly less than a standard action.  Hence, you can exchange a standard action for a move action, but not the other way around.  In other words, during a Slow Turn, you can opt to give up your standard action and take two move actions instead, but you cannot “trade up” in the other direction: without some special effect, you cannot take two standard actions in the same turn.  (A swift action is less than both of these, and can also be swapped in.  If you do nothing else, then, you can take up to two swift actions in a Fast Turn or three in a Slow Turn.)
+    Some actions take so little time or effort that they are classified as <em>free actions</em>.  Common examples include dropping a held item, dropping to the floor, or speaking a few simple sentences.  You can take as many free actions on a turn as the DM deems plausible.
   </p>
   <p>
-    Some actions take so little time and effort that they are classified as “free actions”.  You may take as many free actions on a turn as the DM deems plausible.
+    <em>Reactions</em> are actions you can take in response to something, even if it isn’t your turn.  The most common case of this is making an attack of opportunity against an enemy who has let down their defenses in some way.  Again, you can normally take only a single reaction per round.
   </p>
   <details><summary>Behind the Curtain</summary>
     <p>
-      This is mostly borrowed from <a class="offsite" href="http://schwalbentertainment.com/shadow-of-the-demon-lord/"><em>Shadow of the Demon Lord</em></a>.  Note that there are certain respects in which this system resembles a lighter-weight, more streamlined version of the combat phases from the earliest editions of <em>D&amp;D</em>.  In designing <em>SotDL</em>, Schwalb found that more rigid initiative systems were cumbersome and restrictive, and interrupted the flow of the narrative.  Indeed, there are few alternatives that allow tactical freedom and narrative flow while also taking some account of the relative speed of different actions.
-      <!-- TODO: link to theory document on initiative. -->
+      I initially used a system of <a href="../theory/initiative.html#fast-slow">Fast and Slow Turns</a>, but I’ve since moved to a more purely <a href="../theory/initiative.html#narrative">narrative initiative</a>.  For further discussion, see not only those particular sections, but that document overall.
     </p>
   </details>
 
@@ -53,7 +52,7 @@
       Players rolling for their defense in addition to their attacks helps them stay more engaged, shifts the implied sense of agency, and can also help keep the game moving when monsters are attacking multiple PCs simultaneously.  It also removes any possibility of the DM fudging dice, perhaps subconsciously ratcheting up the tension.  Furthermore, it relieves the already overworked DM of a tiny amount of effort and distraction, allowing them to stay more focused on and engaged with the game and the players.  (The gains are enhanced if the DM uses static [average] values for monster damage.)
     </p>
     <p>
-      This rule comes from the 3.5 <em>Unearthed Arcana</em> pp.&nbsp;133–4, as well as the 5e Unearthed Arcana rules for <a href="https://media.wizards.com/2015/downloads/dnd/UA5_VariantRules.pdf">Players Make All Rolls</a>.  This applies not only to attacks, but also to saving throws and spell resistance: see sources for details.  However, the designers’ math is off—subtracting 10 from PCs’ static numbers (like AC or save DCs) to obtain the corresponding bonus is the most sensible thing to do, but then to preserve the probabilities of success and failure, you must add 12, not 11, to the NPCs’ bonuses for attacks and saves.
+      This rule comes from the 3.5 <em>Unearthed Arcana</em> pp.&nbsp;133–4, as well as the 5e Unearthed Arcana rules for <a href="https://media.wizards.com/2015/downloads/dnd/UA5_VariantRules.pdf">Players Make All Rolls</a>.  This applies not only to attacks, but also to saving throws and spell resistance: see sources for details.  However, the designers’ math is off: subtracting 10 from PCs’ static numbers (like AC or save DCs) to obtain the corresponding bonus is the most sensible thing to do, but then to preserve the probabilities of success and failure, you must add 12, not 11, to the NPCs’ bonuses for attacks and saves.
     </p>
     <p>
       Some (but not all!) editions treated a natural 20 as an automatic hit and a natural 1 as an automatic miss.  This is simple, but it sometimes leads to highly implausible results.  Some modicum of sanity can be restored with little cost in extra complexity with the method given here, which is based on the system presented in the 3.0 <em>DMG</em>, pg.&nbsp;64 (tweaked slightly to fix the math).  Additionally, it meshes nicely with my revised rules for <a href="#critical-hits">critical hits</a>.
@@ -64,7 +63,7 @@
 
 <h2 id="critical-hits">Critical Hits</h2>
   <p>
-    If an attack succeeds (or a defense fails) by <em>more than</em> 10, the attack is a <em>critical hit</em>, and additional damage is rolled for the hit.  (This can stack: An attack that succeeds by more than 20 deals yet another set of damage, for effectively triple the normal value; etc.)
+    If an attack succeeds (or a defense fails) by <em>more than</em> 10, the attack is a <em>critical hit</em>, and additional damage is rolled for the hit.  (This can stack: An attack that succeeds by more than 20 is a “double crit”, dealing yet another set of damage, for effectively triple the normal value; etc.)
   </p>
   <p>
     Extra damage from a critical hit is handled like a separate hit with respect to choosing special effects in place of damage.  So, if you land a critical hit on a normal attack, you might still deal normal damage, but in lieu of extra damage, you might opt for some special effect, subject to DM approval.  Conversely, if you achieve a critical hit when attempting a special maneuver (say, to disarm your opponent), you might deal normal damage on top of that, or perhaps instead choose an additional effect (like a trip).  Some of these may require you to negotiate some give-and-take with your DM.
