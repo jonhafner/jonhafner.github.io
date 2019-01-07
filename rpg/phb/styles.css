@@ -1,20 +1,56 @@
+/*********
+ * FONTS *
+ *********/
+/*
+  The AD&D 2nd Edition core books used Friz Quadrata Bold for their interior headers.  (The logo on the cover uses a variant called "Friz Quadrata No. 2 D", identifiable by its "g" glyph.)  Freely available clones of this family often use the name "Fritz".  (I'm going with a non-Quadrata version that is close enough in feel and seems to have a more comprehensive coverage of non-ASCII characters.)
+
+  The source below indicates that the body text is Zapf Calligraphic 801; other similar fonts suggested include Palatino, Book Antiqua, URW Palladio L, and TeX Gyre Pagella.  The latter two have open licenses and are already on my system!
+
+  For more information on the fonts used in published D&D materials, see
+  https://www.kirith.com/tsr-fonts/
+  These include many more typefaces I might want to emulate in the future, like a half-dozen scripts used in Night Below handouts!
+*/
+
+@font-face {
+  font-family: Palatino;
+  src: local("Zapf Calligraphic 801"),
+       local("Palatino"),
+       local("URW Palladio L"),
+       local("Book Antiqua"),
+       local("TeXGyrePagella");
+}
+@font-face {
+  font-family: FrizQuadrataBold;
+  src: local("Friz Quadrata Bold"),
+       local("Fritz Quadrata Bold"),
+       local("Friz Quadrata"),
+       local("Fritz Quadrata"),
+       url("../FrizQuadrataBold.otf");
+  font-weight: bold;
+}
+
+
+
 body {
+  font-family:
+    "Zapf Calligraphic 801", "Palatino", "URW Palladio L", "TeX Gyre Pagella", "TeXGyrePagella", "Book Antiqua", serif;
   font-size: 100%;
   max-width: 70ex;
   margin: 0 auto 1em;
+  background-color: #fff;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: FrizQuadrataBold, serif;
+  color: #05b;
 }
 
 details {
-  background-color: #ddd;
-  border-color: black;
-  border-style: solid;
-  border-width: thin;
+  background-color: #bdf;
+  border-style: none;
   padding: 5px;
 }
-
-/*
-  Recall that this is the element titling <details> elements, which I chiefly use for Behind the Curtain boxes.
-*/
 summary { font-weight: bold }
 
 /* TODO: add styling for .offsite links */
@@ -39,8 +75,13 @@ td:first-child {
 }
 */
 
+tr.unshaded { background-color: #fff; }
+tr.shaded { background-color: #ddd; }
+tr.shaded-alt { background-color: #bdf; }
+/*
 tbody tr:nth-child(odd)  { background: #f4e9ce }
 tbody tr:nth-child(even) { background: #FFF }
+*/
 /*
   It seems even and odd are shortcuts for, I'm guessing, 2n and 2n+1, respectively.  Other expressions are possible, like 5n+3 for every fifth row, starting with the third.  It can also be a constant, like 2 for just the second.  Etc.
 */
