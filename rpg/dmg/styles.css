@@ -13,12 +13,12 @@
 
 @font-face {
   font-family: Palatino;
-  src: local("Palatino"),
-       local("Zapf Calligraphic 801"),
-       local("URW Palladio L"),
-       local("TeX Gyre Pagella"),
-       local("TeXGyrePagella"),
-       local("Book Antiqua"),
+  src: local("Palatino Regular"),
+       local("Zapf Calligraphic 801 Regular"),
+       local("URW Palladio L Regular"),
+       local("TeX Gyre Pagella Regular"),
+       local("TeXGyrePagella Regular"),
+       local("Book Antiqua Regular"),
        url("../fonts/texgyrepagella-regular.otf");
   font-weight: normal;
   font-style: normal;
