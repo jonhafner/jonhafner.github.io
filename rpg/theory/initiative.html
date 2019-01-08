@@ -35,7 +35,7 @@
   <li><a href="#analysis">Analysis and Conclusions</a></li>
 </ul>
 
-<h2><a name="introduction">Introduction</a></h2>
+<h2 id="introduction">Introduction</h2>
   <p>
     Adam Koebel
     <a href="https://twitter.com/skinnyghost/status/559840805004001281">tweeted</a>, <!-- 2015 Jan 26 -->
@@ -46,7 +46,7 @@
     (It’s worth noting that Mearls is currently the D&amp;D franchise creative director and was a lead designer of the 5th Edition.)  NewbieDM saw this exchange and wrote an entire <a href="https://newbiedm.com/2015/01/28/rethinking-initiative/">article</a> about the problems with initiative and some ways to fix it – and thus began my deep-dive into the theory and practice of initiative.
   </p>
 
-<h2><a name="systems">Systems</a></h2>
+<h2 id="systems">Systems</h2>
   <p>
     First, let’s catalog several of the common or famous systems for initiative, by which I mean determining the order of action of participants in a combat scene in a tabletop roleplaying game.  (Some of these can be applied to games of other types and/or in different media, but that is a separate discussion.)  [Disclaimer: Most of these names were made up by me, sometimes while drunk, in an effort to be as descriptive as possible.  Unless indicated otherwise, don’t assume that anything here is actual established terminology.]
   </p>
@@ -54,7 +54,7 @@
     Unfortunately, this is not a very clean classification, as you can combine various methods of determining who acts <em>first</em> with various methods of who acts <em>next</em> and various sets of rules for how often (if at all) that order can change, and so on.  I am going to first define what I’ll call a “standard” initiative system, then proceed to list assorted alternatives, many of which modify one or more features of the standard system, and many of which can be combined with each other in assorted ways.
   </p>
 
-  <h3><a name="standard">Standard Initiative</a></h3>
+  <h3 id="standard">Standard Initiative</h3>
     <p>
       The standard approach that most people probably think of when they think of initiative systems is one in which at the beginning of the first round of combat (surprise rounds are beyond the scope of this article), every participant in the encounter makes a roll to determine their initiative score.  (In a d20-system game, like 3e, 4e, or 5e, this is d20 + Initiative bonus.  In a dice-pool game system, this is probably the number of successes rolled based on whatever traits go into initiative.  You get the idea.)  The GM rolls for each NPC (or each group of similar NPCs as a unit).  The character with the best initiative acts first, followed by the second-best, etc.  As each character’s turn comes around, the player controlling that character decides on a course of action in that moment, which is then resolved before moving on to the next turn.
     </p>
@@ -68,7 +68,7 @@
       Also, there’s still the question of how to determine one’s Initiative score or bonus.  Dexterity is a common choice, and this does indeed make the most sense for reaction speed, but some argue for Wisdom, as a measure of a character’s perception and awareness, and their ability to assess their surroundings.  When casting spells, Intelligence is a reasonable option, for speed and precision of decision and analysis.  In many cases, it might be reasonable to sum or average two or three of these traits.  When using an initiative-like system for social encounters, Charisma is a reasonable choice.  If the system lacks firm rules on this point, the character stats that go into an Initiative score or check can vary by the GM’s interpretation of the situation.
     </p>
 
-  <h3><a name="static">Static Initiative</a></h3>
+  <h3 id="static">Static Initiative</h3>
     <p>
       Each PC has a fixed relative position in the turn order, with NPCs inserted where appropriate.  This might be determined by a static Initiative score (perhaps a “Passive Initiative” of 10 + bonus, or one’s Dexterity score, or the size of one’s Initiative dice pool, or whatever else) or by some other means as described below.  (In the d20 system, if you want a static Initiative score, the Dexterity score is probably better than 10 + bonus, as one can expect fewer ties this way.)  This has an advantage of being quick and predictable, with no die rolls needed; everyone quickly learns which PC follows which, and only has to accommodate the NPCs where appropriate in the current encounter.  It has a disadvantage of being perhaps <em>too</em> predictable, and therefore boring: the speedy rogue always strikes first, the slow tank always acts last, and there’s no opportunity for the rogue to get caught unaware or for the slow tank or wizard to accidentally get the jump on the enemy, to everyone’s surprise.  (Again, we're ignoring surprise rounds.  Perhaps a surprise mechanic provides the appropriate resolution to this problem?)  That said, this isn’t the worst situation in the world: that character who always goes last presumably has other strengths to balance this out.  Also, having a steady, reliable turn order can be nice for new players who are just trying to learn the rules and how to work together.
     </p>
@@ -85,7 +85,7 @@
       One warning if you’re considering a static initiative system: one commenter pointed out that with most combats starting out the same way, the party could easily fall into a routine that makes battles feel a bit “samey”.  Randomness or other sources of variability help mix things up a bit and keep them interesting.
     </p>
 
-  <h3><a name="side">Side Initiative</a></h3>
+  <h3 id="side">Side Initiative</h3>
     <p>
       In this system, all the PCs take their turns consecutively, and all the NPCs take theirs consecutively; play alternates between the players as a group and the GM.  It is left up to the group to decide amongst themselves who goes in what order.  (If they cannot agree, some sort of check or roll might be called for.)
     </p>
@@ -96,7 +96,7 @@
       Some of these systems will yield initiative to the players by default, often with an option for the GM to disrupt that – perhaps just by judgment of the circumstances, or perhaps by paying some sort of game currency to tweak fate.  (For one example of the latter, see the discussion of <a href="#elective">Elective Action Order</a>, below.)
     </p>
 
-  <h3><a name="declarative">Declarative Initiative</a></h3>
+  <h3 id="declarative">Declarative Initiative</h3>
     <p>
       In declarative initiative systems, every participant in combat declares what they intend to do before actions are resolved.  The details vary considerably: In <em>AD&amp;D</em> 2e, initiative is rerolled each round, and the “speed factor” of the weapon you wield or spell you choose to cast is added as a penalty.  In Mike Mearls’ so-called “Greyhawk” system, you declare your intended action, and the speed of that action determines which dice you roll for initiative, weighting the outcomes one way or the other.
     </p>
@@ -110,12 +110,12 @@
       (All of these require either careful bookkeeping or a better memory than I have.  They could work very well through a text-based medium, however!  The GM could collect declared actions from all players for the round, then resolve them in the logical order, sometimes even simultaneously when appropriate.)
     </p>
 
-  <h3><a name="phased">Phased Initiative</a></h3>
+  <h3 id="phased">Phased Initiative</h3>
     <p>
       In early editions of D&amp;D, within each round, actions were resolved in an order meant to simulate their relative speed.  The details varied from edition to edition, but for example, one might resolve ranged attacks first; then melee attacks; then movement; then finally spellcasting.  Or any modification thereof.  (Melee attacks could be broken down by weapon length, with longer weapons striking first, or by weapon lightness and speed, with nimble weapons acting first; also, other action types might be inserted into the list.)
     </p>
 
-  <h3><a name="fast-slow">Fast/Slow Turns</a></h3>
+  <h3 id="fast-slow">Fast/Slow Turns</h3>
     <p>
       These systems are based on the round structure used by Rob Schwalb’s <em>Shadow of the Demon Lord</em> (<em>SotDL</em>).  See the <em>SotDL</em> rulebook for the precise rules for that specific game; more broadly, a system using this idea has two or three phases in each round.  First, there are “Fast Turns”; then, there are “Slow Turns”; and finally, an “upkeep” phase at the end of the round, when applicable.  (This is when many spell durations end, potions take effect, incapacitated folks make their rolls, certain special creature effects like auras or extra attacks are handled, etc.)
     </p>
@@ -129,7 +129,7 @@
       In some ways, this can be thought of as harkening back to the old days of <a href="#phased">combat phases</a>, but rather than establishing strict hierarchies between all possible actions, turns are simply classified by <em>how much</em> you’re trying to do in your turn.  For the sake of speed and simplicity, it is assumed that doing two major things on your turn will be slower than only doing one.  [In fact, it’s a <em>lot</em> like those old <em>D&amp;D</em> rules.  A comment on a post suggested that the Holmes <em>Basic</em> rules don’t require advance declarations or automatic mandatory initiative rules; the DM could easily go phase by phase, asking if anyone wants to take an action of that type (“Spells?”), and using Dex to sort orders as needed.]
     </p>
 
-  <h3><a name="elective">Elective Action Order</a></h3>
+  <h3 id="elective">Elective Action Order</h3>
     <p>
       This is the system used by Marvel Heroic Roleplaying and some other games.  Some variants are known as “popcorn initiative”, but Fred Hicks <a href="http://www.deadlyfredly.com/2012/02/marvel/">makes a good case</a> that it should instead be known as either Elective Action Order or, if you wish to give proper credit, Balsera-Style Initiative.
     </p>
@@ -143,7 +143,7 @@
       This system is designed to encourage teamwork, and it allows for some truly deep tactical and narrative considerations, but be warned that if there is an imbalance of tactical inclinations at the table, this system could be easily exploited.  The strategy behind deciding who to select next and who should end the round is non-trivial, to put it lightly.
     </p>
 
-  <h3><a name="narrative">Narrative Initiative</a></h3>
+  <h3 id="narrative">Narrative Initiative</h3>
     <p>
       This is sometimes described as a lack of any initiative system at all, but one could argue that any method of determining who acts next in combat is, by definition, an initiative system.
     </p>
@@ -157,18 +157,18 @@
       (One GM using this system gives each player two action tokens; they hand in a token when they act, and once they’re both gone, they can’t act again until <em>everyone</em> at the table has spent theirs, at which time everyone’s is refreshed.  This preserves a considerable degree of flexibility, but also ensures that in the long run, everyone gets to participate evenly.  Another GM doesn’t bother with such formalities, but has observed that shifting the spotlight equitably may require an ability to read nonverbal cues that is much easier in person than online, even with video chat.)
     </p>
 
-  <h3><a name="Shadowrun">Shadowrun?</a></h3>
+  <h3 id="Shadowrun">Shadowrun?</h3>
     <p>
       I don’t think this is the direction I want to go, but it might be worth some research and exploration if you <em>really</em> want to make speed matter.  One commenter on reddit explained that in at least one edition of <em>Shadowrun</em>, when somebody acts, you subtract 10 from their initiative score and continue on; scores below 0 don’t act again this round.  It was described as working in phases or rounds or turns or something: “So say you have initiatives of 24, 22, 19, 15, 4, 2 for a four-man party and two enemies.  First turn ONLY the 24 and 22 go, then they drop to 14 and 12 initiative.  Now 19, 15, 14, 12 go.  They drop to 9, 5, 4, 2 and now 9, 5, 4, 4, 2, 2 go.  Then they re-roll initiative.  I find it can help out keeping the combat feel less like everyone is standing around taking turns.”  Though I figure you could call this all one round, and just subtract and reorder on a rolling basis.  This makes speed very important, and should also require costly choices if you build your character with a big Initiative bonus, since you’ll often get so many more actions!  Though I’m not sure of the randomization method; didn’t Shadowrun use huge pools of d6s?  So maybe the extremes are actually uncommon, and most of the time, you’d end up in the middle?  Look into this.
     </p>
 
-  <h3><a name="WFRP">Warhammer Fantasy Roleplay</a></h3>
+  <h3 id="WFRP">Warhammer Fantasy Roleplay</h3>
     <p>
       Another interesting system comes from <em>Warhammer Fantasy Roleplay</em> 3rd Edition, in which initiatives are rolled by the players and GM at the start of combat, with markers placed on a track to indicate which side goes at which step, but within a side, characters can act in any order!  So, say players roll 4, 3, and 1 success, respectively, while the GM rolls a 2 for an NPC group.  The first two characters to act in each round will be players, then the NPCs will go, then the other player, but it doesn’t have to be the players who rolled those scores!  And the one who goes last could also go first in the next round.  It’s up to them to work out!  Players win ties, and the numbers stay the same from round to round, even when a character drops out of the fight.   Well, mostly; there’s a system for the GM to scoot those a bit based on how the combat plays out, but I haven’t found how that works yet.  (I don’t see a strong reason to use this over one of the other systems, but it is interesting, so I include it here for completeness.)  [It sounds like Star Wars: Force and Destiny might do something similar?  I haven’t checked on that yet.]
     </p>
 
-<h2><a name="tracking">Tracking</a></h2>
-  <h3><a name="fixed">Fixed order</a></h3>
+<h2 id="tracking">Tracking</h2>
+  <h3 id="fixed">Fixed order</h3>
     <p>
       When initiative order is determined at the beginning of an encounter (or earlier) and remains essentially fixed, many options for tracking turn order are available.  The most obvious is to simply write the combatants in order, whether on some scrap paper or on a whiteboard.
     </p>
@@ -182,7 +182,7 @@
       These systems can work fine when the initiative order stays fixed (such as in by-the-book 5e, which removed the Delay action), but if someone's place in combat can easily slide around (or if you just want to try something else), instead try one of the systems for a flexible order:
     </p>
 
-  <h3><a name="flexible">Flexible order</a></h3>
+  <h3 id="flexible">Flexible order</h3>
     <p>
       These systems are good for tracking initiative in cases where the order of action can potentially vary from round to round; most of them are also perfectly good at tracking fixed orders, and so are valid alternatives to the systems described above.  (Exception: Game systems that have mechanics of the form “On initiative count 20” or whatever are not as easily supported; these flexible-order tracking systems assume that once an order is determined, the actual numerical value of initiative no longer matters, only relative position.)
     </p>
@@ -196,7 +196,7 @@
       Note that not <em>everything</em> can be tracked only on these cards!  Early on, I used the monster cards to track their damage as well, but in all but the smallest of fights, it’s actually rather cumbersome to dig the card out of the stack where it’s buried, note the damage done, then make sure everything goes back in the correct order.  Instead, assume that the card is only easily accessible when it’s that creature’s turn, and for anything that might be relevant off-turn (hp, defenses, reactions, etc.), use a sheet of scrap paper.
     </p>
 
-  <h3><a name="random">Random order</a></h3>
+  <h3 id="random">Random order</h3>
     <p>
       For groups that prefer to get a new random initiative order each turn, but without special modifiers or adjustments, consider drawing cards from a standard deck.  (Either set an order to the suits, like alphabetical, or only use the ranks of a single suit.)  This eliminates the need for a separate tracking system, as the current highest/lowest (depending on whether you count up or down) goes next, unless they choose to delay, and once someone acts, they hand in their card to be returned to the deck, so you can also see who still remains this round.  If someone should have a really high initiative bonus, they can draw an extra card and choose which one to keep.  (One person grants one extra card per +4 of Init bonus in d20 systems.)
     </p>
@@ -204,7 +204,7 @@
       Alternatively, if you’re using an established system (such as 2e’s d10 and speed factors), you might just want to have everyone roll initiative and take note of their number privately, then start counting through the values, with people acting as their number comes up.  (Didn’t 2e have the notion of “segments”?  As I recall, each round was divided into multiple “segments”.  You roll 1d10 and add your Reaction Adjustment from Dexterity and the speed factor of your weapon or spell, and the resulting number indicated the segment in which you acted.  The DM would start counting at 1 [or less, I suppose, if participants had significant bonuses], and on a given segment number, everyone with that initiative score acted simultaneously.)
     </p>
 
-  <h3><a name="fluid">Fluid order</a></h3>
+  <h3 id="fluid">Fluid order</h3>
     <p>
       In some systems, like some versions of side initiative, Fast/Slow turns, Elective Action Order, and Narrative Initiative, there is no set sequence established in advance to be followed.  However, it’s still generally the case that each combatant should act exactly once per round.  This calls for fundamentally different approaches to tracking.
     </p>
@@ -221,7 +221,7 @@
       Of course, if your group of players is sufficiently small, and enemies few in number, you might not need to worry about physical tracking systems at all!  With quick turns, few combatants, and short combats, it’s usually not hard to remember who has gone recently.  A TotM encounter with a pair of goblins can probably be run from the hip.
     </p>
 
-<h2><a name="analysis">Analysis and Conclusions</a></h2>
+<h2 id="analysis">Analysis and Conclusions</h2>
   <p>
     Many, possibly most, of the standard initiative systems call for all participants to make a roll for initiative at the beginning of combat.  As indicated by the quotes in the <a href="#introduction">Introduction</a>, there are many problems with this.  One is that it slows things down right when something really exciting is supposed to be happening.  (No matter how fast you get at it, it always seems to take longer than it should.)  Another is that it draws a clear line between combat and not-combat, basically signaling that the time for nonviolent action is over.  In many cases, a smoother and more natural transition would be preferred – something that maintains the flow and continuity in the narrative.
   </p>
