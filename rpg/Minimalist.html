@@ -1,0 +1,361 @@
+<html>
+<head>
+  <title>Minimalist FRPG</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+/**
+ * Layout
+ */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  padding: 1em;
+  margin: auto;
+  max-width: 40em;
+}
+/**
+ * Styles
+ */
+body {
+  font-family: serif;
+}
+h1, h2, h3, h4, h5, h6, th {
+  /* text-transform: uppercase; */
+}
+/* Anchors in headers */
+a.headerlink {
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  padding-left: .3em;
+}
+a.headerlink:hover {
+  color: #888;
+}
+/**
+ * Tables
+ */
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table th {
+  font-weight: bold;
+  background: #252525;
+  color: #fff;
+}
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+th em {
+  font-family: Alegreya, serif;
+}
+p, blockquote, ul, ol, dl, table, pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+a, a:hover {
+  color: #000;
+}
+footer {
+  font-size: small;
+  border-top: 1px solid #444;
+}
+</style>
+<body>
+<section>
+  <h1>Minimalist FRPG</h1>
+  <p>Largely derived from the <a href="https://the-black-hack.jehaisleprintemps.net/">open game content</a>, posted by Bruno Bord, of <em>The Black Hack</em> by David Black.  (See link for source and license.  This version based on the Black Hack v1.2 - 2016-04-03.)  TBH is a highly streamlined OSR hack; this is my hack of that hack, still further streamlined, down to pretty close to the minimal baseline I can get it while still retaining the desired feel.  (I have another, more complex ruleset for standard campaign play; this is intended more for spontaneous one-shots.)</p>
+  <p>Throughout, “you” refers to you or your character, depending on the context—assuming you are a player.  Game Masters are addressed in another document.</p>
+
+  <hr>
+
+  <h2 id="the-core-mechanic">The core mechanic<a class="headerlink" href="#the-core-mechanic" title="Permanent link">&para;</a></h2>
+  <p>When you attempt something that has a chance to either succeed or fail, you test an appropriate stat.  To test a stat, you roll a d20; you succeed if you roll <strong><em>below</em></strong> your score.  If the roll equals or exceeds your score, you fail.</p>
+  <p>GMs don’t usually make tests; e.g., if a monster attacks you, the GM doesn’t roll to attack, but you instead make a test to try to avoid the attack.  The GM might roll for other purposes, such as damage.</p>
+
+    <h3 id="powerful-opponents">Powerful opponents<a class="headerlink" href="#powerful-opponents" title="Permanent link">&para;</a></h3>
+    <p>When you make a test for a conflict between you and an NPC, adjust the roll by the difference between your levels.  (Ask your GM if they forget to mention the levels of your adversaries.)  Examples: If you are level 3 and defending against a level 5 monster’s attack, you would add a +2 penalty to your roll; when attacking a level 2 monster, you would apply a –1 bonus to your roll.</p>
+
+    <h3 id="advantage-disadvantage">Advantage &amp; Disadvantage<a class="headerlink" href="#advantage-disadvantage" title="Permanent link">&para;</a></h3>
+    <p>A GM may decide that a particular task or course of action has a higher or lower chance of success.  They may ask you to roll an additional d20 when making a test: with <strong>Advantage</strong>, the lower (better) result is used, and with <strong>Disadvantage</strong>, the higher (worse).</p>
+
+  <h2 id="creating-a-character">Creating a character<a class="headerlink" href="#creating-a-character" title="Permanent link">&para;</a></h2>
+  <p>Perform the following steps and record the results on a character sheet.  If your GM is running a “funnel”, go through this process once for each character you are instructed to create.</p>
+
+    <h3 id="roll-stats">Roll stats<a class="headerlink" href="#roll-stats" title="Permanent link">&para;</a></h3>
+    <p>The <strong>Stats</strong> are <strong>Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA)</strong>.  To generate your scores, roll 3d6 six times, recording each total for the corresponding stat, in order.</p>
+
+    <h3 id="choose-a-class">Choose a class<a class="headerlink" href="#choose-a-class" title="Permanent link">&para;</a></h3>
+    <p>The four standard options are Warrior, Rogue, Cleric, and Wizard; these are described below.  Your class determines how much damage you do, your hit points (roll your Hit Die), and your unique abilities.</p>
+    <p>(This assumes you are starting at 1st level.  If your GM has you starting with zero-level characters, you have no class, 1 hit point, and deal 1d4 damage.)</p>
+
+    <h3 id="choose-an-ancestry">Optional: Choose an ancestry<a class="headerlink" href="#choose-an-ancestry" title="Permanent link">&para;</a></h3>
+    <p>Player characters are assumed to be human by default.  The GM may allow you to play a nonhuman character if you wish, assuming your stats meet appropriate requirements.  Typically, the primary game effect of a nonhuman ancestry is gaining Advantage or Disadvantage on relevant rolls, at the GM’s discretion.</p>
+
+    <h3 id="choose-equipment">Choose equipment<a class="headerlink" href="#choose-equipment" title="Permanent link">&para;</a></h3>
+    <p>You begin play with a set of clothes, standard adventuring gear, and weapons, armor, and other equipment appropriate for your class.  Decide on your character’s particular preferences.  (Your choices of equipment are mostly aesthetic; the damage dealt by your weapon and absorbed by your armor is determined by your class’s Hit Die.)</p>
+
+  <h2 id="initiative-and-turns">Initiative and turns<a class="headerlink" href="#initiative-and-turns" title="Permanent link">&para;</a></h2>
+  <p>When combat breaks out, everyone must be sorted so you each get to act and react in turn.  If you succeed on a DEX test, you act before your opponents.  If multiple players succeed, you decide your order of actions among yourselves as a group.  If you fail your DEX test, you go after your opponents, again as a group.</p>
+  <p>During your turn, you may move and perform an action.  You might attack, look for a clue, talk with an NPC, cast a spell … interacting with the world is an action.  Often you will test your stats to determine the outcome.</p>
+
+  <h2 id="movement-distance">Movement and distance<a class="headerlink" href="#movement-distance" title="Permanent link">&para;</a></h2>
+  <p>Rather than track precise numbers, we use four abstract ranges for measuring distances: <strong>Close</strong>, <strong>Nearby</strong>, <strong>Far Away</strong>, and <strong>Distant</strong>.  On your turn, you can move somewhere Nearby as part of an action, performing that action at any stage of the move.  You can forgo your action and move somewhere Far Away instead.  Anything beyond Far Away can be classified as Distant and would take three moves to get to.</p>
+  <p>This system is designed to support the narrative ‘theatre of the mind’ style of play, and is less concerned about tracking squares and fiddly distances.  For converting existing movement rates or measures (for spells or areas of effect) use the following as a rough guide:</p>
+  <table>
+    <tbody>
+      <tr>
+        <td>Close</td>
+        <td>&lt; 5ft</td>
+      </tr>
+      <tr>
+        <td>Nearby</td>
+        <td>5–60ft</td>
+      </tr>
+      <tr>
+        <td>Far Away</td>
+        <td>60–120ft</td>
+      </tr>
+      <tr>
+        <td>Distant</td>
+        <td>&gt; 120ft</td>
+      </tr>
+    </tbody>
+  </table>
+
+    <h3 id="blocking">Blocking<a class="headerlink" href="#blocking" title="Permanent link">&para;</a></h3>
+    <p>Once per turn, when an NPC makes a move that will take them Close to an ally of yours who is Nearby to you, you may move to block the path of the NPC, assuming you have not yet used your movement this round.  This action stops the NPC from engaging your ally, though you are likely to be the target of the NPC you blocked.</p>
+
+    <h3 id="encumbrance">Encumbrance<a class="headerlink" href="#encumbrance" title="Permanent link">&para;</a></h3>
+    <p>If the total weight or bulk of items you are carrying is excessive for your STR, you are “encumbered”: all your physical tests are made with Disadvantage, and in a single turn, you can only move as far as somewhere Nearby.  If it is unclear whether your current load should leave you overburdened, the GM may call for a STR test.</p>
+
+  <h2 id="attacking-defending-damage">Attacking, defending, and damage<a class="headerlink" href="#attacking-defending-damage" title="Permanent link">&para;</a></h2>
+  <p>When you attack a creature, you must roll below your STR stat for a <strong>Melee Attack</strong> or DEX for a <strong>Ranged Attack</strong>.  Likewise, when a creature attacks, you must roll below your STR against a Melee Attack or DEX against a Ranged Attack to avoid taking damage.  Your GM will often give the stat required for the test.</p>
+  <p>The damage your attack deals is based on your Hit Die.  If attacking with a normal weapon appropriate for your class, you roll your Hit Die for damage.  If attacking with an improvised weapon or one you are untrained in, you roll the next smaller die type.  If you are unarmed, you used the next die below that.</p>
+  <p>To make a Melee Attack an opponent must be Close.  Ranged Attacks against Close opponents are possible, but the attacker suffers Disadvantage.  (Ranged Attacks against Distant opponents also suffer Disadvantage.)</p>
+
+    <h3 id="critical-damage">Critical damage<a class="headerlink" href="#critical-damage" title="Permanent link">&para;</a></h3>
+    <p>If you roll a 1 on an attack, you roll double the usual number of damage dice.  If you roll a 20 when avoiding an attack, you take double damage.</p>
+    <!-- TODO: Is this natural, or does it include modifiers from the Powerful Opponents rule? -->
+
+    <h3 id="death-dying">Death and dying<a class="headerlink" href="#death-dying" title="Permanent link">&para;</a></h3>
+    <p>When you are reduced to zero <strong>hit points (hp)</strong> you are <strong>incapacitated</strong>, unable to take actions.  Any surplus damage you suffer is applied as temporary damage to your CON score.  When the fight is over and/or you are out of danger, you make a CON test (using your current score, including any damage).  If you succeed, you regain 1d4 hp.  (CON damage will heal at the rate of one point per night’s rest.)  If you fail, you are dead.</p>
+
+    <h3 id="healing">Healing<a class="headerlink" href="#healing" title="Permanent link">&para;</a></h3>
+    <p>You can gain hit points from spells, potions, and abilities.  You can never gain more than their maximum.  (Temporary hit points are a separate pool.)  You also never have “negative” hit points, even when damage rolls over to your CON; if you receive healing while incapacitated, you simply receive that many hit points, starting at zero and counting up.  This does not impact any CON damage you may have suffered.  With a positive hit point total, you are now able to take actions normally.</p>
+
+    <h3 id="resting">Resting<a class="headerlink" href="#resting" title="Permanent link">&para;</a></h3>
+    <p>Once per day, after resting for about an hour, you may roll a Hit Die associated with your class and regain that many hit points.</p>
+
+  <h2 id="experience">Experience and advancement<a class="headerlink" href="#experience" title="Permanent link">&para;</a></h2>
+  <p>Adventurers learn through defeating and overcoming obstacles.  Killing one boring Kobold won’t bring a revelation of learning to someone.  Surviving a dungeon, completing a quest, or simply living to tell the tale are the things that bring perspective and growth.</p>
+  <p>The GM decides the pace of advancement, typically based on characters surviving milestones.  Common milestones may include play sessions, dungeon levels, quests, or major events, but each GM has their own style.  Feel free to ask what your “goalposts” are.</p>
+  <p>When you level up, your maximum Hit Points increase by an ammount rolled on the Hit Die for your class.  Also, you should roll a d20 for each Stat in turn; if the result is higher than your score, that Stat increases by 1.</p>
+
+  <h2 id="usage-dice">Usage dice<a class="headerlink" href="#usage-dice" title="Permanent link">&para;</a></h2>
+  <p>Some items have an associated <strong>usage die</strong>; these are consumable, limited resources.  After that item is used, roll its usage die.  If the roll is a 1, then the usage die is downgraded to the next lower die in the following chain:</p>
+  <p><strong>d20 &gt; d12 &gt; d10 &gt; d8 &gt; d6 &gt; d4</strong></p>
+  <p>When you roll a 1 on a d4, the item is expended and you have no more of it left.</p>
+  <p>There are four standard Usage Dice that most characters are assumed to have: Ammunition, Light, Rations, and Money.  You begin play with a d6 in each.  These have special rules:</p>
+  <ul>
+    <li><strong>Ammunition:</strong> This is your arrows, bolts, javelins, or other projectiles or thrown weapons.  You do not need to check your Ammunition every single time you make a ranged attack; rather, you roll the usage die after the combat is over.  (This incorporates an assumed attempt to recover any spent ammunition that is still usable, etc.)</li>
+    <li><strong>Light:</strong> When you burn a light source, such as a torch, lamp, or lantern, you must roll the usage die at regular intervals determined by the GM.  The quality of your light source is a function of your lifestyle and wealth (i.e., Money).</li>
+    <li><strong>Rations:</strong> Each morning, you must consume rations or become hungry until you eat.  While hungry, you suffer Disadvantage on all tests and cannot recover hit points from resting.</li>
+    <li><strong>Money:</strong> This indicates your money, wealth, or general financial resources.  When restocking in town, you may upgrade your ammunition, ration, and torch Usage Dice to match your Money Die, then test your Money Die.  [Or perhaps test it with <em>each</em> refill?]  This die is also tested when making a significant purchase, bribe, etc.  If another player’s Money Die is at least two steps below yours, and you’re feeling particularly generous (or have struck a suitable deal), you may upgrade their Money Die by one step, then test your own.
+    </li>
+  </ul>
+  <!-- TODO: Continue to revise the above, most of which I made up. -->
+  <!-- TODO: Maybe make a table indicating the general wealth/lifestyle associated with each type of Money Die? -->
+
+  <hr>
+
+  <h2 id="warrior">Warrior<a class="headerlink" href="#warrior" title="Permanent link">&para;</a></h2>
+  <p><strong>Hit Die:</strong> d10</p>
+  <p><strong>Multiattack:</strong> When you use your action to attack, you can make one attack per level.</p>
+  <p><strong>Athlete:</strong> Roll with Advantage when testing STR for a feat of brute strength: lifting, jumping, breaking down a door, etc.</p>
+  <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for STR and CON.</p>
+
+  <h2 id="rogue">Rogue<a class="headerlink" href="#rogue" title="Permanent link">&para;</a></h2>
+  <p><strong>Hit Die:</strong> d6</p>
+  <p><strong>Sneak attack:</strong> When attacking unseen (such as from behind or from hiding), roll with Advantage.  On a hit, deal an extra die of damage, plus your level.</p>
+  <p><strong>Thievery:</strong> Roll with Advantage when performing delicate tasks, climbing, listening, moving stealthily, and opening locks.</p>
+  <p><strong>Evasion:</strong> Roll with Advantage when testing DEX to adoid damage or effects from traps and magical devices.</p>
+  <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for DEX.</p>
+
+  <h2 id="cleric">Cleric<a class="headerlink" href="#cleric" title="Permanent link">&para;</a></h2>
+  <p><strong>Hit Die:</strong> d8</p>
+  <p><strong>Banish undead:</strong> You can spend an action to attempt to banish all Nearby undead.  Test your WIS for each target, adding the target’s level to the roll.  Banished creatures must spend all their movement (and convert actions to movement) to move away from you for 2d4 rounds.</p>
+  <p><strong>Resilience:</strong> Roll with Advantage when testing CON to avoid damage from poison or being paralyzed.</p>
+  <p><strong>Spellcasting:</strong> You can cast Divine Spells; see the Spellcasting section.</p>
+  <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for WIS.</p>
+
+  <!-- TODO: This class was originally called "Conjurer".  When I get enough spells, perhaps create separate lists for the different specializations? -->
+  <h2 id="wizard">Wizard<a class="headerlink" href="#wizard" title="Permanent link">&para;</a></h2>
+  <p><strong>Hit Die:</strong> d4</p>
+  <p><strong>Arcanist:</strong> Roll with Advantage when testing INT to avoid damage or effects from spells or magical devices.</p>
+  <p><strong>Spellcasting:</strong> You can cast Arcane Spells; see the Spellcasting section.  You begin play with a spellbook containing 1d4+2 Level 1 spells.  You can cast any spell you know by reading from your spellbook; you can also memorize a number of spells equal to your level and cast those without consulting your spellbook.</p>
+  <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for INT.  Also, you automatically learn one new spell of a level you can cast, which you can scribe into your spellbook.</p>
+
+  <!-- TODO: The stats covered leave an obvious gap for a bard!  :O -->
+
+  <hr>
+
+  <h2 id="spellcasting">Spellcasting<a class="headerlink" href="#spellcasting" title="Permanent link">&para;</a></h2>
+  <p>If you are a cleric or wizard, you have the ability to cast spells that are chosen from your class list (below).  At 1st level, you can only cast Level I spells; at every odd level, you gain access to the next level: Level II at 3rd, Level III at 5th, etc.</p>
+  <p>Spells are not guaranteed to work: when you attempt to cast a spell, you must test your primary spellcasting stat (WIS for clerics, INT for wizards), adding the spell’s level to the roll.  If you fail, the spell fizzles and has no effect.</p>
+  <p>Spellcasting drains a wizard’s energy and strains a cleric’s relationship with their patron.  Whether you succeed or fail, take note of every spellcasting attempt you make during the day.  You can comfortably attempt a number of castings equal to your level; for every spell cast in excess of your level, you add a cumulative +1 penalty to future spellcasting checks.  After roughly eight hours of rest, you are refreshed, this tally is reset, and any penalty is cleared.</p>
+
+  <!-- TODO: Edit the following spells, which have not yet been touched from TBH.
+  Consider a more freeform system, where you simply make a test to try to cast a spell of a suitable style; your roll has a penalty or bonus if the spell is above or below your general power level.  Spells far below your power level are considered “trivial” and do not count against your daily casting tally.  (Even with a stricter system, consider bringing in zero-level cantrips that are similarly “trivial”.)
+  Perhaps the number of dice used for damage and healing and the like are based on your level, while the type of dice is the complement of your Hit Dice?  Like, the better you are in physical combat, the lower your magic power.  So then a wizard would actually default to using d10s for spellcasting purposes, while a cleric would use only d6s.  A hypothetical sorcerer or priest (or bard?) with d6 HD would use d8s for spell effects.
+  Oh, and consider counting up the spell *levels* cast, not just the number of spells?  Higher-level spells are more draining!
+  -->
+
+  <h2 id="divine-spells">Divine spells<a class="headerlink" href="#divine-spells" title="Permanent link">&para;</a></h2>
+  <h3>Level I</h3>
+  <ul>
+    <li><strong>Cure Light Wounds :</strong> Heal 1d8 hp to a Nearby target.</li>
+    <li><strong>Detect Evil :</strong> Everything Nearby that is evil glows - 5mins.</li>
+    <li><strong>Light :</strong> Create dim light from a Nearby spot or object - 1hr.</li>
+    <li><strong>Protection from Evil :</strong> Advantage on all harmful tests from an Evil source - 1hr.</li>
+    <li><strong>Purify Food and Drink :</strong> Removes all diseases from all Nearby food and drink.</li>
+  </ul>
+  <h3>Level II</h3>
+  <ul>
+    <li><strong>Bless :</strong> Nearby allies gain +1 to stats when making attacks and saves - 1hr.</li>
+    <li><strong>Find Traps :</strong> Notice all nearby traps - 10mins.</li>
+    <li><strong>Hold Person :</strong> Paralyse 1d4 Nearby targets. Test WIS each turn to see if the effect lasts.</li>
+    <li><strong>Silence :</strong> Magical silence covering everything Nearby to a target - 1hr.</li>
+    <li><strong>Speak with Animals :</strong> Can understand and talk with animals - 1hr.</li>
+  </ul>
+  <h3>Level III</h3>
+  <ul>
+    <li><strong>Daylight :</strong> A nearby area is illuminated by sunlight - 1hr.</li>
+    <li><strong>Cure Disease :</strong> Cures a Nearby target of all diseases.</li>
+    <li><strong>Locate Object :</strong> Sense direction of a known object - 1 minute/level.</li>
+    <li><strong>Prayer :</strong> All Nearby allies defend against attacks with Advantage - 1d4 rounds.</li>
+    <li><strong>Remove Curse :</strong> Removes a curse from a Nearby target.</li>
+    <li><strong>Speak with Dead :</strong> Ask a Nearby corpse 3 questions.</li>
+  </ul>
+  <h3>Level IV</h3>
+  <ul>
+    <li><strong>Create Food/Water :</strong> Create enough food/water for all Nearby creatures for a day.</li>
+    <li><strong>Cure Serious Wounds :</strong> Heal 3d8+3 hp to a Nearby target.</li>
+    <li><strong>Neutralise Poison :</strong> Remove/Immunise poison from a Nearby target - 10mins.</li>
+    <li><strong>Protection from Evil :</strong> Nearby allies gain 6 temp AP against evil creatures - 10mins.</li>
+  </ul>
+  <h3>Level V</h3>
+  <ul>
+    <li><strong>Commune :</strong> The Cleric's deity truthfully answers 3 questions - 10mins.</li>
+    <li><strong>Dispel Evil :</strong> Removes a Nearby Divine (Evil) spell.</li>
+    <li><strong>Finger of Death :</strong> Choose a Nearby target and test WIS, if a pass the target is OofA.</li>
+    <li><strong>Plague :</strong> Test WIS for all Nearby targets, they lose 2d8 hp for the next 1d6 turns.</li>
+    <li><strong>Quest :</strong> Force a Nearby creature to obey an order.</li>
+    <li><strong>Raise Dead :</strong> Return a Nearby willing target to life, who's died within the last 7 days.</li>
+  </ul>
+  <h3>Level VI</h3>
+  <ul>
+    <li><strong>Animate Object :</strong> Give a Nearby object motion and a simple intelligence - 10mins.</li>
+    <li><strong>Blade Barrier :</strong> Wall covers a Nearby area, WIS to attack Close targets (3d8) - 10mins.</li>
+    <li><strong>Conjure Elemental :</strong> Summons an elemental with HD equal to caster's lvl -1hr.</li>
+    <li><strong>Find Path :</strong> The path to a chosen location is made known - 1hr.</li>
+    <li><strong>Speak with Monsters :</strong> Can understand and talk with monsters - 1hr.</li>
+    <li><strong>Word of Recall :</strong> Give ability to teleport back to the location this spell was cast - 1year.</li>
+  </ul>
+  <h3>Level VII</h3>
+  <ul>
+    <li><strong>Aerial Servant :</strong> Summons a servant to recover a distant object.</li>
+    <li><strong>Astral Spell :</strong> Projects an avatar of the caster onto a chosen plane - 1hr.</li>
+    <li><strong>Control Weather :</strong> Control the Nearby weather to all extremes - 10mins.</li>
+    <li><strong>Earthquake :</strong> Test WIS for all Nearby creatures, passes are taken OofA.</li>
+    <li><strong>Holy Word :</strong> Nearby creatures with less than 5HD die, 6-10HD paralysed for 1d4 turns.</li>
+    <li><strong>Wind Walk :</strong> Turn into mist and back, at will - 1day.</li>
+    <li><strong>Restoration :</strong> Returns all levels lost to monsters with level drain.</li>
+  </ul>
+
+  <h2 id="arcane-spells">Arcane spells<a class="headerlink" href="#arcane-spells" title="Permanent link">&para;</a></h2>
+  <h3>Level I</h3>
+  <ul>
+    <li><strong>Charm :</strong> A Nearby target obeys commands. Test WIS each turn to see if the effect lasts.</li>
+    <li><strong>Detect Magic :</strong> Everything Nearby that is magic glows - 5mins.</li>
+    <li><strong>Light :</strong> Create dim light from a Nearby spot or object - 1hr.</li>
+    <li><strong>Magic Missile :</strong> A Nearby, Far-Away or Distant target takes 1d4 damage/level.</li>
+    <li><strong>Shield :</strong> Gain 2 AP/ level.</li>
+    <li><strong>Sleep :</strong> Puts 4d6 HD 'worth' of beings to sleep - 8hrs.</li>
+  </ul>
+  <h3>Level II</h3>
+  <ul>
+    <li><strong>Darkness :</strong> Creates darkness covering a Nearby area that blocks all types of vision - 1hr.</li>
+    <li><strong>Invisibility :</strong> A nearby creature is made invisible until it attacks or dispelled.</li>
+    <li><strong>Knock :</strong> A Nearby door or lock is opened.</li>
+    <li><strong>Levitate :</strong> The caster floats up to 6 feet from the ground - 10mins/level.</li>
+    <li><strong>Web :</strong> Traps a Nearby area, stopping movement. Test WIS/hr to see if the effect lasts.</li>
+  </ul>
+  <h3>Level III</h3>
+  <ul>
+    <li><strong>Darkvision :</strong> See in absolute darkness - 10min/level.</li>
+    <li><strong>Dispel Magic :</strong> Removes a Nearby Arcane spell.</li>
+    <li><strong>Fireball :</strong> 1d6 Nearby creatures take 1d6/level damage.</li>
+    <li><strong>Read Language/Magic :</strong> Read all languages and magic - 10mins.</li>
+    <li><strong>Magic Mouth :</strong> Creates an illusory mouth that repeats a phrase to all Nearby creatures.</li>
+  </ul>
+  <h3>Level IV</h3>
+  <ul>
+    <li><strong>Confusion :</strong> 2d6 Nearby targets immediately make a Reaction roll.</li>
+    <li><strong>Dimension Door :</strong> Teleport a target to a Distant Location.</li>
+    <li><strong>Polymorph Self/Other :</strong> Transform a creature to have the appearance of another.</li>
+    <li><strong>Remove Curse :</strong> Removes a curse from a Nearby target.</li>
+    <li><strong>Wall of Fire/Ice :</strong> Wall covers a Nearby area, WIS to attack Close targets (3d6) - 10mins.</li>
+    <li><strong>Wall of Stone/Iron :</strong> A wall covers a Nearby area - 1hr.</li>
+  </ul>
+  <h3>Level V</h3>
+  <ul>
+    <li><strong>Animate Dead :</strong> Create 2d4 Skeletons/Zombies with HD/level, from nearby bodies.</li>
+    <li><strong>Cloudkill :</strong> Anyone with less than 5HD that touches it must test INT or be OofA – 1hr.</li>
+    <li><strong>Conjure Elemental :</strong> Create an Elemental of chosen type with 3d4 HD.</li>
+    <li><strong>Contact Higher Plane :</strong> Ask 1 question/level.</li>
+    <li><strong>Feeblemind :</strong> Reduce a Nearby target's INT to 4 - 10mins/level.</li>
+    <li><strong>Telekinesis :</strong> Move Nearby objects - 1hr.</li>
+    <li><strong>Teleport :</strong> Transports a Nearby target to any place known to the caster.</li>
+  </ul>
+  <h3>Level VI</h3>
+  <ul>
+    <li><strong>Anti Magic Shell :</strong> Creates a Nearby Zone around the caster blocking all magic.</li>
+    <li><strong>Death Spell :</strong> 2d8 Nearby targets with 7HD or fewer die.</li>
+    <li><strong>Disintegrate :</strong> Makes one Nearby target or object turn into a fine powder.</li>
+    <li><strong>Invisible Stalker :</strong> Summons an extra-dimensional monster to perform one task.</li>
+    <li><strong>Stone to Flesh :</strong> Turns a Nearby target into stone (or vice versa).</li>
+  </ul>
+  <h3>Level VII</h3>
+  <ul>
+    <li><strong>Limited Wish :</strong> Change reality in a limited way or time.</li>
+    <li><strong>Power Word, Kill :</strong> A Nearby target with 50 hp or fewer dies and cannot be resurrected.</li>
+    <li><strong>Conjuration of Demons :</strong> Summons a Demon with 2HD/level.</li>
+    <li><strong>Meteor Swarm :</strong> Effects the same as casting Fireball 4 times.</li>
+    <li><strong>Time Stop :</strong> Stops time completely in a Nearby area - 1d4+1 rounds.</li>
+  </ul>
+</section>
+</body>
+</html>

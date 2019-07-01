@@ -1,0 +1,536 @@
+<!--
+  TODO:
+  - Organize into sensible sections/chapters
+  - Work on adapting the bestiary to my tweaked rules
+  - Evaluate and/or incorporate the Additional Things at the end
+  - Check other TODOs
+-->
+<html>
+<head>
+  <title>Minimalist FRPG – GM’s Guide</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<style>
+
+/**
+ * Layout
+ */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  padding: 1em;
+  margin: auto;
+  max-width: 40em;
+}
+/**
+ * Styles
+ */
+body {
+  font-family: serif;
+}
+h1, h2, h3, h4, h5, h6, th {
+  /* text-transform: uppercase; */
+}
+/* Anchors in headers */
+a.headerlink {
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  padding-left: .3em;
+}
+a.headerlink:hover {
+  color: #888;
+}
+/**
+ * Tables
+ */
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table th {
+  font-weight: bold;
+  background: #252525;
+  color: #fff;
+}
+table th, table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+th em {
+  font-family: Alegreya, serif;
+}
+p, blockquote, ul, ol, dl, table, pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+a, a:hover {
+  color: #000;
+}
+</style>
+<body>
+<section>
+  <h1>Minimalist FRPG – GM’s Guide</h1>
+  <p>This document is for the Game Master’s eyes only.  For everything relevant to players, see the <a href="Minimalist.html">core document</a>.</p>
+
+  <hr>
+
+  <h2 id="saving-throws">Saving throws<a class="headerlink" href="#saving-throws" title="Permanent link">&para;</a></h2>
+  <p>Sometimes, a player must roll a test to resist or avoid a spell, trap, or other effect.  Using the table below as a guide.  Remember the advice in the <strong>Powerful Opponents</strong> section.</p>
+  <table>
+    <tbody>
+      <tr>
+        <td>STR</td>
+        <td>Physical Harm that <em>cannot</em> be dodged.</td>
+      </tr>
+      <tr>
+        <td>DEX</td>
+        <td>Physical Harm that <em>can</em> be dodged.</td>
+      </tr>
+      <tr>
+        <td>CON</td>
+        <td>Poison, Disease or Death.</td>
+      </tr>
+      <tr>
+        <td>INT</td>
+        <td>Resisting Spells and Magic.</td>
+      </tr>
+      <tr>
+        <td>WIS</td>
+        <td>Deception and Illusions.</td>
+      </tr>
+      <tr>
+        <td>CHA</td>
+        <td>Charming effects.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>If a spell from a traditional OSR or original era game calls for the target of a player’s spell to make a save, the caster must test their INT or WIS to see if the magic cast was powerful enough to overcome their defences (remember the <strong>Powerful Opponents</strong> rule).</p>
+
+  <h2 id="nonhuman-ancestries">Nonhuman ancestries for player characters<a class="headerlink" href="#nonhuman-ancestries" title="Permanent link">&para;</a></h2>
+  <p>These are solely at your discretion.  My thoughts here are that to qualify for a nonhuman ancestry, a character must satisfy certain restrictions on stats: for example, a dwarf might have to have a CON score higher than their CHA, while an elf would need DEX higher than CON, and a hobbit might need DEX higher than STR.  Look for (and instruct the players to look for) situations where such an ancestry would suggest Advantage or Disadvantage on a test.</p>
+
+  <h2 id="monster-level">Monster level<a class="headerlink" href="#monster-level" title="Permanent link">&para;</a></h2>
+  <p>A monster’s level determines the number of d8 rolled for its hit points (or take the average, level × 4.5) and the dice rolled for damage when it hits with an attack (or use the average, roughly equal to the level).  See also <strong>Powerful Opponents</strong>.</p>
+  <p>(If you are running from a classic module, you can probably use the hp and damage listed there instead if you wish.)</p>
+  <!-- TODO: Originally, I was just deciding on damage dice by doubling the level to get the number of faces.  However, that causes the averages to slowly creep up faster than the levels.  Perhaps instead make the average equal the level?  This doesn't change anything until level 6, which should probably be made into just d12.  The 2d6 should be bumped up to level 7, etc.  Also, continue to seek more dice combinations to provide further options. -->
+  <table>
+    <thead>
+      <tr>
+        <th align="center">Level</th>
+        <th align="center">Avg hp</th>
+        <th align="center">Damage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">¼</td>
+        <td align="center">1</td>
+        <td align="center">1</td>
+      </tr>
+      <tr>
+        <td align="center">½</td>
+        <td align="center">2</td>
+        <td align="center">1</td>
+      </tr>
+      <tr>
+        <td align="center">1</td>
+        <td align="center">4</td>
+        <td align="center">d2 (1)</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td align="center">9</td>
+        <td align="center">d4 (2)</td>
+      </tr>
+      <tr>
+        <td align="center">3</td>
+        <td align="center">13</td>
+        <td align="center">d6 (3)</td>
+      </tr>
+      <tr>
+        <td align="center">4</td>
+        <td align="center">18</td>
+        <td align="center">d8 (4)</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td align="center">22</td>
+        <td align="center">d10 or 2d4 (5)</td>
+      </tr>
+      <tr>
+        <td align="center">6</td>
+        <td align="center">27</td>
+        <td align="center">2d6 (7)</td>
+      </tr>
+      <tr>
+        <td align="center">7</td>
+        <td align="center">31</td>
+        <td align="center">d6 + d8 (8)</td>
+      </tr>
+      <tr>
+        <td align="center">8</td>
+        <td align="center">36</td>
+        <td align="center">2d8 (9)</td>
+      </tr>
+      <tr>
+        <td align="center">9</td>
+        <td align="center">40</td>
+        <td align="center">3d6 or 4d4 (10)</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td align="center">45</td>
+        <td align="center">2d10 (11)</td>
+      </tr>
+      <tr>
+        <td align="center">11</td>
+        <td align="center">49</td>
+        <td align="center">d6 + 2d8 (12)</td>
+      </tr>
+      <tr>
+        <td align="center">12</td>
+        <td align="center">54</td>
+        <td align="center">3d8 (13)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="random-encounters">Random encounters<a class="headerlink" href="#random-encounters" title="Permanent link">&para;</a></h2>
+  <p>The GM should roll a d4 every 15 minutes of real world play (you <em>are</em> paying attention, right?) A result of 1-2 means the players will encounter a randomly generated creature or distraction in the following minutes.</p>
+
+  <h2 id="creature-reactions">Creature reactions<a class="headerlink" href="#creature-reactions" title="Permanent link">&para;</a></h2>
+  <p>Some monsters and NPCs will have predetermined personalities and goals that will guide a GM when choosing their actions and feelings towards the characters. Those that do not, such as randomly encountered creatures, make a <strong>Reaction roll</strong> on the following table:</p>
+  <table>
+    <thead>
+      <tr>
+        <th align="left">Roll</th>
+        <th align="left">Reaction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">1</td>
+        <td align="left">Flee then roll again.</td>
+      </tr>
+      <tr>
+        <td align="left">2</td>
+        <td align="left">Avoid the PCs entirely.</td>
+      </tr>
+      <tr>
+        <td align="left">3</td>
+        <td align="left">Trade with PCs.</td>
+      </tr>
+      <tr>
+        <td align="left">4</td>
+        <td align="left">Give the PCs aid.</td>
+      </tr>
+      <tr>
+        <td align="left">5</td>
+        <td align="left">Mistake the PCs for friends.</td>
+      </tr>
+      <tr>
+        <td align="left">6</td>
+        <td align="left">Trick the PCs (roll again)</td>
+      </tr>
+      <tr>
+        <td align="left">7</td>
+        <td align="left">Call for Reinforcements.</td>
+      </tr>
+      <tr>
+        <td align="left">8</td>
+        <td align="left">Capture/Kill/Eat the PCs.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="magic-items">Magic items<a class="headerlink" href="#magic-items" title="Permanent link">&para;</a></h2>
+  <p>If a magic weapon lists a bonus, characters apply that bonus to their attack and damage rolls using that weapon.  If a magic armor lists a bonus, characters apply that bonus to their defense rolls while wearing that armor.  Many weapons and armors require a certain minimum Hit Die size to be used.</p>
+  <!-- NB: This section was almost entirely rewritten.  I'm using HD as a proxy for combat skill, to avoid having to include detailed lists of which weapons and armors can be used by each class.  For normal equipment, it generally doesn't matter; for magic items, if it does matter, they can specify how “martial” a character needs to be using this value. -->
+
+  <hr>
+
+  <!-- TODO: Update! -->
+  <p>NB: The following table is currently a barely-touched copy of TBH and has not yet been adapted to my revised Minimalist rules.  The only changes I've made are to the Deadly Centipede and the Goblin, bringing their levels below 1, reordering accordingly, and updating the notes.  Note that “OofA” is for “Out of Action”, a status from TBH that’s roughly analogous to “incapacitated”.</p>
+  <table>
+    <thead>
+      <tr>
+        <th align="left">Creature</th>
+        <th align="center">HD</th>
+        <th align="left">Actions and Specials</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">Deadly Centipede</td>
+        <td align="center">¼</td>
+        <td align="left">Bite (0) plus CON test or ‘OofA’; only has 1d2 hp.</td>
+      </tr>
+      <tr>
+        <td align="left">Goblin</td>
+        <td align="center">¾</td>
+        <td align="left">Only has 1d6 hp.</td>
+      </tr>
+      <tr>
+        <td align="left">Fire Beetle</td>
+        <td align="center">1</td>
+        <td align="left">Light glands have a usage die of d8.</td>
+      </tr>
+      <tr>
+        <td align="left">Giant Vampire Bat</td>
+        <td align="center">1</td>
+        <td align="left">1d6 damage next round after attack.</td>
+      </tr>
+      <tr>
+        <td align="left">Manes Demon</td>
+        <td align="center">1</td>
+        <td align="left">2 Claws (1d2) + 1 Bite (1d4), Half damage from non-magic weapons</td>
+      </tr>
+      <tr>
+        <td align="left">Hobgoblin</td>
+        <td align="center">1</td>
+        <td align="left">Usually has a backup shield if one is sundered.</td>
+      </tr>
+      <tr>
+        <td align="left">Human Berserker</td>
+        <td align="center">1</td>
+        <td align="left">Disadvantage on defense rolls when Berserker attacks.</td>
+      </tr>
+      <tr>
+        <td align="left">Giant Ant Warrior</td>
+        <td align="center">2</td>
+        <td align="left">Poisonous Bite (1d6) + CON test or add 2d6 damage to the attack.</td>
+      </tr>
+      <tr>
+        <td align="left">Carrion Creeper</td>
+        <td align="center">2</td>
+        <td align="left">Bite (1) + 6 Tentacles (0) + CON test or Paralysed.</td>
+      </tr>
+      <tr>
+        <td align="left">Ghoul</td>
+        <td align="center">2</td>
+        <td align="left">2 claws (1d3) + 1 bite (1d4) + CON test or Paralysed.</td>
+      </tr>
+      <tr>
+        <td align="left">Giant Leech</td>
+        <td align="center">2</td>
+        <td align="left">Drains a Level the round after dealing damage.</td>
+      </tr>
+      <tr>
+        <td align="left">Bugbear</td>
+        <td align="center">3</td>
+        <td align="left">All DEX tests are rolled with disadvantage.</td>
+      </tr>
+      <tr>
+        <td align="left">Harpy</td>
+        <td align="center">3</td>
+        <td align="left">Song - CHA test or PCs must move towards it.</td>
+      </tr>
+      <tr>
+        <td align="left">Wererat</td>
+        <td align="center">3</td>
+        <td align="left">Cannot gain Advantage when attempting to surprise a Wererat.</td>
+      </tr>
+      <tr>
+        <td align="left">Shadow</td>
+        <td align="center">3</td>
+        <td align="left">Touch (1d4 and -1 STR), only hit by magic weapons.</td>
+      </tr>
+      <tr>
+        <td align="left">Doppleganger</td>
+        <td align="center">3</td>
+        <td align="left">Change form in a round, disadvantage against magic tests.</td>
+      </tr>
+      <tr>
+        <td align="left">Wight</td>
+        <td align="center">3</td>
+        <td align="left">Can only be hit by magical or silver weapons, Drain 1 Level with Hit.</td>
+      </tr>
+      <tr>
+        <td align="left">Blink Dog</td>
+        <td align="center">4</td>
+        <td align="left">Teleport nearby once per fight.</td>
+      </tr>
+      <tr>
+        <td align="left">Grizzly Bear</td>
+        <td align="center">4</td>
+        <td align="left">2 claws (1d3) + if both hit hug for 1d8 damage.</td>
+      </tr>
+      <tr>
+        <td align="left">Gargoyle</td>
+        <td align="center">4</td>
+        <td align="left">2 claws (1d3) + 1 bite (1d4) + 1 horn (1d6).</td>
+      </tr>
+      <tr>
+        <td align="left">Gelatinous Cube</td>
+        <td align="center">4</td>
+        <td align="left">CON test on touch or be Paralysed, immune to cold and lightning.</td>
+      </tr>
+      <tr>
+        <td align="left">Werewolf</td>
+        <td align="center">4</td>
+        <td align="left">Only silver weapons can hurt it.</td>
+      </tr>
+      <tr>
+        <td align="left">Ogre</td>
+        <td align="center">4</td>
+        <td align="left">Gives advantage on all CHA tests made against it.</td>
+      </tr>
+      <tr>
+        <td align="left">Cockatrice</td>
+        <td align="center">5</td>
+        <td align="left">Bite (1d3) and CON test or Petrified.</td>
+      </tr>
+      <tr>
+        <td align="left">Owlbear</td>
+        <td align="center">5</td>
+        <td align="left">2 claws (1d6) + 1 bite (2d6) + Hug for 2d8 if to-hit roll is 1-4.</td>
+      </tr>
+      <tr>
+        <td align="left">Basilisk</td>
+        <td align="center">6</td>
+        <td align="left">CON test on eye contact or be petrified.</td>
+      </tr>
+      <tr>
+        <td align="left">Succubus/Incubus</td>
+        <td align="center">6</td>
+        <td align="left">2 Claws (1d3), Advantage on magic tests, immune to non magic weapons, level drain (-1) with kiss. Can cast Charm person (spell) once per hour.</td>
+      </tr>
+      <tr>
+        <td align="left">Mummy</td>
+        <td align="center">6</td>
+        <td align="left">Attacks stop healing until cure wounds cast, immune to normal weapons, half damage from magic weapons.</td>
+      </tr>
+      <tr>
+        <td align="left">Banshee</td>
+        <td align="center">7</td>
+        <td align="left">Shriek - CON test or Paralysed for 2d6 rounds.</td>
+      </tr>
+      <tr>
+        <td align="left">Djinni</td>
+        <td align="center">7</td>
+        <td align="left">Can take Gaseous Form, Create Objects, Create Illusions, Cast Invisibility (spell) as action.</td>
+      </tr>
+      <tr>
+        <td align="left">Spectre</td>
+        <td align="center">8</td>
+        <td align="left">A person killed by a Spectre will become a Spectre in 1d6 minutes.</td>
+      </tr>
+      <tr>
+        <td align="left">Chimera</td>
+        <td align="center">8</td>
+        <td align="left">2 Claws (1d3) + 2 Goat horns (1d4) + 1 Lion bite (2d4) + 1 Dragon bite (3d4) or Breathes fire as a Dragon (3d8).</td>
+      </tr>
+      <tr>
+        <td align="left">Balor Demon</td>
+        <td align="center">9</td>
+        <td align="left">Sword (1d12+2) + Whip (0) DEX test or be pulled Close to the Balor and burnt for 3d6 fire damage.</td>
+      </tr>
+      <tr>
+        <td align="left">Hezrou Demon</td>
+        <td align="center">9</td>
+        <td align="left">2 Claws (1d3) + 1 Bite (2d8), Cause Fear (as per Banish) or Darkness (spell) - each once per fight.</td>
+      </tr>
+      <tr>
+        <td align="left">Black Pudding</td>
+        <td align="center">10</td>
+        <td align="left">Metal objects that touch it melt the next round.</td>
+      </tr>
+      <tr>
+        <td align="left">Frost Giant</td>
+        <td align="center">10</td>
+        <td align="left">Throws boulders or great chunks of ice.</td>
+      </tr>
+      <tr>
+        <td align="left">Stone Golem</td>
+        <td align="center">12</td>
+        <td align="left">Only spells that affect rock or stone work, weapons must be +2 or better to damage it.</td>
+      </tr>
+      <tr>
+        <td align="left">Giant Slug</td>
+        <td align="center">12</td>
+        <td align="left">Spit Acid - d4+2 nearby targets (1d12) test DEX for 1/2 damage.</td>
+      </tr>
+      <tr>
+        <td align="left">Dragon</td>
+        <td align="center">9 to 11</td>
+        <td align="left">2 Claws (1d8) + Bite (1d10), Breathes fire - d4+2 nearby targets (3d8) Can cast 1d4 1st level spells + 1d2 2nd level spells.</td>
+      </tr>
+    </tbody>
+  </table>
+  </section>
+</body>
+</html>
+
+
+
+
+
+<section><h1 id="additional-things">Additional Things<a class="headerlink" href="#additional-things" title="Permanent link">&para;</a></h1>
+  <h2 id="luck">Luck<a class="headerlink" href="#luck" title="Permanent link">&para;</a></h2>
+  <p>Each character is created with one point of Luck - they can trade this in at any time and get a re-roll on any one die, or create one fact of story fiction that does not invoke direct mechanical benefits. The only way to get more is to be awarded them by the GM - I give them out to my players when they mess up really badly. Karma.</p>
+  <p><em>You already know whether you like Luck systems or not, and this one's nothing crazy or innovative.</em></p>
+  <h2 id="failing-forward">Failing forward<a class="headerlink" href="#failing-forward" title="Permanent link">&para;</a></h2>
+  <p>If a player fails a roll and a GM suggests it, they may treat the outcome of that action as a success - but they must accept a cost or penalty from the list below, chosen and adapted to fit the narrative by the GM.</p>
+  <table>
+    <thead>
+      <tr>
+        <th align="center">Cost of success</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">Roll a d10; this item in the PC’s inventory is destroyed/lost.</td>
+      </tr>
+      <tr>
+        <td align="center">“Downgrade” the lowest usage die the PC has; if it’s already a d4, the item is gone.</td>
+      </tr>
+      <tr>
+        <td align="center">Someone Nearby (including the PC) takes 1d6 hp damage.</td>
+      </tr>
+      <tr>
+        <td align="center">Disadvantage on a future test of the GM's choice.</td>
+      </tr>
+      <tr>
+        <td align="center">+2 to the next Reaction roll the GM makes.</td>
+      </tr>
+      <tr>
+        <td align="center">Rolls of 1-2 when counting coins are obvious counterfeits.</td>
+      </tr>
+      <tr>
+        <td align="center">+1 to the next Out of Action roll the PC makes.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><em>Some people scorn failing forward, I find myself using it when I’m looking to engage a story focused player or when i'm feeling generous and the situation is dire - so some mechanical hooks are useful things to have worked up in advance.</em></p>
+  <h2 id="paralysed">Paralysed<a class="headerlink" href="#paralysed" title="Permanent link">&para;</a></h2>
+  <p>Some monsters in the main rulebook will cause PC's to become Paralysed. Whilst Paralysed a character cannot move, talk or take any actions. At the start of their turn a character can make a CON test, If successful they are no-longer Paralysed and can continue the rest of their turn.</p>
+  <p><em>I cut this from the rules for space reasons, it seemed like a GM would be able to come up with something with the implied 'status effect', plus a Clerics advantage on CON tests. You can use the same approach to model lots of impairing effects, Poison, Fire, Insanity, Blindness etc - just vary up the associated attributes.</em></p>
+  <h2 id="random-encounters">Random encounters<a class="headerlink" href="#random-encounters" title="Permanent link">&para;</a></h2>
+  <p>An alternative method of checking for random encounters is to roll a d4 every time the players make a loud noise or stay in a potentially dangerous area longer than 5 minutes. Results of 1 indicate a random encounter.</p>
+  <p><em>Not everyone likes or can remember to roll a dice every 15 minutes, this offers a much less regimented approach - giving back the GM some control.</em></p>
+  <h2 id="morale">Morale<a class="headerlink" href="#morale" title="Permanent link">&para;</a></h2>
+  <p>If the number of opponents engaged in combat with the players drops by 50% they are 'broken' and a Reaction roll should be made to determine their new attitude.</p>
+  <p>If a character can make a successful CHA test the broken opponents will attempt to flee the combat as quickly as possible. If they have a leader fighting amongst them, the CHA test is taken with Disadvantage.</p>
+  <p><em>This is a very 'wargamey' feeling rule, which will add an interesting tactical element to combats, if you're so inclined. And remember if the new reaction roll is favourable, yet the NPC's were trying to kill the players a moment before - its no hard stretch to imagine that they are now grovelling for their lives! All of this should be used as a guide, its recommended a GM should exercise their 'narrative common sense'.</em></p>
+  <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+  <p><strong><em>If a PC summons a creature, and I want the player to roll attacks/defenses for the creature, should it use one of the PCs stats, or should it have its own statline and HD?</em></strong></p>
+  <p>I would have the PC test their relevant stat - especially for 'throwaway' summoned creatures. Perhaps if it was a more regular cast member (like a certain dark elf's panther pet) I'd give it HD and a single line special ability that fits it narratively.</p>
