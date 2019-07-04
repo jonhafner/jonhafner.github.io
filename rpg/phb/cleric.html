@@ -14,10 +14,59 @@
   <strong>Spellcasting:</strong>  Clerics are now <a href="div-spont.html">spontaneous spellcasters</a>.  For now, at first level, each cleric knows four minor spells and their two level I domain spells.  They can cast three minor spells and one level I spell per day (plus bonus spells from high Wisdom).  See the linked document for plans on how to move forward after the playtest.
 </p>
 <p>
-  <strong>Turn Undead:</strong>  Once per encounter, a cleric with access to the Good, Life, or Sun domain can attempt to <a href="turn-undead.html">turn undead</a>.  (That’s “turn” in the sense of “turn back”, not “turn into”!)
+  <strong>Turn the Unholy:</strong>  By wielding your holy symbol and uttering holy words, you can attempt to turn away the enemies of your faith.  Your domains determine which types of creatures are affected.  (For example, domains like Life and Sun allow you to turn undead, while Good allows you to turn devils and demons.)
 </p>
+<p>
+  When you encounter such creatures, you can attempt to turn them by presenting your holy symbol and speaking a censuring prayer.  (This is a standard action; it does not provoke attacks of opportunty, nor does it require the unbroken concentration of spellcasting.)  Make a turning check (1d20 + half your level + your Charisma modifier) against the Will save of each such creature able to perceive you.
+</p>
+<p>
+  If you are successful, the creature is turned for 1&nbsp;minute (10&nbsp;rounds) or until it takes damage.  Turned creatures flee from you by the best and fastest means available to them.  If they cannot flee, they cower, granting a boon to attack rolls against them.  If you approach within 10&nbsp;feet of them, however, they overcome being turned and act normally.  (If you were already within 10&nbsp;feet, you can remain there without breaking the turning effect—you just can’t approach them.)
+</p>
+<p>
+  If you succeed on your turning attempt by more than 10, the creature is instead utterly defeated.  An extraplanar creature is banished to its home plane, whereas an undead creature is destroyed outright.
+</p>
+<p>
+  Any particular creature is only at risk of being turned by you once per day.  Whether you succeed or fail on your turning check, future attempts in the same day will automatically fail.  You can still attempt to turn other individuals of the same type, and other clerics can attempt to turn that creature without interference.
+</p>
+<p>
+  A creature cannot be turned while on its home plane, as it is protected and strengthened by the energies of the place.
+</p>
+<p>
+  <em>Rebuke the Subordinate:</em>  Some domains grant the ability to rebuke or command certain types of creatures.  (For example, Death allows you to rebuke undead.)  This functions just like turning, except success indicates that the rebuked creature cowers as if in awe.  On a critical success, the creature is instead commanded and under your control.  As a standard action, you can give mental orders to a commanded creature.  Your cleric level limits the total CR of creatures you may have under your control at any given time; you may voluntarily relinquish command of some creatures in order to command new ones.
+</p>
+<p>
+  If you are able to rebuke a particular type of creature, you can also use a rebuking check to attempt to dispel the turning effect of another cleric upon them.  For each such creature, if your check result exceeds the turning check of the enemy cleric, the creature is no longer turned.  You may also preëmptively bolster creatures against turning: you make a check as if attempting to rebuke the creature, and if successful, your check result is used instead of the creature’s Will when resisting turn attempts.  This effect lasts for 1&nbsp;minute.
+</p>
+<p>
+  <em>Conflicting powers:</em>  You cannot have the ability to both turn and rebuke the same type of creature.  If both of these would be available to you, you must choose which one you will gain, forfeiting the other.
+</p>
+<!-- TODO: Copy-paste this ability into the paladin spell description, then trim it down to the paladin-specific things: turn undead and fiends, omit any mention of critical successes, rebuking, etc.  (The paladin ability should be slightly less powerful than the cleric ability; most editions achieve this by reducing the effective level of the paladin, but 5e seems to just not grant the ability to destroy undead, so that seems like an adequate model.)  For the “Behind the Curtain”, direct the reader to the cleric entry. -->
 
-<!-- TODO Consider keeping some sort of healing power available as a channel divinity option.  I was thinking of having preserve life in Healing, turn undead in Sun, etc.  This is particularly important if the cure wounds spells are available to all clerics, as I'm inclined to do.  There needs to be some additional benefit to choosing the Healing domain. -->
+<details><summary>Behind the Curtain</summary>
+  <p>
+    I’ve borrowed from 2e, 3e, and 5e for this version, in an effort to produce something as simple as possible that’s still in the spirit of classic editions.  The effects of turning are fairly consistent across editions (excluding 4e), but the turning check rules vary considerably.  For reference, here are their respective rules summarized very briefly, skipping many details:
+  </p>
+  <p>
+    <strong>2nd edition:</strong> You can attempt to turn undead once per encounter.  (No range is specified, just when you “encounter” them.)  Roll 1d20 and consult a table to determine the strongest undead you are able to turn.  (The table is not perfectly regular, but generally, a roll of 20 is exactly what’s needed to turn a creature with three more HD than your level; you have roughly even odds of turning a creature with HD about equal to your level.  You automatically turn undead about three or four HD below your level.  A paladin turns undead as a cleric two levels lower.)  You can turn up to 2d6 undead, starting with the weakest.  The table indicates that undead about five to eight HD below the cleric’s level are destroyed outright (possibly turning additional undead of that type); alternatively, undead are destroyed by clerics of about two to three times their level, except at the low end, where this is closer to four to six.
+  </p>
+  <p>
+    <strong>3rd edition:</strong> You can attempt to turn undead a number of times per day equal to 3&nbsp;+ your Charisma modifier.  (This can be increased with a feat.  Turning is a standard action, but there are no other limits on frequency—it appears that you can attempt to turn repeatedly on consecutive rounds.)  You turn the closest undead first, out to a maximum range of 60 feet; turning is blocked by total cover.  Roll a turning check (1d20 + your Charisma modifier) and consult a table to determine the strongest undead you are able to turn.  (The maximum HD turned is four less than your level if your check is 0 or less, equal to your level on 10–12, four more than your level on 22+.  A paladin turns undead as a cleric two levels lower.)  You turn a number of creatures whose total HD does not exceed 2d6 + your cleric level + your Charisma modifier.  If you have at least twice as many levels as the undead have HD, you destroy any that you would normally turn.
+  </p>
+  <p>
+    <strong>5th edition:</strong> Starting at 2nd level, you can attempt to turn undead once per short or long rest.  Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw or be turned.  (The DC is your spell save DC, 8&nbsp;+ your proficiency bonus + your Wisdom modifier.)  [For comparison, in 3e, the spell save DC is 10 + spell level + ability modifier.]  Starting at 5th level, an undead failing its save is instantly destroyed if its CR is at or below a threshold indicated on a table.  (Undead of CR&nbsp;1/2 or lower are destroyed at 5th level.  For CR&nbsp;1 or more, the cleric must have a level equal to five more than thrice the CR, up to CR&nbsp;4 at 17th level.)  [Paladins of the Oath of Devotion have an ability that functions similarly, except with no mention of outright destruction of targets, though it does also function against fiends as in 2e.  Unlike 2e and 3e, paladins are otherwise no less effective in their turning attempts than clerics of equal level.  Also, a paladin’s spell save DC is based on Charisma, meaning that the effectiveness of their turning attempts is also.]
+  </p>
+  <p>
+    There are <em>some</em> differences in the effects.  Chiefly, in 3e, the creature cowers if it cannot flee, and attacks do not break the effect.  In contrast, in 5e, the creature can Dodge if cornered, and ceases to be turned if it takes any damage.  (2e is silent on these matters.)  As a sort of compromise, I used 3e’s cowering (modfied from granting +2 to attacks against it to being flat-footed), as I feel it’s more plausible, but adopted the end condition of 5e to keep a trapped creature from just becoming a punching bag.
+  </p>
+  <p>
+    I struggled for some time trying to reconcile the different thresholds for outright destruction before the idea to tie it to the turning check leapt into my mind!  This resonates with my critical hit rules, and also correlates with level in approximately the right way.  (Note, however, that some powerful undead might need a bit of “turn resistance”—just a small bonus, probably reported as a separate “Will save vs turning”—to prevent a single lucky roll from smoking them instantly!)
+  </p>
+  <p>
+    Inspired by 5e, I figured the easiest thing to do for paladins was just to drop the possibility of outright destroying the undead.  Having them turn as a cleric two levels lower translates into a difference of only one point on the d20 roll for the turning check; probably not worth messing with.
+  </p>
+</details>
+
+<!-- TODO: Retain the concept of domain powers, particularly those regarding turning or rebuking certain types of creatures.  Add more as appropriate.  (E.g., Death allows rebuking undead, while Healing/Life allows turning them.)  Rename Healing as Life, partly since the _cure_ spells are now collapsed down to one, and partly because spells like _raise dead_ and _resurrection_ really belong in here. -->
 
 </body>
 </html>
