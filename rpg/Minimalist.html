@@ -109,7 +109,7 @@ footer {
 
     <h3 id="choose-a-class">Choose a class<a class="headerlink" href="#choose-a-class" title="Permanent link">&para;</a></h3>
     <p>The four standard options are Warrior, Rogue, Cleric, and Wizard; these are described below.  Your class determines how much damage you do, your hit points (roll your Hit Die), and your unique abilities.</p>
-    <p>(This assumes you are starting at 1st level.  If your GM has you starting with zero-level characters, you have no class, 1 hit point, and deal 1d4 damage.)</p>
+    <p>This assumes you are starting at 1st level, so you should also follow the rules for checking stats for improvement upon gaining your first level.  If your GM has you starting with zero-level characters, you have no class, 1 hit point, and deal 1d4 damage.)</p>
 
     <h3 id="choose-an-ancestry">Optional: Choose an ancestry<a class="headerlink" href="#choose-an-ancestry" title="Permanent link">&para;</a></h3>
     <p>Player characters are assumed to be human by default.  The GM may allow you to play a nonhuman character if you wish, assuming your stats meet appropriate requirements.  Typically, the primary game effect of a nonhuman ancestry is gaining Advantage or Disadvantage on relevant rolls, at the GM’s discretion.</p>
@@ -178,16 +178,16 @@ footer {
   <p>Some items have an associated <strong>usage die</strong>; these are consumable, limited resources.  After that item is used, roll its usage die.  If the roll is a 1, then the usage die is downgraded to the next lower die in the following chain:</p>
   <p><strong>d20 &gt; d12 &gt; d10 &gt; d8 &gt; d6 &gt; d4</strong></p>
   <p>When you roll a 1 on a d4, the item is expended and you have no more of it left.</p>
-  <p>There are four standard Usage Dice that most characters are assumed to have: Ammunition, Light, Rations, and Money.  You begin play with a d6 in each.  These have special rules:</p>
+  <p>There are four standard Usage Dice that most characters are assumed to have: Ammunition, Light, Rations, and Wealth.  You begin play with a d6 in each.  These have special rules:</p>
   <ul>
     <li><strong>Ammunition:</strong> This is your arrows, bolts, javelins, or other projectiles or thrown weapons.  You do not need to check your Ammunition every single time you make a ranged attack; rather, you roll the usage die after the combat is over.  (This incorporates an assumed attempt to recover any spent ammunition that is still usable, etc.)</li>
-    <li><strong>Light:</strong> When you burn a light source, such as a torch, lamp, or lantern, you must roll the usage die at regular intervals determined by the GM.  The quality of your light source is a function of your lifestyle and wealth (i.e., Money).</li>
+    <li><strong>Light:</strong> When you burn a light source, such as a torch, lamp, or lantern, you must roll the usage die at regular intervals determined by the GM.  The quality of your light source is a function of your lifestyle and Wealth.</li>
     <li><strong>Rations:</strong> Each morning, you must consume rations or become hungry until you eat.  While hungry, you suffer Disadvantage on all tests and cannot recover hit points from resting.</li>
-    <li><strong>Money:</strong> This indicates your money, wealth, or general financial resources.  When restocking in town, you may upgrade your ammunition, ration, and torch Usage Dice to match your Money Die, then test your Money Die.  [Or perhaps test it with <em>each</em> refill?]  This die is also tested when making a significant purchase, bribe, etc.  If another player’s Money Die is at least two steps below yours, and you’re feeling particularly generous (or have struck a suitable deal), you may upgrade their Money Die by one step, then test your own.
+    <li><strong>Wealth:</strong> This indicates your general financial resources, whether coin or otherwise.  When restocking in town, you may upgrade your ammunition, ration, and torch Usage Dice to match your Wealth Die, then test your Wealth Die.  [Or perhaps test it with <em>each</em> refill?]  This die is also tested when making a significant purchase, bribe, etc.  If another player’s Wealth Die is at least two steps below yours, and you’re feeling particularly generous (or have struck a suitable deal), you may upgrade their Wealth Die by one step, then test your own.
     </li>
   </ul>
   <!-- TODO: Continue to revise the above, most of which I made up. -->
-  <!-- TODO: Maybe make a table indicating the general wealth/lifestyle associated with each type of Money Die? -->
+  <!-- TODO: Maybe make a table indicating the general wealth/lifestyle associated with each type of Wealth Die? -->
 
   <hr>
 
@@ -224,13 +224,15 @@ footer {
 
   <h2 id="spellcasting">Spellcasting<a class="headerlink" href="#spellcasting" title="Permanent link">&para;</a></h2>
   <p>If you are a cleric or wizard, you have the ability to cast spells that are chosen from your class list (below).  At 1st level, you can only cast Level I spells; at every odd level, you gain access to the next level: Level II at 3rd, Level III at 5th, etc.</p>
-  <p>Spells are not guaranteed to work: when you attempt to cast a spell, you must test your primary spellcasting stat (WIS for clerics, INT for wizards), adding the spell’s level to the roll.  If you fail, the spell fizzles and has no effect.</p>
-  <p>Spellcasting drains a wizard’s energy and strains a cleric’s relationship with their patron.  Whether you succeed or fail, take note of every spellcasting attempt you make during the day.  You can comfortably attempt a number of castings equal to your level; for every spell cast in excess of your level, you add a cumulative +1 penalty to future spellcasting checks.  After roughly eight hours of rest, you are refreshed, this tally is reset, and any penalty is cleared.</p>
+  <p>Spells are not guaranteed to work: when you attempt to cast a spell, you must test your primary spellcasting stat (WIS for clerics, INT for wizards).  If you fail, the spell fizzles and has no effect.  Even if you succeed, if you did so by a narrow margin, the GM may rule that the spell is less effective than usual.  On the other hand, succeeding by a very large margin may indicate improved performance, with a 1 resulting in a critical success.  A 20, however, indicates a misfire!  The spell goes terribly wrong somehow.</p>
+  <p>Spellcasting drains a wizard’s energy and strains a cleric’s relationship with their patron.  After each spellcasting attempt you make, whether you succeed or fail, you adds the spell’s level to a running tally of spells cast that day.  You can comfortably cast a number of spell levels equal to your class level; anything beyond that imposes a cumulative penalty to future spellcasting checks.  After roughly eight hours of rest, you are refreshed, the tally is reset, and accumulated penalties are cleared.</p>
+  <p>
+    At your GM’s discretion, you might attempt other magical effects beyond the spells you know by rote.  These should be consistent with your spellcasting style, and your GM is the final arbiter of what is possible and the effective spell level.  Particularly minor spells might be classified as “Level Zero”: they still require a check to cast, but they do not count toward your daily limits or penalties.
+  </p>
 
   <!-- TODO: Edit the following spells, which have not yet been touched from TBH.
-  Consider a more freeform system, where you simply make a test to try to cast a spell of a suitable style; your roll has a penalty or bonus if the spell is above or below your general power level.  Spells far below your power level are considered “trivial” and do not count against your daily casting tally.  (Even with a stricter system, consider bringing in zero-level cantrips that are similarly “trivial”.)
-  Perhaps the number of dice used for damage and healing and the like are based on your level, while the type of dice is the complement of your Hit Dice?  Like, the better you are in physical combat, the lower your magic power.  So then a wizard would actually default to using d10s for spellcasting purposes, while a cleric would use only d6s.  A hypothetical sorcerer or priest (or bard?) with d6 HD would use d8s for spell effects.
-  Oh, and consider counting up the spell *levels* cast, not just the number of spells?  Higher-level spells are more draining!
+  Consider moving toward a more focused yet freeform system, where rather than “cleric” or “wizard” you might be a “warpriest” or “necromancer”.  Spells can be given as examples, but you don’t have to worry about how many you “know”, and improvisation is expected.
+  A possible mechanic to include in an improvised spellcasting system: Perhaps the number of dice used for damage and healing and the like are based on the spell level, while the type of dice is the complement of your Hit Dice?  Like, the better you are in physical combat, the lower your magic power.  So then a wizard would actually default to using d10s for spellcasting purposes, while a cleric would use only d6s.  A hypothetical sorcerer or priest (or bard?) with d6 HD would use d8s for spell effects.
   -->
 
   <h2 id="divine-spells">Divine spells<a class="headerlink" href="#divine-spells" title="Permanent link">&para;</a></h2>
@@ -268,18 +270,18 @@ footer {
   </ul>
   <h3>Level V</h3>
   <ul>
-    <li><strong>Commune :</strong> The Cleric's deity truthfully answers 3 questions - 10mins.</li>
+    <li><strong>Commune :</strong> The Clerics deity truthfully answers 3 questions - 10mins.</li>
     <li><strong>Dispel Evil :</strong> Removes a Nearby Divine (Evil) spell.</li>
     <li><strong>Finger of Death :</strong> Choose a Nearby target and test WIS, if a pass the target is OofA.</li>
     <li><strong>Plague :</strong> Test WIS for all Nearby targets, they lose 2d8 hp for the next 1d6 turns.</li>
     <li><strong>Quest :</strong> Force a Nearby creature to obey an order.</li>
-    <li><strong>Raise Dead :</strong> Return a Nearby willing target to life, who's died within the last 7 days.</li>
+    <li><strong>Raise Dead :</strong> Return a Nearby willing target to life, who’s died within the last 7 days.</li>
   </ul>
   <h3>Level VI</h3>
   <ul>
     <li><strong>Animate Object :</strong> Give a Nearby object motion and a simple intelligence - 10mins.</li>
     <li><strong>Blade Barrier :</strong> Wall covers a Nearby area, WIS to attack Close targets (3d8) - 10mins.</li>
-    <li><strong>Conjure Elemental :</strong> Summons an elemental with HD equal to caster's lvl -1hr.</li>
+    <li><strong>Conjure Elemental :</strong> Summons an elemental with HD equal to caster’s lvl -1hr.</li>
     <li><strong>Find Path :</strong> The path to a chosen location is made known - 1hr.</li>
     <li><strong>Speak with Monsters :</strong> Can understand and talk with monsters - 1hr.</li>
     <li><strong>Word of Recall :</strong> Give ability to teleport back to the location this spell was cast - 1year.</li>
@@ -303,7 +305,7 @@ footer {
     <li><strong>Light :</strong> Create dim light from a Nearby spot or object - 1hr.</li>
     <li><strong>Magic Missile :</strong> A Nearby, Far-Away or Distant target takes 1d4 damage/level.</li>
     <li><strong>Shield :</strong> Gain 2 AP/ level.</li>
-    <li><strong>Sleep :</strong> Puts 4d6 HD 'worth' of beings to sleep - 8hrs.</li>
+    <li><strong>Sleep :</strong> Puts 4d6 HD of beings to sleep - 8hrs.</li>
   </ul>
   <h3>Level II</h3>
   <ul>
@@ -336,7 +338,7 @@ footer {
     <li><strong>Cloudkill :</strong> Anyone with less than 5HD that touches it must test INT or be OofA – 1hr.</li>
     <li><strong>Conjure Elemental :</strong> Create an Elemental of chosen type with 3d4 HD.</li>
     <li><strong>Contact Higher Plane :</strong> Ask 1 question/level.</li>
-    <li><strong>Feeblemind :</strong> Reduce a Nearby target's INT to 4 - 10mins/level.</li>
+    <li><strong>Feeblemind :</strong> Reduce a Nearby target’s INT to 4 - 10mins/level.</li>
     <li><strong>Telekinesis :</strong> Move Nearby objects - 1hr.</li>
     <li><strong>Teleport :</strong> Transports a Nearby target to any place known to the caster.</li>
   </ul>
