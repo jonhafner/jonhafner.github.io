@@ -1,96 +1,7 @@
-/*********
- * FONTS *
- *********/
-/*
-  The AD&D 2nd Edition core books used Friz Quadrata Bold for their interior headers.  (The logo on the cover uses a variant called "Friz Quadrata No. 2 D", identifiable by its "g" glyph, but the difference is minor and not worth attempting to recreate.)  Freely available clones of this family often use the name "Fritz".
-
-  The body text is Palatino or one of its many clones; URW Palladio L and TeX Gyre Pagella have open licenses.
-
-  For more information on the fonts used in published D&D materials, see
-  https://www.kirith.com/tsr-fonts/
-  These include many more typefaces I might want to emulate in the future, like a half-dozen scripts used in Night Below handouts!
-*/
-
-@font-face {
-  font-family: Palatino;
-  src: local("Palatino Regular"),
-       local("Zapf Calligraphic 801 Regular"),
-       local("URW Palladio L Regular"),
-       local("TeX Gyre Pagella Regular"),
-       local("TeXGyrePagella Regular"),
-       local("Book Antiqua Regular"),
-       url("../fonts/texgyrepagella-regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: Palatino;
-  src: local("Palatino Italic"),
-       local("Zapf Calligraphic 801 Italic"),
-       local("URW Palladio L Italic"),
-       local("TeX Gyre Pagella Italic"),
-       local("TeXGyrePagella Italic"),
-       local("Book Antiqua Italic"),
-       url("../fonts/texgyrepagella-italic.otf");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: Palatino;
-  src: local("Palatino Bold"),
-       local("Zapf Calligraphic 801 Bold"),
-       local("URW Palladio L Bold"),
-       local("TeX Gyre Pagella Bold"),
-       local("TeXGyrePagella Bold"),
-       local("Book Antiqua Bold"),
-       url("../fonts/texgyrepagella-bold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: Palatino;
-  src: local("Palatino Bold Italic"),
-       local("Zapf Calligraphic 801 Bold Italic"),
-       local("URW Palladio L Bold Italic"),
-       local("TeX Gyre Pagella Bold Italic"),
-       local("TeXGyrePagella Bold Italic"),
-       local("Book Antiqua Bold Italic"),
-       url("../fonts/texgyrepagella-bolditalic.otf");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: FrizQuadrataBold;
-  src: local("Friz Quadrata Bold"),
-       local("Fritz Quadrata Bold"),
-       local("Friz Quadrata"),
-       local("Fritz Quadrata"),
-       local("Friz Bold"),
-       local("Fritz Bold"),
-       url("../fonts/FrizQuadrataBold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: FrizQuadrataBold;
-  src: local("Friz Quadrata Bold Italic"),
-       local("Fritz Quadrata Bold Italic"),
-       local("Friz Quadrata Italic"),
-       local("Fritz Quadrata Italic"),
-       local("Friz Bold Italic"),
-       local("Fritz Bold Italic"),
-       url("../fonts/FrizQuadrataBoldItalic.ttf");
-  font-weight: bold;
-  font-style: italic;
-}
-
-
-
 body {
   background-color: #fff;
   color: #000;
-  font-family: Palatino, serif;
+  font-family: serif;
   font-size: 100%;
   font-style: normal;
   font-weight: normal;
@@ -102,7 +13,7 @@ em { font-style: italic; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #05b;
-  font-family: FrizQuadrataBold, serif;
+  font-family: serif;
   font-weight: bold;
 }
 
@@ -112,7 +23,7 @@ details {
   padding: 5px;
 }
 summary {
-  font-family: FrizQuadrataBold, serif;
+  font-family: serif;
   font-weight: bold;
 }
 
@@ -130,13 +41,6 @@ td {
   text-align: center;
   vertical-align: top;
 }
-
-/*
-th:first-child,
-td:first-child {
-  text-align: left;
-}
-*/
 
 tr.unshaded { background-color: #fff; }
 tr.shaded { background-color: #ddd; }
