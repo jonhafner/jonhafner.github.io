@@ -5,8 +5,9 @@ body {
   font-size: 100%;
   font-style: normal;
   font-weight: normal;
-  margin: 0 auto 1em;
+  margin: auto;
   max-width: 70ex;
+  padding: 1em;
 }
 
 em { font-style: italic; }
