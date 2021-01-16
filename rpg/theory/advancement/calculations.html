@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advancement – How much?</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<h1>Advancement</h1>
+<h2>How much?</h2>
+
+<p>
+  Once you decide <a href="sources.html">what sorts of things</a> to award XP for, you then have the task of determining <em>how much</em> XP to award for those things, as well as how many XP are required to reach the next level.  Of course, the game you are playing probably already has rules for this—but if you’re here, you presumably find those dissatisfying in some way.  Read on for discussions of a variety of options with varying degrees of complexity.
+</p>
+<p>
+  For some sources, there isn’t much to say here.  For milestones or story rewards, for instance, you might just need to decide what portion of a level that should be worth, and hand out the corresponding amount of XP.  Some games offer more specific advice for such things; for example, every edition of D&amp;D from 2nd through 5th has included advice for story rewards in the DMG, but the details have varied considerably from edition to edition, as both XP scales and design philosophies have changed considerably.
+</p>
+<p>
+  If you’re awarding XP for treasure, you probably need to choose a standard rate (such as the classic 1 XP per gold piece) and use a system of <a href="#fixed">fixed rewards</a> with an exponential level chart.
+</p>
+<p>
+  Since awarding XP for overcoming challenges—whether combat specifically or just any challenges in general—is probably both the most common and most complex source of XP, that will be the focus of the rest of this page.
+</p>
+
+<ul>
+  <li><a href="#fixed">Fixed rewards</a></li>
+  <li><a href="#3e">Complex relative rewards, progressive scale: 3e</a></li>
+  <li><a href="#DCC">Simple relative rewards, progressive scale: DCC</a></li>
+  <li><a href="#linear">Relative rewards, linear scale</a></li>
+  <li><a href="#individual">Individual XP adjustments</a></li>
+</ul>
+
+<h3 id="fixed">Fixed rewards</h3>
+  <p>
+    Most editions of D&amp;D (except <a href="#3e">3rd</a>) assign an XP value to each thing the players are expected to earn XP for (whether that’s treasure or challenges); the group of PCs involved in retrieving a treasure or defeating a monster or whatever divide the XP evenly among themselves.  As characters’ XP totals reach the thresholds given in the relevant table, they gain levels.
+  </p>
+  <p>
+    In the TSR editions, level thresholds are approximately exponential (at least for about the first ten levels or so); in 4e and 5e, they are closer to polynomial.  The XP values of creatures are then derived from this somehow, though in contrast to 3e, none of these systems are entirely regular or transparent.
+  </p>
+  <p>
+    If you want to use something that is similar to this in spirit but easier to calculate, you can try the “regularized exponential scale” I developed, which I’ll include below.  Beware, however, that this merely simplifies the scales—it does nothing to address the underlying problem of the false accuracy of calculated CRs.  Advance assessment of a challenge is always imprecise at best, as discussed below.
+  </p>
+  <details>
+    <summary>Regularized exponential scale</summary>
+    <p>
+      Combining the quasi-exponential advancement of the TSR editions with the fixed XP of the non-3e editions, but with 3e pacing, assume a typical level has a little over ten level-appropriate challenges, so a CR <em>X</em> challenge should supply each character with a little under 1/10 the XP a Level <em>X</em> character needs to advance to level <em>X</em> + 1.  Assuming a typical party size of four PCs, that means a little under 4/10 that XP.  Use a simple exponential progression; for example:
+    </p>
+    <table>
+      <thead>
+        <tr><th>Level</th><th>XP</th><th>XP to next</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>0</td>     <td style="text-align:right">0</td>   <td style="text-align:right">500</td></tr>
+        <tr><td>A</td>   <td style="text-align:right">500</td>   <td style="text-align:right">500</td></tr>
+        <tr><td>1</td> <td style="text-align:right">1,000</td> <td style="text-align:right">1,000</td></tr>
+        <tr><td>2</td> <td style="text-align:right">2,000</td> <td style="text-align:right">2,000</td></tr>
+        <tr><td>3</td> <td style="text-align:right">4,000</td> <td style="text-align:right">4,000</td></tr>
+        <tr><td>4</td> <td style="text-align:right">8,000</td> <td style="text-align:right">8,000</td></tr>
+        <tr><td>5</td><td style="text-align:right">16,000</td><td style="text-align:right">16,000</td></tr>
+      </tbody>
+    </table>
+    <p>
+      Etc.  (We bake zero- and apprentice-level into the system to make the progression work more smoothly, since by starting at a nonzero XP total, you can simply double the XP for the current level to get the next.  Otherwise, the first two level gains are the same, which throws off the XP-by-CR calculations.)
+    </p>
+    <p>
+      Now we calculate the value of a CR 1 challenge: A 1st-level adventurer needs 1,000 XP to advance to the next level, so a party of four of them requires 4,000 XP.  A single CR 1 challenge, then, should supply a little under 400 XP.  Wanting a multiple of 60 (for divisibility reasons), that suggests 360.  Similar calculations for higher CRs (and simple division for fractional ones) yield something like the following chart:
+    </p>
+    <table>
+      <thead>
+        <tr><th>CR</th><th>XP</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1/4</td>   <td style="text-align:right">90</td></tr>
+        <tr><td>1/3</td>  <td style="text-align:right">120</td></tr>
+        <tr><td>1/2</td>  <td style="text-align:right">180</td></tr>
+        <tr> <td>1</td>   <td style="text-align:right">360</td></tr>
+        <tr> <td>2</td>   <td style="text-align:right">720</td></tr>
+        <tr> <td>3</td> <td style="text-align:right">1,440</td></tr>
+        <tr> <td>4</td> <td style="text-align:right">2,880</td></tr>
+        <tr> <td>5</td> <td style="text-align:right">5,760</td></tr>
+      </tbody>
+    </table>
+    <p>
+      Etc.
+    </p>
+  </details>
+
+<h3 id="3e">Complex relative rewards, progressive scale: 3e</h3>
+  <p>
+    Like many parts of the Third Edition of D&amp;D, the experience point scale is a very regular and tightly (perhaps overly) designed system that captures some of the most useful features of the TSR editions while making significant improvements.  The first innovation, and the most obvious, is to put every class on the same advancement scale.  This is huge, and while the numbers have changed through the editions since, the basic premise of a unified progression has stuck.  Second, the scale itself consists entirely of nice clean multiples of 1,000 according to an obvious, simple formula, with a quadratic progression.  (Seriously, once you see how it works, it’s quite easy to calculate the XP thresholds in your head.  It’s a shame this was dropped from subsequent editions.)  This allows us to have something that <em>feels</em> classic, in the sense that the numbers are in the thousands and grow ever larger, but is much more stable and predictable, while also not growing out of control, reaching absurd values in the tens of millions.
+  </p>
+  <p>
+    Unfortunately, this clean regularity in the scale comes at a cost.  Making this work requires adjusting the amount of XP awarded for overcoming a particular challenge based on how its effective Encounter Level compares to the party’s level, and the combination of a large table with tedious calculations makes the system extremely cumbersome.  Furthermore, this all depends heavily on the calculated Challenge Rating (CR) of each foe, but these are crude estimates at best.  (4e was more tightly balanced, so the CRs in that edition are somewhat more precise, but 5e returns to being notoriously unreliable.)  The 3e DMG also describes various situations in which the DM should increase or decrease the XP awarded to account for circumstances (such as enemy tactics or party composition) making the encounter harder or easier in ways that are difficult to quantify.  (I will discuss these in more detail below.)  CR might be a useful aid for encounter design, but relying on it too heavily for any purpose is dangerous.
+  </p>
+  <p>
+    I do not mean to rag on 3e and imply that its design was terrible; quite the contrary, it had some absolutely brilliant design.  In my opinion, the biggest shortcoming of its core XP system was failing to recognize the usefulness of one of its innovations in particular, and unfortunately, future editions missed the value of it and reverted to the old ways.  I mentioned two innovations in the opening paragraph to this section, but a third is often overlooked, and that is the “Free-Form Experience” variant rule—specifically the version for encounters rather than sessions.  I will discuss more about the design below, but if you just want my recommendation for running a 3e game, it is this:  Since XP are built into the system so strongly, you cannot get away from them without extensive houseruling.  If you are running published modules with precalculated CRs and ELs, and you also have a digital tool to handle <em>all</em> of the XP calculations for you (including adjusting the amount for each character based on their level), then you can certainly use the standard XP rules as written.  However, if any of those conditions are not met, you can achieve comparable end results with far less work using the “Free-Form Experience” variant rule, especially if you incorporate some of the guidelines I discuss in some of the other methods below.
+  </p>
+
+<h3 id="DCC">Simple relative rewards, progressive scale: DCC</h3>
+  <p>
+    As far as I can tell, all the systems mentioned so far start with a scale and then work out how much each encounter is worth based on that.  (At least, those awarding XP primarily for challenges; presumably, early D&amp;D started with 1 gp = 1 XP, then built the scale from there, and that set the standard for later editions even after moving away from treasure-based XP.)  <em>Dungeon Crawl Classics</em> seems to go in the other direction: Establish an easy system for assigning a value to each encounter, then set the scale as required to obtain the desired rate of advancement.  In so doing, it also gives us much smaller and simpler numbers to work with.
+  </p>
+  <p>
+    The most distinctive characteristic of DCC’s XP system is that XP is awarded based on the <em>observed</em> difficulty of an encounter rather than its theoretically <em>expected</em> difficulty.  This might sound heretical, but even the D&amp;D 3e DMG explicitly advises a DM to “Adjust the XP award and the EL depending on how greatly circumstances change the encounter’s difficulty.”  Some of the examples given could be anticipated and calculated in advance, but some of them might only be known when the encounter occurs, for which adjustments can only be made after the fact.  In other words, if a 3e DM follows the standard core rules as written, they will be making adjustments to XP awards whenever the actual difficulty of an encounter turned out to differ from its expected difficulty.  DCC, then, simply skips the additional work of trying to precisely calculate the difficulty of an encounter in advance, and instead simply assesses it quickly post hoc.  If this seems too arbitrary, remember that CR calculations merely give the <em>illusion</em> of precision to begin with.  Actual challenge depends strongly on circumstances, like the environment, the PC party composition, the tactical acumen of the GM and players, etc.  Not to mention the difficulty of handling the nonlinear scaling of large numbers of low-CR baddies.  Awarding XP post hoc based on actual at-the-table difficulty actually makes way more sense.
+  </p>
+  <p>
+    A quick and easy post hoc assessment is made possible by scaling down from typical D&amp;D-style XP sizes to small, simple, “chunky” values.  In DCC, successfully surviving an encounter earns from 0–4 XP depending on difficulty.  A standard encounter, in which “characters incurred damage and were required to utilize resources to survive the encounter”, is worth 2 XP.  (This is probably roughly analogous to a “standard encounter” in D&amp;D, which the 3e DMG says is one that expends about 20% of the PCs’ resources—hit points, spells, magic item uses, etc.)  A lesser threat is worth 1 XP, while something that poses no significant threat is not worth any XP.  Conversely, a more serious challenge is worth 3 XP, while 4 XP would be awarded for “An extremely difficult encounter, one that the party barely survives.  Multiple character fatalities, significant character damage, and potentially a retreat of some kind required.”  In summary:
+  </p>
+  <table>
+    <tr>
+      <th>XP</th><th style="text-align:left">Difficulty</th>
+    </tr>
+    <tr>
+      <td>0</td><td style="text-align:left">Trivial</td>
+    </tr>
+    <tr>
+      <td>1</td><td style="text-align:left">Easy</td>
+    </tr>
+    <tr>
+      <td>2</td><td style="text-align:left">Moderate</td>
+    </tr>
+    <tr>
+      <td>3</td><td style="text-align:left">Hard</td>
+    </tr>
+    <tr>
+      <td>4</td><td style="text-align:left">Deadly</td>
+    </tr>
+  </table>
+  <p>
+    It’s worth stressing again that encounters go beyond merely monsters and traps; see the discussion <a href="sources.html#challenges">elsewhere</a> about basing XP on challenges.  If the threat of harm doesn’t seem like the best way to assess a particular challenge or encounter, you might also consider the question of how much the PCs <em>learned</em> from it.  For example, playing a little loose with DCC’s guidelines, one person described how they expected to assign XP for the various encounters in a short adventure they wrote, incorporating not only cost in resources but also sense of achievement: traps were generally worth 2 XP if defeated or bypassed, or 1 XP to survivors otherwise; a minor puzzle or mystery granted 1 XP if solved; most monsters were 2 XP, but the major battle at the end would be worth 2–4 XP, depending on how it shook out.
+  </p>
+  <p>
+    For another example of awarding XP by relative difficulty, one GM said, “Just last week my players made a deadly encounter easy and happened upon a normal encounter that was way past deadly.  Darkmantle ambushes turn out to be pretty difficult to deal with, especially when they wake you from your sleep.”  Again, “easy” creatures can be used in challenging ways!  (Remember Tucker’s Kobolds.)  And defeating a “tough” monster because circumstances were in your favor isn’t as much of an achievement.  Do remember to reward cleverness, though.  If an encounter <em>really should’ve</em> been challenging, and the party survived it through cleverness rather than force, don’t cheat them out of XP.
+  </p>
+  <p>
+    Note that this sort of implicitly handles the matter of scaling rewards for large or small groups in a natural way:  With fixed-reward methods, you divide the XP total evenly among the PCs, so the larger the party, the less each character earns.  This makes sense, as more characters usually make the encounter easier.  Smaller parties get larger XP rewards per person.  Well, under the DCC system, if you have so many party members that it makes the encounter easier than it should be, everybody gets fewer XP than standard, and vice versa.  You get a similar net effect in the long run, but without having to deal with division and fractions.
+  </p>
+  <p>
+    One big caution if you’re going to adopt this method is that you’ll probably want to take note of the XP value of each encounter as soon as possible after it concludes, before you forget how it went.  (This is especially true if you award <a href="#individual">different amounts to different PCs</a>.)  You could even award XP immediately after the encounter concludes, though that could interrupt the flow of play; do what feels right for your table.  (You can still require downtime for leveling, so don’t worry about the problems of going up a level in the middle of a dungeon.)
+  </p>
+  <p>
+    As for the advancement scale, DCC uses a quadratic progression.  The details vary by edition (beta vs final, and perhaps more variants exist), but one chart I saw put 1st level at 10 XP, 2nd at 50 XP, 3rd at 110 XP, 4th at 190 XP, and so on, with the gaps continuing to increase by 20 XP per level.  (Note that in DCC, each player typically starts out with two to four zero-level characters; generally, any that survive the “funnel” make it to first level.)  Be aware, however, that this scale makes advancement slow down to a crawl very quickly.  (Advancing from 1st to 2nd level requires twenty standard encounters; advancing from 3rd to 4th requires forty of them!)  This is probably intentional, given the old-school, lower-powered grittiness of DCC, but you might want to tweak the scale if adapting it to a different style of game; see below for some possibilities.
+  </p>
+
+<h3 id="linear">Relative rewards, linear scale</h3>
+  <p>
+    It seems at first like a progressive scale is needed to moderate the pace of advancement; this is true with fixed rewards, but with relative rewards, this is not necessarily so.  Certainly, if you want a drastic reduction of pace, something like <a href="#DCC">DCC’s approach</a> would be very effective; however, a milder and more gradual slowing of advancement is likely to occur on its own.  A sidebar in the 3e DMG includes the paragraph,
+  </p>
+  <blockquote>
+    “Thirteen or fourteen encounters can seem to go by very quickly.  This is particularly true at low levels, where most of the encounters that characters take part in are appropriate for their levels.  At higher levels, the PCs face a varied range of Encounter Levels (more lower than higher, if they’re to survive) and thus gain levels somewhat more slowly.  Higher-level characters also tend to spend more and more time interacting with each other and with NPCs, which results in fewer XP over time.”
+  </blockquote>
+  <p>
+    This makes it clear that you don’t need to change the cost per level in order to slow down advancement; basing XP rewards on relative difficulty will take care of the pacing on its own.  Thus, you can create a simple advancement scale that requires a constant quantity of XP per level.
+  </p>
+  <p>
+    For example, the first edition of <em>Pathfinder</em> uses a <a href="#fixed">fixed rewards system</a>, but the second edition (PF2) uses a simple 1,000 XP-per-level advancement; this has advantages, like being easy to tweak the rate of progress (just change that number), easy to gauge progress (500 XP? halfway to the next level), and easy to set ad hoc non-combat rewards without consulting a chart.  Yet that number (1,000) is large enough to make XP rewards still “feel” like traditional D&amp;D and PF1.  However, if that is not a design goal, you can get away with using much smaller numbers.
+  </p>
+  <p>
+    Professor Dungeon Master awards XP through a <a href="https://www.youtube.com/watch?v=oju4v_yUrpc">system</a> that resembles a combination of story rewards/<wbr>milestones and the DCC criteria, except applied at the level of the play session instead of the encounter.  Each PC gets 1–5 XP per session (typically 4).  For advancement, he uses a simple scale of 10 XP per level.  When you advance to the next level, you reset your XP to 0 and only track your progress toward the next level—no charts needed!  He also points out how easily you can modify that number if you want faster or slower advancement.
+  </p>
+  <p>
+    Combining these principles, we see a general approach that can be taken to easily design a relative-reward, linear-scale XP system:
+  </p>
+  <ol>
+    <li>Decide how granular you want your reward scale to be by setting a value for a “standard” encounter.  (In DCC, that’s 2 XP; in PF2, it seems to be around 80 XP.)</li>
+    <li>Choose a desired pace in terms of the number of standard encounters per level.</li>
+    <li>Multiply these values to find the number of XP required per level.</li>
+  </ol>
+  <p>
+    For example, my personal preference for D&amp;D has recently been to use the DCC values for awards (0–4 XP, standard 2), but with an expectation of about ten encounters per level, meaning that each level costs 20 XP.  (That rate of ten encounters per level is a bit faster than 3e’s target of 13.33 and PF2’s 12.5, but right in line with 4e’s expectation of eight to ten, and also pretty much what 5e eventually settles into after some early instability.)
+  </p>
+  <p>
+    Above, at the end of <a href="#3e">the section on 3e</a>, I suggested using the variant rule for “Free-Form Experience”.  In this variant, the DM is advised to “just hand out about 75 XP times the average party level for each character in the party per balanced encounter.  Hand out more for tough encounters: 100 XP per level per character, or even 150 XP.  Award less for easy ones: 25 to 50 XP.”  This is indeed pretty much in line with the standard system, just lacking the (excessively tedious) precise calculations for fine adjustments.  But recall that 3e’s advancement scale has each level cost 1,000 XP times the current level, so that perfectly balances out the scaling of awards by the average party level.  For the purposes of comparison, if we scale this down by dividing all the numbers by 25 XP per level, we obtain a system that awards 1–6 XP per encounter, with a standard encounter worth 3 XP, and requires 40 XP to advance to the next level.  (You can check for yourself that this does indeed work out to the stated pace of 13.33 standard encounters per level.)  This is very revealing of the underlying design behind the 3e systems of XP, CR, and EL!  (Of course, that scaling is <em>only</em> for the purposes of comparison—it cannot easily be applied to simplify 3e’s XP system without extensive houseruling to address multiclassing penalties, magic item and spell costs, etc.  This is why I advised using the rule variant as printed.)
+  </p>
+
+<h3 id="individual">Individual XP adjustments</h3>
+  <p>
+    This section is not about individual XP <em>awards</em>, such as for using class abilities or achieving personal goals; such things are discussed elsewhere.  Here, we should discuss the possibility of not all PCs gaining the same amount of XP from a group award.  There are a few situations in which this might be considered.
+  </p>
+  <p>
+    The first, and perhaps clearest, is when PCs of different levels adventure together.  The reason for the level gap doesn’t matter much—perhaps one player has missed several sessions of an ongoing campaign, so their character has been similarly out of action; or perhaps one player has done a bit of extra side-questing between sessions, and gotten ahead of the others; or perhaps this is more of a West Marches–style campaign, and the current group of characters is a temporary alliance.  No matter the cause, there is a general expectation that the lower-level characters should gain more from a given encounter than the higher-level characters do.
+  </p>
+  <p>
+    If your XP system uses <a href="#fixed">fixed rewards</a> with an aggressively progressive (e.g., exponential) scale, things will probably work fine without any adjustment, since a given XP award is worth <em>relatively</em> much more to a lower-level character than a higher-level one, and a constant gap between XP totals will translate into a diminishing gap in levels over time.  Eventually, so long as the XP gap does not grow, a character with more or fewer XP will sometimes level up a little sooner or later, but they will spend most of their time at the same level as the rest of the group.
+  </p>
+  <p>
+    A less aggressive scale (e.g., polynomial) does <em>something</em> to address this problem, but possibly not enough—hence 3e’s rules for adjusting XP for each character based on character level.  The scales used in 4e and 5e are comparable, but they lack these adjustment mechanisms; a small gap is probably fine, but a large gap will close only very slowly.  The best remedy there might be to simply give the lower-level PCs some extra scenes or short adventures to help them “catch up”.
+  </p>
+  <p>
+    A <a href="#linear">linear scale</a> requires even more attention to level differences if a “catch-up” mechanism is desired.  If awards are already scaled to character level by some formula, that should do the job: simply apply that for each character individually.  But if there is no firm calculation, and the XP value of an encounter is instead determined by the DM’s subjective assessment of difficulty, the simplest approach is probably to keep an eye out for differences in the experiences of individual characters and adjust awards accordingly.
+  </p>
+  <p>
+    For example, suppose a group with mixed levels overcomes a challenge that you judge is worth 2 XP.  If everybody had a roughly comparable experience, no adjustments are needed or appropriate.  However, if the highest-level PCs had a noticeably easier time of things, they might only receive 1 XP each.  On the other hand, if the lowest-level PCs struggled observably more, they might earn 3 XP each, say.
+  </p>
+  <p>
+    Again, this might not be appropriate for every encounter, but over time, such adjustments should gradually reduce the level gap until any remaining differences are too small to matter.
+  </p>
+  <p>
+    Of course, these sorts of adjustments don’t need to be confined to only characters of differing levels: even those of the same level could have significantly different capabilities due to variations in ability scores, equipment, class features, etc.  Whenever there’s a clear power differential between characters, so that some are genuinely at greater risk and expending more resources than others, you might consider tweaking the XP awards.
+  </p>
+  <p>
+    Be sure that you <em>only</em> apply this when the difference is <em>clear and significant</em>.  In particular, it would have to be more significant than normal asymmetries within a party:  If the cleric didn’t take a scratch, but had to use up all his spell slots to heal the front-line fighters, he has still spent personal resources.  If the rogue keeps to the shadows and backstabs things to death, she’s still risking great harm, since if she were to flub a Stealth check, she would likely get pummeled.  However, if some characters are having to burn through limited resources and/or suffer great harm or risk while other characters breeze right through, then maybe different XP awards are justified.
+  </p>
+  <p>
+    If you don’t want to have to swing back the other way later, you might also want to make sure that these differences are persistent rather than temporary.  At the lowest levels in D&amp;D, for example, a wizard is <em>expected</em> to have a much harder time in combat than a fighter does.  This will take care of itself at higher levels; if you throw the wizard some extra XP early on, you’ll need to do the same for the fighter later.  A druid or ranger is likely to have a much better time than a streetwise rogue in an adventure deep in the forest, but the reverse will be true when the party becomes embroiled in urban intrigue.  On the other hand, if the entire campaign is centered in one of these locales or the other, the fish-out-of-water character could perhaps use a little help to keep up.
+  </p>
+  <p>
+    Remember, unequal awards aren’t intended as some sort of punishment for being effective—they’re to reflect the fact that you don’t learn as much from things that are too easy for you!  Less effective characters learn more from their struggling, and giving them a boost to advancement can help level the playing field between players, hopefully helping everyone have more fun.  If players with more effective characters don’t want to receive smaller XP awards, they should try to shoulder a larger burden of risk, evening out the challenge experienced.
+  </p>
+  <p>
+    Other times unequal awards might be warranted are in cases where some characters take on significantly more or less risk and cost than others.  This should be rare, but if, say, one character hides out of sight and harm’s way for most of the encounter, they should probably get little or no experience for it.  Again, this should only be applied in exceptional and obvious cases: a cleric or wizard who hangs back and casts is still consuming resources in the form of spell slots, and a rogue who sneaks around the battlefield is still taking a risk of being seen and splattered.  I’m not talking about penalizing those who play intelligently—I’m talking about penalizing those who play cowardly, or who simply don’t participate for whatever reason.  This could even be due to inability: those who are incapacitated for most or all of a fight don’t traditionally get a share of the XP for an encounter, for instance.
+  </p>
+  <p>
+    In any case, if you award XP unequally, you should strongly consider doing so immediately after the encounter, both so you don’t forget and so players get immediate feedback and understanding of why this is the case.  You don’t want somebody to be surprised by getting fewer XP than someone else at the end of the night.
+  </p>
+  <p>
+    Taking all of these points into consideration, note that I’m not suggesting automatically awarding extra XP to a character who has fewer than the rest of the party: if the difference in challenge is negligible, so too should be the difference in reward.  Small differences between levels are normal and not bad.  Differences large enough to challenge the characters differently can lead to unequal awards, as the characters learn different amounts.  But if the lower-level character is so far behind that they’re having to hang back and stay out of combat just to avoid certain death, they’ll actually learn (and earn) <em>less</em> from the experience, and probably shouldn’t be there at all; maybe they should do some solo adventuring, or group up with some other low-level characters to do things more level-appropriate?
+  </p>
+
+
+
+<footer>
+<p><nav><a href="..">Main</a> | <a href=".">Advancement</a> </nav></p>
+</footer>
+</body>
+</html>
