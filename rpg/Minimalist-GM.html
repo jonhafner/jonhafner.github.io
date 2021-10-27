@@ -1,4 +1,10 @@
 <!--
+  v0.1 - last modification date 2019-07-04
+  v0.2 - 2021-08-05 to 2021-08-09(or later? TODO)
+    - Trim some useless CSS, and also eliminate the anchors in headers
+    - Move discussion of initiative over here from the player document, and add a few more options
+-->
+<!--
   TODO:
   - Organize into sensible sections/chapters
   - Work on adapting the bestiary to my tweaked rules
@@ -12,40 +18,11 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <style>
-
-/**
- * Layout
- */
-html {
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 body {
   padding: 1em;
   margin: auto;
   max-width: 40em;
-}
-/**
- * Styles
- */
-body {
   font-family: serif;
-}
-h1, h2, h3, h4, h5, h6, th {
-  /* text-transform: uppercase; */
-}
-/* Anchors in headers */
-a.headerlink {
-  font-size: 0.8em;
-  color: #fff;
-  text-decoration: none;
-  font-weight: normal;
-  padding-left: .3em;
-}
-a.headerlink:hover {
-  color: #888;
 }
 /**
  * Tables
@@ -69,21 +46,7 @@ table th, table td {
   border: 1px solid #ddd;
 }
 table tr {
-  background-color: #fff;
   border-top: 1px solid #dcdcdc;
-}
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-th em {
-  font-family: Alegreya, serif;
-}
-p, blockquote, ul, ol, dl, table, pre {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-a, a:hover {
-  color: #000;
 }
 </style>
 <body>
@@ -93,7 +56,17 @@ a, a:hover {
 
   <hr>
 
-  <h2 id="saving-throws">Saving throws<a class="headerlink" href="#saving-throws" title="Permanent link">&para;</a></h2>
+  <h2 id="initiative-and-turns">Initiative and turns</h2>
+  <p>There are many ways to handle the sequence of turns in combat.  Here are a few simple options that should work with this system:</p>
+  <ol>
+    <li>Natural initiative:  Each combatant declares their actions for this Moment, and the GM adjudicates their resolution in a logical order.  When the order is unclear, call for a DEX test.</li>
+    <li>Dexterity test:  When combat breaks out, each PC makes a DEX test.  Those who succeed act before the NPCs; those who fail act afterward.  Within a group, they decide their order of actions amongst themselves.  These groups might remain fixed for that combat, or you might call for initiative to be rerolled at the beginning of each round.</li>
+    <li>Side initiative: Play alternates between all PCs as a group and all NPCs as a group.  If it isn’t clear from circumstances which side should go first, one player and the GM each roll a die; highest roll goes first.</li>
+    <li>Seat order: Choose someone to go first; this may be the player whose character has the highest DEX, or the player sitting to the left of the GM, or the player who rolls highest on a d20, etc.  After that player’s turn, play proceeds around the table clockwise until the combat ends.</li>
+  </ol>
+  <p>I personally prefer option 1, as it provides the most realism and flexibility with the least rules, but it probably only works for small parties.  Keeping track of declared actions and deciding on the logical sequence becomes increasingly difficult as the number of combatants increases.  For large parties, the other options are probably easier.  (Option 2 was the system used in TBH, and is thus the most “native” to this ruleset.)</p>
+
+  <h2 id="saving-throws">Saving throws</h2>
   <p>Sometimes, a player must roll a test to resist or avoid a spell, trap, or other effect.  Using the table below as a guide.  Remember the advice in the <strong>Powerful Opponents</strong> section.</p>
   <table>
     <tbody>
@@ -125,10 +98,10 @@ a, a:hover {
   </table>
   <p>If a spell from a traditional OSR or original era game calls for the target of a player’s spell to make a save, the caster must test their INT or WIS to see if the magic cast was powerful enough to overcome their defences (remember the <strong>Powerful Opponents</strong> rule).</p>
 
-  <h2 id="nonhuman-ancestries">Nonhuman ancestries for player characters<a class="headerlink" href="#nonhuman-ancestries" title="Permanent link">&para;</a></h2>
+  <h2 id="nonhuman-ancestries">Nonhuman ancestries for player characters</h2>
   <p>These are solely at your discretion.  My thoughts here are that to qualify for a nonhuman ancestry, a character must satisfy certain restrictions on stats: for example, a dwarf might have to have a CON score higher than their CHA, while an elf would need DEX higher than CON, and a hobbit might need DEX higher than STR.  Look for (and instruct the players to look for) situations where such an ancestry would suggest Advantage or Disadvantage on a test.</p>
 
-  <h2 id="monster-level">Monster level<a class="headerlink" href="#monster-level" title="Permanent link">&para;</a></h2>
+  <h2 id="monster-level">Monster level</h2>
   <p>A monster’s level determines the number of d8 rolled for its hit points (or take the average, level × 4.5) and the dice rolled for damage when it hits with an attack (or use the average, roughly equal to the level).  See also <strong>Powerful Opponents</strong>.</p>
   <p>(If you are running from a classic module, you can probably use the hp and damage listed there instead if you wish.)</p>
   <!-- TODO: Originally, I was just deciding on damage dice by doubling the level to get the number of faces.  However, that causes the averages to slowly creep up faster than the levels.  Perhaps instead make the average equal the level?  This doesn’t change anything until level 6, which should probably be made into just d12.  The 2d6 should be bumped up to level 7, etc.  Also, continue to seek more dice combinations to provide further options. -->
@@ -214,10 +187,10 @@ a, a:hover {
     </tbody>
   </table>
 
-  <h2 id="random-encounters">Random encounters<a class="headerlink" href="#random-encounters" title="Permanent link">&para;</a></h2>
+  <h2 id="random-encounters">Random encounters</h2>
   <p>The GM should roll a d4 every 15 minutes of real world play (you <em>are</em> paying attention, right?) A result of 1-2 means the players will encounter a randomly generated creature or distraction in the following minutes.</p>
 
-  <h2 id="creature-reactions">Creature reactions<a class="headerlink" href="#creature-reactions" title="Permanent link">&para;</a></h2>
+  <h2 id="creature-reactions">Creature reactions</h2>
   <p>Some monsters and NPCs will have predetermined personalities and goals that will guide a GM when choosing their actions and feelings towards the characters. Those that do not, such as randomly encountered creatures, make a <strong>Reaction roll</strong> on the following table:</p>
   <table>
     <thead>
@@ -262,7 +235,7 @@ a, a:hover {
     </tbody>
   </table>
 
-  <h2 id="magic-items">Magic items<a class="headerlink" href="#magic-items" title="Permanent link">&para;</a></h2>
+  <h2 id="magic-items">Magic items</h2>
   <p>If a magic weapon lists a bonus, characters apply that bonus to their attack and damage rolls using that weapon.  If a magic armor lists a bonus, characters apply that bonus to their defense rolls while wearing that armor.  Many weapons and armors require a certain minimum Hit Die size to be used.</p>
   <!-- NB: This section was almost entirely rewritten.  I’m using HD as a proxy for combat skill, to avoid having to include detailed lists of which weapons and armors can be used by each class.  For normal equipment, it generally doesn’t matter; for magic items, if it does matter, they can specify how “martial” a character needs to be using this value. -->
 
@@ -484,11 +457,11 @@ a, a:hover {
 
 
 
-<section><h1 id="additional-things">Additional Things<a class="headerlink" href="#additional-things" title="Permanent link">&para;</a></h1>
-  <h2 id="luck">Luck<a class="headerlink" href="#luck" title="Permanent link">&para;</a></h2>
+<section><h1 id="additional-things">Additional Things</h1>
+  <h2 id="luck">Luck</h2>
   <p>Each character is created with one point of Luck - they can trade this in at any time and get a re-roll on any one die, or create one fact of story fiction that does not invoke direct mechanical benefits. The only way to get more is to be awarded them by the GM - I give them out to my players when they mess up really badly. Karma.</p>
   <p><em>You already know whether you like Luck systems or not, and this one’s nothing crazy or innovative.</em></p>
-  <h2 id="failing-forward">Failing forward<a class="headerlink" href="#failing-forward" title="Permanent link">&para;</a></h2>
+  <h2 id="failing-forward">Failing forward</h2>
   <p>If a player fails a roll and a GM suggests it, they may treat the outcome of that action as a success - but they must accept a cost or penalty from the list below, chosen and adapted to fit the narrative by the GM.</p>
   <table>
     <thead>
@@ -521,16 +494,16 @@ a, a:hover {
     </tbody>
   </table>
   <p><em>Some people scorn failing forward, I find myself using it when I’m looking to engage a story focused player or when i’m feeling generous and the situation is dire - so some mechanical hooks are useful things to have worked up in advance.</em></p>
-  <h2 id="paralysed">Paralysed<a class="headerlink" href="#paralysed" title="Permanent link">&para;</a></h2>
+  <h2 id="paralysed">Paralysed</h2>
   <p>Some monsters in the main rulebook will cause PCs to become Paralysed. Whilst Paralysed a character cannot move, talk or take any actions. At the start of their turn a character can make a CON test, If successful they are no-longer Paralysed and can continue the rest of their turn.</p>
   <p><em>I cut this from the rules for space reasons, it seemed like a GM would be able to come up with something with the implied “status effect”, plus a Clerics advantage on CON tests. You can use the same approach to model lots of impairing effects, Poison, Fire, Insanity, Blindness etc - just vary up the associated attributes.</em></p>
-  <h2 id="random-encounters">Random encounters<a class="headerlink" href="#random-encounters" title="Permanent link">&para;</a></h2>
+  <h2 id="random-encounters">Random encounters</h2>
   <p>An alternative method of checking for random encounters is to roll a d4 every time the players make a loud noise or stay in a potentially dangerous area longer than 5 minutes. Results of 1 indicate a random encounter.</p>
   <p><em>Not everyone likes or can remember to roll a dice every 15 minutes, this offers a much less regimented approach - giving back the GM some control.</em></p>
-  <h2 id="morale">Morale<a class="headerlink" href="#morale" title="Permanent link">&para;</a></h2>
+  <h2 id="morale">Morale</h2>
   <p>If the number of opponents engaged in combat with the players drops by 50% they are “broken” and a Reaction roll should be made to determine their new attitude.</p>
   <p>If a character can make a successful CHA test the broken opponents will attempt to flee the combat as quickly as possible. If they have a leader fighting amongst them, the CHA test is taken with Disadvantage.</p>
   <p><em>This is a very “wargamey” feeling rule, which will add an interesting tactical element to combats, if you’re so inclined. And remember if the new reaction roll is favourable, yet the NPCs were trying to kill the players a moment before - its no hard stretch to imagine that they are now grovelling for their lives! All of this should be used as a guide, its recommended a GM should exercise their “narrative common sense”.</em></p>
-  <h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+  <h2 id="faq">FAQ</h2>
   <p><strong><em>If a PC summons a creature, and I want the player to roll attacks/defenses for the creature, should it use one of the PCs stats, or should it have its own statline and HD?</em></strong></p>
   <p>I would have the PC test their relevant stat - especially for “throwaway” summoned creatures. Perhaps if it was a more regular cast member (like a certain dark elf’s panther pet) I’d give it HD and a single line special ability that fits it narratively.</p>

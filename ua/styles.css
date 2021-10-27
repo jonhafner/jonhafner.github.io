@@ -1,0 +1,47 @@
+html {
+  margin: 0 0.5ex 1em;
+}
+
+body {
+  font-family: serif;
+  font-size: 100%;
+  margin: auto;
+  max-width: 70ex;
+  padding: 1em;
+}
+
+details {
+  background-color: #ddd;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  padding: 5px;
+}
+
+summary { font-weight: bold }
+
+dt { font-weight: bold }
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.25em 1em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  border-top: 0.15em solid gray;
+  border-bottom: 0.15em solid gray;
+}
+
+td {
+  border-top: 0.1em solid gray;
+  border-bottom: 0.1em solid gray;
+}
+
+footer { font-size: small; }
+
+.centered { text-align: center; }

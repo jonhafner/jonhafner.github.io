@@ -1,3 +1,14 @@
+<!--
+  v0.1 - last modification date 2021-01-08
+  v0.2 - 2021-08-05 to 2021-08-09(or later? TODO)
+    - Fix assorted minor typos and other language mechanics issues
+    - Trim some useless CSS, and also eliminate the anchors in headers
+    - Add several ideas to comments for possible follow-up
+    - Creating a Character / Roll stats: Add the option to swap two scores (I thought this was a new thought, but it's actually restored from TBH after apparently having been cut in my first draft!)
+    - Creating a Character / Optional: choose an ancestry: Add a qualifying phrase about suiting the setting, to give GMs more power to exclude ancestries that don't fit
+    - Initiative and turns: Move the discussion of initiative to the GM document to allow for other possibilities
+    - Wizard: Add a note that you might find additional spells during the game, rather than implying that what you start with and what you get through advancement are all you'll ever have
+-->
 <html>
 <head>
   <title>Minimalist FRPG</title>
@@ -5,40 +16,11 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <style>
-
-/**
- * Layout
- */
-html {
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 body {
   padding: 1em;
   margin: auto;
   max-width: 40em;
-}
-/**
- * Styles
- */
-body {
   font-family: serif;
-}
-h1, h2, h3, h4, h5, h6, th {
-  /* text-transform: uppercase; */
-}
-/* Anchors in headers */
-a.headerlink {
-  font-size: 0.8em;
-  color: #fff;
-  text-decoration: none;
-  font-weight: normal;
-  padding-left: .3em;
-}
-a.headerlink:hover {
-  color: #888;
 }
 /**
  * Tables
@@ -62,25 +44,7 @@ table th, table td {
   border: 1px solid #ddd;
 }
 table tr {
-  background-color: #fff;
   border-top: 1px solid #dcdcdc;
-}
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-th em {
-  font-family: Alegreya, serif;
-}
-p, blockquote, ul, ol, dl, table, pre {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-a, a:hover {
-  color: #000;
-}
-footer {
-  font-size: small;
-  border-top: 1px solid #444;
 }
 </style>
 <body>
@@ -91,37 +55,37 @@ footer {
 
   <hr>
 
-  <h2 id="the-core-mechanic">The core mechanic<a class="headerlink" href="#the-core-mechanic" title="Permanent link">&para;</a></h2>
+  <h2 id="the-core-mechanic">The core mechanic</h2>
   <p>When you attempt something that has a chance to either succeed or fail, you test an appropriate stat.  To test a stat, you roll a d20; you succeed if you roll <strong><em>below</em></strong> your score.  If the roll equals or exceeds your score, you fail.</p>
+  <!-- Maybe consider allowing a roll equal to your score be a partial success, success at a cost, or failure with consolation, at your GM's discretion, assuming such a thing makes sense for the roll? -->
   <p>GMs don’t usually make tests; e.g., if a monster attacks you, the GM doesn’t roll to attack, but you instead make a test to try to avoid the attack.  The GM might roll for other purposes, such as damage.</p>
 
-    <h3 id="powerful-opponents">Powerful opponents<a class="headerlink" href="#powerful-opponents" title="Permanent link">&para;</a></h3>
+    <h3 id="powerful-opponents">Powerful opponents</h3>
     <p>When you make a test for a conflict between you and an NPC, adjust the roll by the difference between your levels.  (Ask your GM if they forget to mention the levels of your adversaries.)  Examples: If you are level 3 and defending against a level 5 monster’s attack, you would add a +2 penalty to your roll; when attacking a level 2 monster, you would apply a –1 bonus to your roll.</p>
 
-    <h3 id="advantage-disadvantage">Advantage &amp; Disadvantage<a class="headerlink" href="#advantage-disadvantage" title="Permanent link">&para;</a></h3>
+    <h3 id="advantage-disadvantage">Advantage &amp; Disadvantage</h3>
     <p>A GM may decide that a particular task or course of action has a higher or lower chance of success.  They may ask you to roll an additional d20 when making a test: with <strong>Advantage</strong>, the lower (better) result is used, and with <strong>Disadvantage</strong>, the higher (worse).</p>
 
-  <h2 id="creating-a-character">Creating a character<a class="headerlink" href="#creating-a-character" title="Permanent link">&para;</a></h2>
+  <h2 id="creating-a-character">Creating a character</h2>
   <p>Perform the following steps and record the results on a character sheet.  If your GM is running a “funnel”, go through this process once for each character you are instructed to create.</p>
 
-    <h3 id="roll-stats">Roll stats<a class="headerlink" href="#roll-stats" title="Permanent link">&para;</a></h3>
-    <p>The <strong>Stats</strong> are <strong>Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA)</strong>.  To generate your scores, roll 3d6 six times, recording each total for the corresponding stat, in order.</p>
+    <h3 id="roll-stats">Roll stats</h3>
+    <p>The <strong>Stats</strong> are <strong>Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), and Charisma (CHA)</strong>.  To generate your scores, roll 3d6 six times, recording each total for the corresponding stat, in order.  Unless your GM is running a “funnel”, you may swap two scores if you wish, though you are encouraged to take them as rolled.</p>
 
-    <h3 id="choose-a-class">Choose a class<a class="headerlink" href="#choose-a-class" title="Permanent link">&para;</a></h3>
+    <h3 id="choose-a-class">Choose a class</h3>
     <p>The four standard options are Warrior, Rogue, Cleric, and Wizard; these are described below.  Your class determines how much damage you do, your hit points (roll your Hit Die), and your unique abilities.</p>
-    <p>This assumes you are starting at 1st level, so you should also follow the rules for checking stats for improvement upon gaining your first level.  If your GM has you starting with zero-level characters, you have no class, 1 hit point, and deal 1d4 damage.)</p>
+    <p>This assumes you are starting at 1st level, so you should also follow the rules for checking stats for improvement upon gaining your first level.  If your GM has you starting with zero-level characters, you have no class, 1 hit point, and deal 1d4 damage.</p>
 
-    <h3 id="choose-an-ancestry">Optional: Choose an ancestry<a class="headerlink" href="#choose-an-ancestry" title="Permanent link">&para;</a></h3>
-    <p>Player characters are assumed to be human by default.  The GM may allow you to play a nonhuman character if you wish, assuming your stats meet appropriate requirements.  Typically, the primary game effect of a nonhuman ancestry is gaining Advantage or Disadvantage on relevant rolls, at the GM’s discretion.</p>
+    <h3 id="choose-an-ancestry">Optional: Choose an ancestry</h3>
+    <p>Player characters are assumed to be human by default.  The GM may allow you to play a nonhuman character, assuming it suits the setting and your stats meet appropriate requirements.  Typically, the primary game effect of a nonhuman ancestry is gaining Advantage or Disadvantage on relevant rolls, at the GM’s discretion.</p>
 
-    <h3 id="choose-equipment">Choose equipment<a class="headerlink" href="#choose-equipment" title="Permanent link">&para;</a></h3>
+    <h3 id="choose-equipment">Choose equipment</h3>
     <p>You begin play with a set of clothes, standard adventuring gear, and weapons, armor, and other equipment appropriate for your class.  Decide on your character’s particular preferences.  (Your choices of equipment are mostly aesthetic; the damage dealt by your weapon and absorbed by your armor is determined by your class’s Hit Die.)</p>
 
-  <h2 id="initiative-and-turns">Initiative and turns<a class="headerlink" href="#initiative-and-turns" title="Permanent link">&para;</a></h2>
-  <p>When combat breaks out, everyone must be sorted so you each get to act and react in turn.  If you succeed on a DEX test, you act before your opponents.  If multiple players succeed, you decide your order of actions among yourselves as a group.  If you fail your DEX test, you go after your opponents, again as a group.</p>
-  <p>During your turn, you may move and perform an action.  You might attack, look for a clue, talk with an NPC, cast a spell … interacting with the world is an action.  Often you will test your stats to determine the outcome.</p>
+  <h2 id="initiative-and-turns">Initiative and turns</h2>
+  <p>Your GM will tell you which method they use for determining what order everyone acts in.  During your turn, you may move and perform an action.  You might attack, look for a clue, talk with an NPC, cast a spell … interacting with the world is an action.  Often you will test your stats to determine the outcome.</p>
 
-  <h2 id="movement-distance">Movement and distance<a class="headerlink" href="#movement-distance" title="Permanent link">&para;</a></h2>
+  <h2 id="movement-distance">Movement and distance</h2>
   <p>Rather than track precise numbers, we use four abstract ranges for measuring distances: <strong>Close</strong>, <strong>Nearby</strong>, <strong>Far Away</strong>, and <strong>Distant</strong>.  On your turn, you can move somewhere Nearby as part of an action, performing that action at any stage of the move.  You can forgo your action and move somewhere Far Away instead.  Anything beyond Far Away can be classified as Distant and would take three moves to get to.</p>
   <p>This system is designed to support the narrative ‘theatre of the mind’ style of play, and is less concerned about tracking squares and fiddly distances.  For converting existing movement rates or measures (for spells or areas of effect) use the following as a rough guide:</p>
   <table>
@@ -145,36 +109,35 @@ footer {
     </tbody>
   </table>
 
-    <h3 id="blocking">Blocking<a class="headerlink" href="#blocking" title="Permanent link">&para;</a></h3>
+    <h3 id="blocking">Blocking</h3>
     <p>Once per turn, when an NPC makes a move that will take them Close to an ally of yours who is Nearby to you, you may move to block the path of the NPC, assuming you have not yet used your movement this round.  This action stops the NPC from engaging your ally, though you are likely to be the target of the NPC you blocked.</p>
 
-    <h3 id="encumbrance">Encumbrance<a class="headerlink" href="#encumbrance" title="Permanent link">&para;</a></h3>
+    <h3 id="encumbrance">Encumbrance</h3>
     <p>If the total weight or bulk of items you are carrying is excessive for your STR, you are “encumbered”: all your physical tests are made with Disadvantage, and in a single turn, you can only move as far as somewhere Nearby.  If it is unclear whether your current load should leave you overburdened, the GM may call for a STR test.</p>
 
-  <h2 id="attacking-defending-damage">Attacking, defending, and damage<a class="headerlink" href="#attacking-defending-damage" title="Permanent link">&para;</a></h2>
+  <h2 id="attacking-defending-damage">Attacking, defending, and damage</h2>
   <p>When you attack a creature, you must roll below your STR stat for a <strong>Melee Attack</strong> or DEX for a <strong>Ranged Attack</strong>.  Likewise, when a creature attacks, you must roll below your STR against a Melee Attack or DEX against a Ranged Attack to avoid taking damage.  Your GM will often give the stat required for the test.</p>
-  <p>The damage your attack deals is based on your Hit Die.  If attacking with a normal weapon appropriate for your class, you roll your Hit Die for damage.  If attacking with an improvised weapon or one you are untrained in, you roll the next smaller die type.  If you are unarmed, you used the next die below that.</p>
-  <p>To make a Melee Attack an opponent must be Close.  Ranged Attacks against Close opponents are possible, but the attacker suffers Disadvantage.  (Ranged Attacks against Distant opponents also suffer Disadvantage.)</p>
+  <p>The damage your attack deals is based on your Hit Die.  If attacking with a normal weapon appropriate for your class, you roll your Hit Die for damage.  If attacking with an improvised weapon or one you are untrained in, you roll the next smaller die type.  If you are unarmed, you use the next die below that.</p>
+  <p>To make a Melee Attack an opponent must be Close.  Ranged Attacks against Close opponents are possible, but the attacker suffers Disadvantage.  Ranged Attacks against Distant opponents also suffer Disadvantage.</p>
 
-    <h3 id="critical-damage">Critical damage<a class="headerlink" href="#critical-damage" title="Permanent link">&para;</a></h3>
+    <h3 id="critical-damage">Critical damage</h3>
     <p>If you roll a 1 on an attack, you roll double the usual number of damage dice.  If you roll a 20 when avoiding an attack, you take double damage.</p>
-    <!-- TODO: Is this natural, or does it include modifiers from the Powerful Opponents rule? -->
 
-    <h3 id="death-dying">Death and dying<a class="headerlink" href="#death-dying" title="Permanent link">&para;</a></h3>
-    <p>When you are reduced to zero <strong>hit points (hp)</strong> you are <strong>incapacitated</strong>, unable to take actions.  Any surplus damage you suffer is applied as temporary damage to your CON score.  When the fight is over and/or you are out of danger, you make a CON test (using your current score, including any damage).  If you succeed, you regain 1d4 hp.  (CON damage will heal at the rate of one point per night’s rest.)  If you fail, you are dead.</p>
+    <h3 id="death-dying">Death and dying</h3>
+    <p>When you are reduced to zero <strong>hit points (hp)</strong> you are <strong>incapacitated</strong>, unable to take actions.  Any surplus damage you suffer is applied as temporary damage to your CON score.  When the fight is over and/or you are out of danger, you make a CON test (using your current score, including any damage).  If you succeed, you regain 1d4 hp; if you fail, you die.  (CON damage will heal at the rate of one point per night’s rest.)</p>
 
-    <h3 id="healing">Healing<a class="headerlink" href="#healing" title="Permanent link">&para;</a></h3>
-    <p>You can gain hit points from spells, potions, and abilities.  You can never gain more than their maximum.  (Temporary hit points are a separate pool.)  You also never have “negative” hit points, even when damage rolls over to your CON; if you receive healing while incapacitated, you simply receive that many hit points, starting at zero and counting up.  This does not impact any CON damage you may have suffered.  With a positive hit point total, you are now able to take actions normally.</p>
+    <h3 id="healing">Healing</h3>
+    <p>You can gain hit points from spells, potions, and abilities.  You can never gain more than your maximum.  (Temporary hit points are a separate pool.)  You also never have “negative” hit points, even when damage rolls over to your CON; if you receive healing while incapacitated, you simply receive that many hit points, starting at zero and counting up.  This does not impact any CON damage you may have suffered.  With a positive hit point total, you are now able to take actions normally.</p>
 
-    <h3 id="resting">Resting<a class="headerlink" href="#resting" title="Permanent link">&para;</a></h3>
-    <p>Once per day, after resting for about an hour, you may roll a Hit Die associated with your class and regain that many hit points.</p>
+    <h3 id="resting">Resting</h3>
+    <p>Once per day, after resting for several hours, you may roll a Hit Die associated with your class and regain that many hit points.</p>
 
-  <h2 id="experience">Experience and advancement<a class="headerlink" href="#experience" title="Permanent link">&para;</a></h2>
+  <h2 id="experience">Experience and advancement</h2>
   <p>Adventurers learn through defeating and overcoming obstacles.  Killing one boring Kobold won’t bring a revelation of learning to someone.  Surviving a dungeon, completing a quest, or simply living to tell the tale are the things that bring perspective and growth.</p>
   <p>The GM decides the pace of advancement, typically based on characters surviving milestones.  Common milestones may include play sessions, dungeon levels, quests, or major events, but each GM has their own style.  Feel free to ask what your “goalposts” are.</p>
   <p>When you level up, your maximum Hit Points increase by an amount rolled on the Hit Die for your class.  Also, you should roll a d20 for each Stat in turn; if the result is higher than your score, that Stat increases by 1.</p>
 
-  <h2 id="usage-dice">Usage dice<a class="headerlink" href="#usage-dice" title="Permanent link">&para;</a></h2>
+  <h2 id="usage-dice">Usage dice</h2>
   <p>Some items have an associated <strong>usage die</strong>; these are consumable, limited resources.  After that item is used, roll its usage die.  If the roll is a 1, then the usage die is downgraded to the next lower die in the following chain:</p>
   <p><strong>d20 &gt; d12 &gt; d10 &gt; d8 &gt; d6 &gt; d4</strong></p>
   <p>When you roll a 1 on a d4, the item is expended and you have no more of it left.</p>
@@ -191,20 +154,20 @@ footer {
 
   <hr>
 
-  <h2 id="warrior">Warrior<a class="headerlink" href="#warrior" title="Permanent link">&para;</a></h2>
+  <h2 id="warrior">Warrior</h2>
   <p><strong>Hit Die:</strong> d10</p>
   <p><strong>Multiattack:</strong> When you use your action to attack, you can make one attack per level.</p>
   <p><strong>Athlete:</strong> Roll with Advantage when testing STR for a feat of brute strength: lifting, jumping, breaking down a door, etc.</p>
   <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for STR and CON.</p>
 
-  <h2 id="rogue">Rogue<a class="headerlink" href="#rogue" title="Permanent link">&para;</a></h2>
+  <h2 id="rogue">Rogue</h2>
   <p><strong>Hit Die:</strong> d6</p>
   <p><strong>Sneak attack:</strong> When attacking unseen (such as from behind or from hiding), roll with Advantage.  On a hit, deal an extra die of damage, plus your level.</p>
   <p><strong>Thievery:</strong> Roll with Advantage when performing delicate tasks, climbing, listening, moving stealthily, and opening locks.</p>
   <p><strong>Evasion:</strong> Roll with Advantage when testing DEX to adoid damage or effects from traps and magical devices.</p>
   <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for DEX.</p>
 
-  <h2 id="cleric">Cleric<a class="headerlink" href="#cleric" title="Permanent link">&para;</a></h2>
+  <h2 id="cleric">Cleric</h2>
   <p><strong>Hit Die:</strong> d8</p>
   <p><strong>Banish undead:</strong> You can spend an action to attempt to banish all Nearby undead.  Test your WIS for each target, adding the target’s level to the roll.  Banished creatures must spend all their movement (and convert actions to movement) to move away from you for 2d4 rounds.</p>
   <p><strong>Resilience:</strong> Roll with Advantage when testing CON to avoid damage from poison or being paralyzed.</p>
@@ -212,30 +175,31 @@ footer {
   <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for WIS.</p>
 
   <!-- TODO: This class was originally called "Conjurer".  When I get enough spells, perhaps create separate lists for the different specializations? -->
-  <h2 id="wizard">Wizard<a class="headerlink" href="#wizard" title="Permanent link">&para;</a></h2>
+  <h2 id="wizard">Wizard</h2>
   <p><strong>Hit Die:</strong> d4</p>
   <p><strong>Arcanist:</strong> Roll with Advantage when testing INT to avoid damage or effects from spells or magical devices.</p>
-  <p><strong>Spellcasting:</strong> You can cast Arcane Spells; see the Spellcasting section.  You begin play with a spellbook containing 1d4+2 Level 1 spells.  You can cast any spell you know by reading from your spellbook; you can also memorize a number of spells equal to your level and cast those without consulting your spellbook.</p>
+  <!-- TODO: Consider changing the number of spells in your spellbook to be, say, INT/3 rounded down? -->
+  <p><strong>Spellcasting:</strong> You can cast Arcane Spells; see the Spellcasting section.  You begin play with a spellbook containing 1d4+2 Level I spells.  You can cast any spell you know by reading from your spellbook; you can also memorize a number of spells equal to your level and cast those without consulting your spellbook.  You might find additional spells during the game.</p>
   <p><strong>Leveling up:</strong> When rolling to see if attributes increase, roll twice for INT.  Also, you automatically learn one new spell of a level you can cast, which you can scribe into your spellbook.</p>
 
-  <!-- TODO: The stats covered leave an obvious gap for a bard!  :O -->
+  <!-- TODO: The stats covered leave an obvious gap for a bard!  :O  (Update: Or sorcerer, or paladin, or....) -->
 
   <hr>
 
-  <h2 id="spellcasting">Spellcasting<a class="headerlink" href="#spellcasting" title="Permanent link">&para;</a></h2>
+  <h2 id="spellcasting">Spellcasting</h2>
   <p>If you are a cleric or wizard, you have the ability to cast spells that are chosen from your class list (below).  At 1st level, you can only cast Level I spells; at every odd level, you gain access to the next level: Level II at 3rd, Level III at 5th, etc.</p>
-  <p>Spells are not guaranteed to work: when you attempt to cast a spell, you must test your primary spellcasting stat (WIS for clerics, INT for wizards).  If you fail, the spell fizzles and has no effect.  Even if you succeed, if you did so by a narrow margin, the GM may rule that the spell is less effective than usual.  On the other hand, succeeding by a very large margin may indicate improved performance, with a 1 resulting in a critical success.  A 20, however, indicates a misfire!  The spell goes terribly wrong somehow.</p>
+  <p>Spells are not guaranteed to work: when you attempt to cast a spell, you must test your primary spellcasting stat (WIS for clerics, INT for wizards).  If you fail, the spell fizzles and has no effect.  A 1 results in a critical success, but a 20 indicates a misfire!  The spell goes terribly wrong somehow.</p>
   <p>Spellcasting drains a wizard’s energy and strains a cleric’s relationship with their patron.  After each spellcasting attempt you make, whether you succeed or fail, you adds the spell’s level to a running tally of spells cast that day.  You can comfortably cast a number of spell levels equal to your class level; anything beyond that imposes a cumulative penalty to future spellcasting checks.  After roughly eight hours of rest, you are refreshed, the tally is reset, and accumulated penalties are cleared.</p>
-  <p>
-    At your GM’s discretion, you might attempt other magical effects beyond the spells you know by rote.  These should be consistent with your spellcasting style, and your GM is the final arbiter of what is possible and the effective spell level.  Particularly minor spells might be classified as “Level Zero”: they still require a check to cast, but they do not count toward your daily limits or penalties.
-  </p>
+  <!-- TODO: Consider adding a paragraph like this.  If I do, I'll probably need to cut the idea of a wizard having a certain number of spells known and memorized.
+    <p>At your GM’s discretion, you might attempt other magical effects beyond the spells you know by rote.  These should be consistent with your spellcasting style, and your GM is the final arbiter of what is possible and the effective spell level.  Particularly minor spells might be classified as “Level Zero”: they still require a check to cast, but they do not count toward your daily limits or penalties.</p>
+  -->
 
   <!-- TODO: Edit the following spells, which have not yet been touched from TBH.
   Consider moving toward a more focused yet freeform system, where rather than “cleric” or “wizard” you might be a “warpriest” or “necromancer”.  Spells can be given as examples, but you don’t have to worry about how many you “know”, and improvisation is expected.
   A possible mechanic to include in an improvised spellcasting system: Perhaps the number of dice used for damage and healing and the like are based on the spell level, while the type of dice is the complement of your Hit Dice?  Like, the better you are in physical combat, the lower your magic power.  So then a wizard would actually default to using d10s for spellcasting purposes, while a cleric would use only d6s.  A hypothetical sorcerer or priest (or bard?) with d6 HD would use d8s for spell effects.
   -->
 
-  <h2 id="divine-spells">Divine spells<a class="headerlink" href="#divine-spells" title="Permanent link">&para;</a></h2>
+  <h2 id="divine-spells">Divine spells</h2>
   <h3>Level I</h3>
   <ul>
     <li><strong>Cure Light Wounds :</strong> Heal 1d8 hp to a Nearby target.</li>
@@ -297,7 +261,7 @@ footer {
     <li><strong>Restoration :</strong> Returns all levels lost to monsters with level drain.</li>
   </ul>
 
-  <h2 id="arcane-spells">Arcane spells<a class="headerlink" href="#arcane-spells" title="Permanent link">&para;</a></h2>
+  <h2 id="arcane-spells">Arcane spells</h2>
   <h3>Level I</h3>
   <ul>
     <li><strong>Charm :</strong> A Nearby target obeys commands. Test WIS each turn to see if the effect lasts.</li>
