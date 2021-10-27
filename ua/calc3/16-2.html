@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 16.2</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 16.2: Line Integrals</h2>
+<p>
+  There are some new concepts here, but the calculation is actually much more straightforward than it might appear at first glance.  You will usually be supplied with a parametric description of a path; in particularly simple cases, such as a line segment or an arc of a circle, you may need to construct a parametrization yourself using the techniques of § 12.5 and/or Chapter 13.  In any case, once you have a parametrization, you need only express everything in terms of the parameter and integrate.  Especially if you have good habits with handling differentials, the notation basically takes care of itself.  (If you <em>don’t</em> have good notational habits, start being more careful about that—better late than never!)
+</p>
+
+<h3>Line integrals of scalar fields</h3>
+<p>
+  The first few subsections deal with line integrals of scalar fields—i.e., real-valued functions.  The default is integration with respect to arc length, <i>ds</i>.  Recall from Chapter 13 that the differential arc length <i>ds</i> = |<b>r</b>′(<i>t</i>)| <i>dt</i>, which can be expanded to various radical expressions.
+</p>
+<p>
+  If the integrand is simply 1, you have the arc length calculation from Chapter 13.  As long as the integrand is nonnegative, we have several options for interpretation: If it’s a height (<i>z</i>-value), the integral represents an area of a particular sheet, as illustrated in Figure 2.  If the function is the linear mass density of a wire, the integral along the curve describing the wire represents total mass; see Example 3 and Figure 6.
+  I work through a quick example in “§ 16.2a: Exercise #2” (<a href="https://www.youtube.com/watch?v=mK-hofKYlEk">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1a8a5e36-26f6-4cf6-b7c9-ac8300f3b974">Panopto</a>).
+</p>
+<p>
+  Integrals with respect to a particular variable are slightly harder to conceptualize, but somewhat easier to evaluate, since instead of the relatively complex <i>ds</i>, you have a much simpler differential like <i>dx</i>, <i>dy</i>, or <i>dz</i>.  Recall from the definition of differentials (§ 3.10) that if <i>x</i> is a function of <i>t</i>, then <i>dx</i> = <i>x′</i>(<i>t</i>) <i>dt</i>, and similarly for other variables.  The text presents messy, explicit formulae (box 7), as it tends to do, but if you’re well practiced working with differentials, you have nothing new to memorize here—just substitute everything in where it goes, as specified by the notation itself.
+  I illustrate this method of computation in “§ 16.2b: Exercise #8” (<a href="https://www.youtube.com/watch?v=8DRXGxoQrcs">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a049ce9-6742-4ef7-b0ce-ac8300f34d66">Panopto</a>).
+</p>
+
+<h3>Line integrals of vector fields</h3>
+<p>
+  There are several ways of thinking about line integrals of vector fields; before I get into the geometry and calculation, I want to address the way the textbook leans heavily on its application to computing the work done by a force, because that’s probably one of the most common applications.
+  If you have some intuition for work and force from past studies of physics, thinking of these line integrals in those terms can be helpful.
+  However, if you do not, that’s fine; this is not a physics course.
+  Feel free to gloss over discussions of work, and just take “compute the work done by this force in moving a particle along this path” to be code for “compute the line integral of this vector field along this curve”.
+</p>
+<p>
+  Now then.  We typically write line integrals of vector fields in a form like ∫<sub><small><i>C</i></small></sub> <b>F</b>⋅<i>d</i><b>r</b>.  This can be interpreted in a few different ways, each with its uses.
+</p>
+<p>
+  Definition 13 and the preceding discussion show that the integral is equal to ∫<sub><small><i>C</i></small></sub> <b>F</b>⋅<b>T</b> <i>ds</i>.
+  This is not generally useful for computation, but it does illustrate the geometric meaning of the line integral:
+  The integrand, <b>F</b>⋅<b>T</b>, is a dot product, so it’s scalar-valued; hence, this is an integral of the type we saw in the earlier portion of this section.
+  Recall that <b>T</b> is a unit vector, so <b>F</b>⋅<b>T</b> is the component of <b>F</b> in the direction of <b>T</b>.
+  (If needed, review projections from § 12.3.)
+  Furthermore, since <b>T</b> is tangent to the curve and points in the direction of movement, this expression tells us the portion of <b>F</b> that points in the same direction; in a sense, it measures the degree to which <b>F</b> “agrees with” motion along the path <i>C</i>.
+  A negative value indicates that it’s pushing backwards against the motion described.
+  At each point along the curve, then, <b>F</b>⋅<b>T</b> measures how much the vector field moves with or against the curve.
+  Summing (integrating) all of these along the length (<i>ds</i>) of the curve, we get the total or net amount of this “agreement”.
+  If positive, the field points along with the path more than it points against it; if negative, the reverse.
+  If zero, these are perfectly balanced.
+</p>
+<p>
+  So that tells us what this <em>means,</em> but like I said, we don’t usually use that form for computation.
+  For that, we work from <i>d</i><b>r</b>.
+  One way to interpret this is like any other differential, so <i>d</i><b>r</b> = <b>r</b>′(<i>t</i>) <i>dt</i> = ⟨<i>x′</i>(<i>t</i>), <i>y′</i>(<i>t</i>), <i>z′</i>(<i>t</i>)⟩ <i>dt</i>.
+  Alternatively, consider that <i>d</i><b>r</b> = ⟨<i>dx</i>, <i>dy</i>, <i>dz</i>⟩ = ⟨<i>x′</i>(<i>t</i>) <i>dt</i>, <i>y′</i>(<i>t</i>) <i>dt</i>, <i>z′</i>(<i>t</i>) <i>dt</i>⟩.
+  Observe that these are equal.
+  Observe also that, again, if you just use the symbols and evaluate the expressions and differentials as stated, writing everything in terms of the parameter <i>t</i>, the notation takes care of things for you, and you don’t have anything to memorize!
+  On the other hand, if the expressions that fall out of this are more complex and unwieldy than you would like, you can use the “expanded” versions shown at the end of the section, <em>after</em> Example 8.
+  Some students find it much easier to separately write out and simplify <i>P</i>, <i>Q</i>, and <i>R</i>, and <i>dx</i>, <i>dy</i>, and <i>dz</i>, then combine them together afterward to integrate—or perhaps even integrate them separately!
+  I illustrate both bookkeeping methods in “§ 16.2c: Exercise #22” (<a href="https://www.youtube.com/watch?v=rdjLmF-MH28">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=13a7fd52-8325-48db-8c48-ac8300f2f0f8">Panopto</a>); you can decide which you prefer, or find some combination or alternate technique that works better for you.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–24, 41–43
+</p>
+<p>
+  You may also find #35–38 to be useful practice working with mass, density, and center of mass.
+</p>
+<p>
+  Remember to read the other exercises for additional applications; for example, #54 works with Ampère’s Law, addressing the magnetic field induced by an electric current.
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>
