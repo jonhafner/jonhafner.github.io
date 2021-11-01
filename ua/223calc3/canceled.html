@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 15.4</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>Special notes for Monday, November 1:</h2>
+
+<p>
+  First, to wrap up § 15.3: I said there was one more example I wanted to show, but that it wasn’t essential for our course material.  The “bell curve” of the normal distribution is an important object of study in probability and statistics.  It is a transformation of exp(−<i>x</i>²), but that function has no elementary antiderivative, complicating the computation of the area under the curve on arbitrary intervals (which is necessary for probability calculations).  Astonishingly, however, we are able to calculate its integral over all of ℝ, obtaining what might be a surprising result.  The method is quite clever and is outlined in Exercise #50; I recommend you at least read through the exercise and see if you can get the gist.  We don’t expect you to do things that challenging in this course, but if you have the time and inclination, give it a try for yourself!
+</p>
+<p>
+  Next is § 15.4.  We only cover a small portion of this section in this course, and I’ve already been laying the groundwork for part of it when I’ve talked about interpreting functions as densities of mass or charge.  This is covered in more depth here, and extended to calculations of moments and centers of mass.  You should work on this material for yourself tonight and/or tomorrow, so we can limit how much further behind we fall due to this lost class session.  To assist you in this, I’m including below a copy of the notes I posted last year when teaching this course online.
+</p>
+<p>
+  Those notes include a link to a video I recorded of working through an example.  This is far from good, but hopefully better than nothing.  (Please don’t judge me on the poor quality of the work—it was churned out at a time when I was overworked and very stressed.  Unfortunately, I don’t really have time to create a new one now and have it ready soon enough to be useful.)  If you think you might want to turn on captions, I recommend the YouTube version, so you can switch between the two sets and compare them as needed.  (For accessibility reasons, a set of captions was supplied by a transcription service; these are easier to read but often <em>less accurate</em> than the auto-generated captions supplied by YouTube.  If you go with those, but something seems strange, try the others.  I haven’t checked the captions for this video specifically, though, so use your discretion.)
+</p>
+<p>
+  I hope this covers all the essentials; let me know if you have any questions!
+</p>
+
+<hr>
+
+<h2>§ 15.4: Applications of Double Integrals</h2>
+<p>
+  First, a clarification for those of you who are confused by the terminology: a “lamina” is any plate or sheet of material that is thin enough that we can ignore its actual thickness, treating it as perfectly flat and two-dimensional for the purposes at hand.  The actual measurements involved will depend on your application and the scale at which you’re working.  Mathematically, we represent it as a region in a plane.
+</p>
+<p>
+  A few notes to help you make efficient use of the textbook:
+</p>
+
+<h3>Density and Mass</h3>
+<p>
+  Note that if density <i>ρ</i> (that’s the Greek letter rho, not the Latin p) measures mass per unit area, then when you multiply it by an area, you get a mass.  Thus, if you multiply the density at a point by a differential area, you get a differential mass: <i>ρ dA</i> = <i>dm</i>.  If you then sum (integrate) all those differential masses, you obtain the total mass over the region!  That’s basically all that’s going on here.  (Similar principles apply for other types of density, such as electric charge.)
+</p>
+
+<h3>Moments and Centers of Mass</h3>
+<p>
+  The foundations of this topic are discussed more thoroughly in § 8.3; you can follow the link in the textbook, then advance to the subsection by this name.  Questions about balance, leverage, and support often entail calculation of moments.  The text and figures in § 8.3 lay a lot of the groundwork, but once they start talking about integrals, you can stop reading there and return to the present section, whose content is more general and replaces those narrow formulae.
+</p>
+<p>
+  The general summary “moment = mass × distance” explains the forms of the moments given in this section: the moment about the <i>x</i>-axis is the distance from the <i>x</i>-axis (namely, <i>y</i>) times the mass at that point, <i>ρ dA</i>, while the moment about the <i>y</i>-axis is the distance from the <i>y</i>-axis (<i>x</i>) times the mass.  This is why the notations seem to “switch” the <i>x</i> and <i>y</i>.  If you look at the summary in box 5, you can see that the coördinates of the center of mass are basically the “weighted averages” of the <i>x</i> and <i>y</i> coördinates, respectively.
+</p>
+<p>
+  I work through an example of this type of problem in “§ 15.4: Mass and center of mass” (<a href="https://www.youtube.com/watch?v=UOmEGth7zdY">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=82fc48d5-7280-4916-b7ab-ac7500f5d854">Panopto</a>).
+</p>
+
+<h3>Other applications</h3>
+<p>
+  The remaining applications are not emphasized in this course; I’ve never seen them appear on a final exam, for instance, and I never test them myself.  However, they are useful and interesting, so I encourage you to at least skim these subsections and their corresponding exercises.  If any seem applicable to your studies or interests, give them a try.
+</p>
+<p>
+  Moments of inertia (second moments) and radii of gyration operate similarly to first moments and centers of mass, just with slightly more complicated formulae; these concepts are important in physics, and I assume also in mechanical engineering.
+</p>
+<p>
+  Probability and Expected Values are statistical concepts with myriad applications across a broad range of disciplines, as the examples and exercises might suggest.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–18
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>
