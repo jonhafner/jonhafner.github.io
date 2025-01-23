@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - Introduction to vector multiplication</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>Introduction to vector multiplication</h2>
+<p>
+  In § 12.2, we saw how to add and subtract vectors, and how to multiply them by scalars.  The natural next step is to consider whether we can multiply vectors.  And we can, but we must do so with care.
+</p>
+<p>
+  The “obvious” approach is to simply multiply componentwise; however, <a href="https://en.wikipedia.org/wiki/Hadamard_product_(matrices)">this product</a> is not preserved under certain simple actions such as rotation of the coördinate system.  It has applications in some information sciences, but it’s basically useless for most purposes in geometry, physics, and engineering.  For that reason, we won’t be using it here.
+</p>
+<p>
+  Instead, mathematicians, physicists, and engineers generally consider <em>two</em> kinds of vector products; they’re a little less obvious, but they have useful properties and physical meaning.  Most calculus texts (including ours) attempt to justify these on various grounds, but I don’t find those purported motivations to be particularly clear or convincing.  This is probably in no small part because they’re historically backward!  The motivations usually given are <em>post hoc</em> rationalizations, justifications made up after the fact.  To understand why things are done the way they are, we need a bit of historical context.
+</p>
+<p>
+  In a nutshell, vector analysis has its roots in <a href="https://en.wikipedia.org/wiki/Quaternion">quaternions</a>, a four-dimensional analog to complex numbers.  A quaternion has a one-dimensional “scalar part” (a real number) and a three-dimensional “vector part” (built out of three distinct imaginary units).  Their development was motivated by algebraic theory, but they turned out to have a great many practical applications.  Some applications require the use of quaternions proper, but most can be satisfied by splitting vectors and scalars into separate things.  This is why we’ve been able to just consider vectors in two or three dimensions without worrying about the considerably weirder quaternions.
+</p>
+<p>
+  Most properties of and operations on vectors can be intuitively obtained from the ideas we introduced in the previous section, but multiplication is less clear.  This is not surprising, since certain difficulties surrounding multiplication and division motivated the peculiar development of quaternions in the first place.  The details can be glossed over; for our purposes, it suffices to know that when you multiply two “vectors” as <em>quaternions</em>, the vector and scalar parts of the product have different structures, interpretations, and applications.  The vector part is equivalent to what we define in § 12.4 as the cross product of vectors, and the scalar part is the negative of what we call the dot product in § 12.3.
+</p>
+<p>
+  So, <em>this</em> is why the dot and cross products are defined the way they are.  As I said, the motivations supplied by the textbook are justifications made up after the fact, and are not the “true” origins of these concepts.  This won’t have much impact on our discussion of dot products, but I will be taking a somewhat different course through § 12.4, starting with the algebraic properties, then progressing to the more geometric and physical properties and applications.
+</p>
+<p>
+  [If anything here intrigues you, or you have any other questions, feel free to chat with me outside of class!]
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>
