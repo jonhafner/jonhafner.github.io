@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 12.3</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 12.3: The Dot Product</h2>
+
+<p>
+  In the previous section, we saw how we could easily add and subtract vectors geometrically or with their components.  The natural question to ask next is whether we can also multiply vectors.  The shortest answer is “Yes,” but a more accurate answer is “It’s complicated.”
+</p>
+<p>
+  From your experience with vector addition and subtraction, you might naïvely try multiplying two vectors by simply multiplying their corresponding components.  This defines something called the <a href="https://en.wikipedia.org/wiki/Hadamard_product_(matrices)">Hadamard product</a>, which certainly behaves like multiplication algebraically, but it has practically no consistent geometric or physical meaning.  For the things we do in this class, the operations we perform on vectors should not depend on our choice of coördinate system; if you shift or rotate to another system of basis vectors, you should get the same result, just in the new representation.  However, the Hadamard product <em>heavily</em> depends on the actual components used.  For example, the Hadamard product of ⟨0,1⟩ and ⟨1,0⟩ is the zero vector ⟨0,0⟩; however, if you rotate the coördinate system, you can obtain various products of assorted non-zero lengths.  (I encourage you to try this yourself.)  This is not helpful.  It has applications in data and information sciences, but not in the physical sciences and engineering as far as I can see.  Unless I have missed an obscure example somewhere, <strong>you will not use the Hadamard product in this class.</strong>
+</p>
+<p>
+  Instead, we define <em>two</em> kinds of vector multiplication that are slightly more complex.  They may seem a little strange at first, but they turn out to be extremely useful.  These operations are customarily denoted with · and ×, and so are called the “dot product” and “cross product” respectively.  The dot product yields a scalar as its result, while the cross product produces a vector, so some authors instead call these the “scalar product” and “vector product”, but I find those phrases a little too close to things like “scalar multiplication” and “product of vectors”.  I think it’s best to try to avoid possible confusion, but be aware that those terms are used in other literature.  Also, the dot product is an example of a more general type of thing called an “inner product”, so you may sometimes see that term used as well.
+</p>
+<p>
+  As the section title suggests, we begin by examining the dot product, as it is the simpler of the two; we’ll turn to the cross product in the next section.
+</p>
+
+<h3>The Dot Product of Two Vectors</h3>
+<p>
+  Read this subsection carefully, and practice doing the computations; with a little practice, you should be able to evaluate dot products pretty quickly and easily.  (You’re going to be doing a lot of them in this course, so keep practicing exercises until you can compute them smoothly.)
+</p>
+<p>
+  Theorem 2: Properties of the Dot Product points out some properties that are analogous to real-number multiplication.  The analogy isn’t perfect—for example, note the distinction between the vector zero and the scalar zero in property #5—but the similarities should help more than they hurt.  Just be careful to always think about whether each quantity you’re working with is a vector or a scalar, and handle it accordingly.  Two properties are proved for you; you may find it useful to prove the other three for yourself.
+</p>
+<p>
+  <strong>Theorem 3 is extremely important.</strong>  Copy it into your notes, draw a box around it, put it on an index card, do whatever you need to do to have it readily available, and memorize it as soon as you can.  I’m not a fan of memorization in general, but this theorem is a serious workhorse.  Read through the proof carefully; not only might it help you remember it if you know where it comes from, but the proof itself is also a good illustration of some ways we can use that list of algebraic vector properties from above.
+</p>
+<p>
+  Note that both Theorem 2 and Theorem 3 make no explicit mention of components.  They apply equally well in two, three, or even more dimensions.  Also of note is that Theorem 3 provides a completely geometric characterization of the dot product.  Indeed, some sources take this as the <em>definition</em> of the dot product, and deduce the properties and the calculation from components as consequences.  So we see that unlike the Hadamard product I mentioned in my introduction, the dot product remains unchanged if we alter our coördinate system.
+</p>
+<p>
+  Some students memorize Corollary 6, but observe that it’s just a simple rearrangement of Theorem 3, so it’s not necessary to treat it separately.  Myself, when I have to find the angle between two vectors, I start with the equation from Theorem 3, then apply the tried-and-true method of plugging in what I know and solving for what I don’t.  You can do whatever you find easiest.  You can see my approach in my video “§ 12.3a: Using the dot product to find angles” (<a href="https://www.youtube.com/watch?v=Rq8sU2RmlTU">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5b99ce92-1186-4c7f-8681-ac300108075f">Panopto</a>).
+</p>
+<p>
+  The remaining material is also important.  The statement in box 7 is an essential concept we will use frequently.
+</p>
+<p>
+  In the text at the end of this subsection, the key idea is the second sentence of that paragraph: “We can think of <b>a</b> · <b>b</b> as measuring the extent to which <b>a</b> and <b>b</b> point in the same direction.”  The rest of that paragraph and the illustration in Figure 2 should help explain a bit more of what that means.  The more two vectors “agree” or “work together”, the larger their dot product will be, up to a maximum of the product of their magnitudes.  If they “disagree” or work against each other, the dot product will be negative.  (If you’d like to play around with this, see the tool in the “Explore &amp; Test” tab of the “Explore It” in the eBook.)
+</p>
+
+<h3>Direction Angles and Direction Cosines</h3>
+<p>
+  I feel that this subsection is actually easier to understand <em>after</em> the next one; maybe skip it for now and return later, and try to think of things in terms of unit vectors and projections.  However, this isn’t a major topic, so don’t spend too much time on it.  Some of the exercises ask about these things, but you can just use the formulas and follow Example 5 and you should be fine.
+</p>
+
+<h3>Projections</h3>
+<p>
+  I think projections are much easier to conceptualize in terms of unit vectors.  You might be able to see how just from reading the text, but if not, I explain this approach and show an example in my video “§ 12.3b: Projections” (<a href="https://www.youtube.com/watch?v=IiNex5huJt4">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d1d737ae-5c19-4072-bfa5-ac3001080f0d">Panopto</a>).  You might also find it helpful to play around with the “Explore &amp; Test” tab of the “Explore It”, but I do <em>not</em> recommend watching the “Example Video” while you’re in there—the narrator uses unusual phrasing and incorrect notation.  :(
+</p>
+<p>
+  Many students find the notation used here confusing:  If it’s the projection of <b>b</b> onto <b>a</b>, why is the <b>a</b> written first?  And why is it a subscript?  And so on.  It might help to think of comp and proj as families of special functions that act on vectors.
+</p>
+<p>
+  Consider by analogy that logarithms form a family of functions, not just a single, specific function.  They all have similar properties, but to use a logarithm, you need to decide which specific logarithm you mean.  Think back to when you first studied logarithms, at the very beginning, before you learned about the common and natural logarithms.  Without those defaults, you always had to specify a base, and we do that by attaching it to the log as a subscript: log<sub>2</sub>, log<sub>10</sub>, and log<sub><i>e</i></sub>, for instance, are different functions with similar properties.  So, for example, we might write log<sub>2</sub> 5, and read that as either “the logarithm of 5 base 2”, “the base-2 logarithm of 5”, or “log-base-2 of 5”.  Note that each phrasing has a different feel and a different connotation, but they all mean the same thing.
+</p>
+<p>
+  Similarly, the scalar and vector projections are functions that take a vector and project it onto a fixed “base” or “baseline” vector.
+  A vector projection is abbreviated as proj, but which vector are you projecting onto?
+  If it’s <b>a</b>, then that’s the function proj<sub><b>a</b></sub>.
+  We normally read proj<sub><b>a</b></sub> <b>b</b> as “the projection of <b>b</b> onto <b>a</b>”, but if you really wanted, you could think of it more like “proj-onto-<b>a</b> of <b>b</b>”.
+  Then you can also project <b>c</b>, <b>d</b>, etc. onto <b>a</b> by taking proj<sub><b>a</b></sub> <b>c</b>, proj<sub><b>a</b></sub> <b>d</b>, etc.  And similarly with the scalar projection, comp.
+</p>
+
+<h3>Application: Work</h3>
+<p>
+  Again, this is not a physics class, but many of the simplest and most natural applications of this material happen to be in physics.  Work is one of these, and we will come back to it again later.  I think this is explained reasonably well in the text, and the video and written examples should illustrate the application adequately.
+</p>
+<p>
+  Since this is not a physics class, the required units will usually be made clear to you, and you can just slide them in at the end if needed, as shown in the video example.  If you are experienced with dimensional analysis, however, feel free to use that here.  Example 7 comes close to this, but it’s missing the appropriate units in one step: if using proper dimensional analysis, the first expression on the second line of calculation should read “(70 N)(100 m)cos 35°”.  But again, if you aren’t already comfortable with these techniques, do not feel any pressure to use them!  Anything you see in this class should make it clear what the units should be.
+</p>
+<p>
+  This subsection opened with the primitive high-school-physics notion of work as <i>W</i> = <i>FD</i>.  This applies in the simplest case, with one dimension of action and a constant force.  We see here how to extend this to a two- or three-dimensional setting with <i>W</i> = <b>F</b> · <b>D</b>, but that still assumes constant force.  You may have seen how to handle a variable force in a single dimension in a previous calculus class; that’s covered in Stewart in § 6.4 if you’re interested.  If the force is <i>F</i>(<i>x</i>), the work done over a differential distance <i>dx</i> is <i>F</i>(<i>x</i>) <i>dx</i>, so we need only integrate that from the beginning to ending positions.  But what do we do if we have a variable force in two or three dimensions?  Well, we’ll find out in Chapter 16, but I’ll give you a hint to look forward to: it integrates a dot product of vectors over a curved path!  :D
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–52
+</p>
+<p>
+  Not all applications of vectors are geometric or physical; #14 is a simple illustration that hints at broader uses in the information sciences.
+</p>
+<p>
+  The three exercises #61–63 state some broader principles that might be worth thinking about; the first two in particular are commonly used throughout higher analysis.  At the very least, make sure you understand #62(a)!
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>

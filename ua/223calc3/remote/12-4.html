@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 12.4</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 12.4: The Cross Product</h2>
+
+<p>
+  While the dot product of two vectors is a scalar, the cross product is another vector.  It has some very useful properties, but unfortunately, it is somewhat more complicated to compute, as we will see.
+</p>
+
+<h3>The Cross Product of Two Vectors</h3>
+<p>
+  The textbook attempts to derive the calculation of the cross product from the premise that we want it to be perpendicular to the two vectors going into it, but I don’t feel they were very successful in conveying their motivation and justification.  A clearer justification can be devised later.  So, if the beginning of this subsection is confusing, feel free to jump on ahead to box 4, with the definition of the cross product.  A couple notes:
+</p>
+<ul>
+  <li>
+    <p>
+      The form of the definition stated here is not very clear, and probably hard to memorize.  You are free to do so if you wish, but there are at least three common techniques for computing the cross product that are much easier to remember, which we’ll talk about in a moment.
+    </p>
+  </li>
+  <li>
+    <p>
+      I’ve mentioned from time to time that most of the things we do in this course are stated specifically for two- and three-dimensional cases, but they actually work in any number of dimensions.  The cross product is an exception: it <em>only</em>* exists in three dimensions!  If you try to take the cross product of two vectors in ℝ², the result will be a vector perpendicular to the plane, in ℝ³.
+    </p>
+    <p>
+      (* Almost.  I am not an algebraist, but my understanding is that there is something like the cross product in ℝ⁷, but that’s it: three dimensions and seven dimensions, and no others.  This has something to do with Hurwitz’s theorem on normed division algebras, and the properties of the quaternions and octonions.  But that won’t matter in this class, and it will probably have no practical application for the majority of you, so if you find this footnote more confusing than interesting, just forget about it!)
+    </p>
+  </li>
+</ul>
+<p>
+  The rest of this subsection describes how we can compute cross products by observing certain structural similarities to determinants of 3×3 matrices.  We imagine a “matrix” whose first row consists of the standard unit basis vectors <b>î</b>, <b>ĵ</b>, and <b>k̂</b>.  The second and third row are the components of the first and second vectors of the cross product.  Without concerning ourselves with what such a matrix or its determinant would “mean”, we formally compute the determinant; the result is the product.
+</p>
+<p>
+  It may have been a while since you studied determinants or matrices, so the textbook illustrates the method of computing a determinant by cofactor expansion.  Another common technique is sometimes known as the “Rule of Sarrus”; running that phrase through your favorite search engine should turn up countless articles and videos on the topic.  I will demonstrate both of those methods in my videos, linked below, but of course you should still study the examples in this subsection.
+</p>
+
+<h3>Properties of the Cross Product</h3>
+<p>
+  The first portion of this subsection provides a geometric characterization of the cross product, analogous to what the previous section’s Theorem 3 gave us for the dot product.  Again, the cross product is a vector, so it has both direction and magnitude.
+</p>
+<ul>
+  <li>
+    <p>
+      The direction of the cross product is given by Theorem 8 and the discussion which follows, up through Figure 1.  Together, these say that the vector <b>a</b> × <b>b</b> is orthogonal to both <b>a</b> and <b>b</b>, pointing in the direction given by the right-hand rule.  The video following this (“Properties of Cross Product”) provides a more visual demonstration.  If you can tolerate the slightly cheesy presentation, the end of the video illustrates an important point that is difficult to convey through other means, which is the connection this right-hand rule has with the action of nuts, screws, bolts, bottle caps, and other objects with right-handed threading, and with the meaning of torque.
+    </p>
+  </li>
+  <li>
+    <p>
+      The magnitude of the cross product is given by Theorem 9.  Carefully compare and contrast this with Theorem 3 for dot products from the previous section.  Note the complementary relationship: the dot product was maximized when the two vectors were parallel and zero when they were orthogonal, but the cross product is zero when the vectors are parallel and maximized when they are orthogonal.  (See also Corollary 10.)
+    </p>
+  </li>
+</ul>
+<p>
+  The text that follows this geometric characterization interprets the magnitude of the cross product of two vectors as the area of the parallelogram they define.  This is a useful rule to keep in mind; note how it is consistent with my remarks above about minimizing or maximizing its value.  I provide a simple, concrete example of this fact, and some demonstration of calculation, in my video “§ 12.4a: Area of a parallelogram” (<a href="https://www.youtube.com/watch?v=OG_i8Du-U8Y">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=06ae5321-a1b1-4d43-82e6-ac3600ed7a98">Panopto</a>).
+</p>
+<p>
+  Note that we’ve barely done anything with cross products, and we already have several applications!  We know that the cross product of two vectors is orthogonal to both of those vectors, so Example 3 shows how we can use that fact to construct a vector orthogonal to a geometric object containing three known points.  The preceding remarks in the text and my video linked above describe how we can use a cross product to find the area of a parallelogram; this also provides an easy means of calculating the area of any triangle, as demonstrated in Example 4.  Corollary 10 provides a systematic way of checking whether two vectors are parallel.  (If you have specific components given, it might be faster and easier to check whether one is a scalar multiple of the other, but that might not always be feasible in general.)
+</p>
+<p>
+  To prepare for applying cross products more broadly, we should now examine their properties more closely.  Read through the text that follows after Example 4; note that from the geometric characterization, we can easily compute cross products of the standard unit basis vectors.  (Try to visualize this with the right-hand rule, but whether you are successful or not, you might also try confirming at least some of those results by computing on their components from the definition.)  But note that, as explained, neither the commutative nor associative laws hold.  This is unfortunate, as we would expect such properties by analogy with the multiplication of real numbers, but there are several weaker properties that <em>do</em> hold, as listed in Theorem 11.  Some comments:
+</p>
+<ol>
+  <li><p>The cross product is not commutative, but <strong>anticommutative</strong>: if you reverse the order of the product, you negate the result.  (Recall the right-hand rule and the discussion in the textbook’s video.)  By the way, that last expression, −<b>b</b> × <b>a</b> … is that supposed to be (−<b>b</b>) × <b>a</b> or −(<b>b</b> × <b>a</b>)?  As it turns out, it doesn’t matter, because of the next property:</p></li>
+  <li><p>Like the dot product, the cross product has a sort of “associativity” with scalar multiplication.</p></li>
+  <li><p>The cross product is left-distributive over addition.</p></li>
+  <li><p>The cross product is right-distributive over addition.  (You usually only see a single distributive law, but that’s for commutative operations!  Since the cross product is not commutative, we have two separate distributive laws.  You can distribute from either end, but be careful to preserve the order.)</p></li>
+  <li><p>This property describes something called the “scalar triple product”; we will discuss this more in the next subsection.</p></li>
+  <li><p>This property deals with the “vector triple product”.  Do not spend much time on this right now; for our purposes, it can be thought of as a sort of technical lemma.  The textbook applies it to the derivation of Kepler’s First Law of planetary motion in the next chapter, but other than that, we don’t do much with it here.  Some of you will have use for it later in your particular studies, but if so, you should be reminded of it when it becomes relevant.</p></li>
+</ol>
+
+<h3>Interlude: Algebraic Evaluation of Cross Products</h3>
+<p>
+  Here, between two subsections, seems to be the best place to insert a point glossed over in the textbook.  As the textbook remarked in passing, physicists and engineers often take the geometric characterizations of the cross product given at the top of this subsection as the <em>definition</em> of the cross product; all the other properties, including the methods of computation from components, follow from there.  But I’m getting ahead of myself.
+</p>
+<p>
+  From the geometric description of the cross product, one can prove the first few properties in Theorem 11, which supply basic means of algebraic manipulation.  Furthermore, we can easily compute the cross products of the standard basis vectors, as was discussed.  Taken together, this means that if you express two vectors in terms of the standard basis vectors, you can evaluate their cross product purely algebraically, with no determinants required!  (This is the third of the three methods I alluded to above.)
+</p>
+<p>
+  I explain this method in <a href="algebraic-cross-product.pdf">this document (PDF)</a>.  It looks a little cumbersome at first, but that’s because I’m writing everything out explicitly.  By the end, it should seem more reasonable.  Most people (myself included) tend to prefer one of the determinant methods in most cases, but if you dislike those, try the algebraic approach.  Also, even if you do well with a determinant-based method, I encourage you to learn this method anyway, because it tends to be much more efficient when we have very few non-zero components!  For example, if you apply this algebraic method to the example in my video above (with the area of a parallelogram), you should be able to compute the cross product <em>extremely</em> quickly.  Try it and see!
+</p>
+<p>
+  Incidentally, if you apply this method in general on vectors of arbitrary unspecified components, you will find that it produces the definition given at the beginning of the subsection.  This, I feel, is a superior justification than the reasoning given in the textbook.
+</p>
+<p>
+  Now that we have all three common methods of computing cross products, a more thorough and illustrative example might be in order.  I work through such a demonstration in “§ 12.4b: Three methods for cross products” (<a href="https://www.youtube.com/watch?v=Vv9OQv4bGPI">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=16f02480-0897-413e-a261-ac3600ee1434">Panopto</a>).
+</p>
+
+<h3>Triple Products</h3>
+<p>
+  I have little to add to this subsection.  The three main things to take away are:
+</p>
+<ol>
+  <li><p>The scalar triple product can be easily and efficiently evaluated with a single determinant.</p></li>
+  <li><p>Its value is the volume of the parallelepiped defined by the vectors.</p></li>
+  <li><p>Consequently, if its value is 0, the vectors must be coplanar.</p></li>
+</ol>
+<p>
+  These facts will be useful from time to time.
+</p>
+
+<h3>Application: Torque</h3>
+<p>
+  This application might help some of you gain a more intuitive understanding of the cross product.  Alternatively, it might help others of you gain a better understanding of torque!  Compare this application to the description given earlier, in terms of the area of a parallelogram.
+</p>
+<p>
+  Given a constant magnitude of force applied at a given distance from a hinge, it should make sense that you get the most torque if you apply that force at a right angle to the radius.  As the angle of your force becomes shallower, less of that force goes toward the turning action.  In the worst case, if you are applying the force directly toward or away from the pivot point, you have no torque at all!  Also, applying the force at a greater distance from the pivot point translates into greater torque due to the mechanical advantage of the lever, gear, etc.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–20, 27–43
+</p>
+<p>
+  Computation is important, but the most valuable investment of your time might actually be in #13.  Make sure you understand that exercise in full, and let me know if you have any questions.
+</p>
+<p>
+  Exercise #53 might also be interesting and useful to consider.
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>

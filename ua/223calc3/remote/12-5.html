@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 12.5</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 12.5: Equations of Lines and Planes</h2>
+
+<p>
+  There are many applications of the ideas presented in this section, and many types of questions that can be asked about them.  I’ll work through a few examples in videos, but that’s still just plucking out a handful of special cases from a very long list of possibilities.  Even more than most topics, you’ll probably need to practice a large variety of exercises to develop the ability to tackle whatever random problems may be thrown your way.  Try to get as firm a grasp as you can on the geometric qualities of these objects, in addition to their algebraic descriptions.
+</p>
+
+<h3>Lines</h3>
+<p>
+  It is easy to describe a line in ℝ² with a single equation, but for reasons I talked about in <a href="12-1.html">my notes for § 12.1</a>, a single linear equation in three variables will instead describe a plane in ℝ³.  The easiest way to describe a line in three or more dimensions turns out to be with parametric equations.  These work much like those you studied in Calculus II, just with a <i>z</i> variable for a third dimension.  (See Chapter 10 if you’d like a refresher of the two-dimensional version.  Also note that the approach we use here will also work when reduced to ℝ².)
+</p>
+<p>
+  Read this subsection carefully, and also examine the figures closely to make sure you understand the connection between the written descriptions of vectors and the geometry in space.  The video in the eBook may also be helpful.
+</p>
+<p>
+  You don’t need to spend much time and attention on the symmetric equations (box 3) as these are rarely encountered in practice.  They show up in a small number of exercises, but you can always refer back to this section for reference if needed.  We won’t ask you about them on the final exam.
+</p>
+<p>
+  I work through some examples of working with lines in these videos:
+</p>
+<ul>
+  <li><p>“§ 12.5a: Equations for a line segment” (<a href="https://www.youtube.com/watch?v=VyLOYFOQJWw">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=64ba543c-bf26-4511-83bb-ac3900dea5a8">Panopto</a>)</p></li>
+  <li><p>“§ 12.5b: Comparing two lines” (<a href="https://www.youtube.com/watch?v=FcOwraV-F98">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4b0f4ed4-9113-45ea-897f-ac3900de4dcc">Panopto</a>)</p></li>
+</ul>
+
+<h3>Planes</h3>
+<p>
+  Also study this subsection carefully.  The vector equations in boxes 5 and 6 are the most compact and geometrically grounded expressions, but in practice, we primarily use the scalar equations given in boxes 7 and 8.  I work through an example of finding a plane in “§ 12.5c: Equation for a plane” (<a href="https://www.youtube.com/watch?v=GHXjLq3stiU">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7676e70f-75db-485e-a86a-ac3900ddf7a6">Panopto</a>).
+</p>
+<p>
+  Some of you might be interested in trying to get a bit more intuition for why the scalar equations of planes work the way they do.  We can build up to that by starting with linear equations in two dimensions and exploring their behavior.  (If this doesn’t interest you, feel free to skip it.)
+</p>
+<p>
+  First, consider the analog in ℝ², a line of the form <i>ax</i> + <i>by</i> = 0.  Note that it passes through the origin, and be sure you understand why ⟨<i>a</i>, <i>b</i>⟩ is normal to it.  (Sketch the vector, and think about slopes.  Maybe solve the equation for <i>y</i> to make the slope more apparent.)  Observe how you can then shift it to pass through another fixed point by subtracting values from <i>x</i> and/or <i>y</i>.  Also think about the way putting a nonzero constant <i>c</i> on the right-hand side of the equation shifts the line around, particularly from the viewpoint of sliding it in the direction of the normal vector.  Play around with this for a while, with various examples.
+</p>
+<p>
+  Once this is in your head, move back up to the analogous situation in ℝ³, starting with the plane <i>ax</i> + <i>by</i> + <i>cz</i> = 0, and making sure you understand why the coefficients are the components of the normal vector, and how altering them changes the “tilt” of the plane.  Again, explore how to shift that to other places—either by subtracting constants from the variables, or by putting a nonzero constant <i>d</i> on the RHS to slide the plane along its normal vector.
+</p>
+<p>
+  That’s a rough sketch of the general idea.  If you try this for yourself, let me know how it goes!  This is something that’s a bit hard to explain, and I could use the feedback.
+</p>
+
+<h3>Distances</h3>
+<p>
+  This subsection is reasonably well explained by the text, I think, except for some insight into the intuitive meaning of the equation in box 9.
+</p>
+<p>
+  Since the equation
+  <i>ax</i> + <i>by</i> + <i>cz</i> + <i>d</i> = 0
+  defines the plane, then if <i>P</i><sub>1</sub> lies on the plane we have
+  <i>ax</i><sub>1</sub> + <i>by</i><sub>1</sub> + <i>cz</i><sub>1</sub> + <i>d</i> = 0,
+  and thus <i>D</i> = 0, as it should.  If <i>P</i><sub>1</sub> does <em>not</em> lie on the plane, then the expression
+  <i>ax</i><sub>1</sub> + <i>by</i><sub>1</sub> + <i>cz</i><sub>1</sub> + <i>d</i>
+  evaluates to some nonzero number.  The more it strays from the plane, the larger (in magnitude) that value will be.  So the numerator measures the amount of that deviation.  However, that measure is “polluted” by the size of the coefficients.  For example, if you scaled the plane equation by a factor of 2, then the result you found would be doubled.  To account for that scaling factor, we need to divide by the magnitude of the normal vector ⟨<i>a</i>, <i>b</i>, <i>c</i>⟩.
+</p>
+<p>
+  So, that’s the basic idea: to find the distance a point is from a plane, arrange the scalar equation to have all nonzero terms on one side, plug in the coördinates of the point, take the absolute value, then divide by the length of the normal vector.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–20, 23–26, 28–48, 50–58, 61–67, 71–74.  (Feel free to skip the symmetric equations in #6–12, and you might opt to find a different form of the line in #15(a).)
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>
