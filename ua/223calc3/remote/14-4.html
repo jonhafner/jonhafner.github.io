@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 14.4</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 14.4: Tangent Planes and Linear Approximations</h2>
+
+<p>
+  Read this section in full.  Particularly note the comparisons with the point-slope equation of a line: Equation 2 is simply a natural extension of it into an additional dimension.  Some students have difficulty parsing Equation 2 as written, so rather than trying to memorize and apply it directly, you might find it easier to think of it as
+</p>
+<blockquote>
+  <i>z</i> − <i>z</i><sub>0</sub>
+  = <i>m<sub>x</sub></i>(<i>x</i> − <i>x</i><sub>0</sub>)
+  + <i>m<sub>y</sub></i>(<i>y</i> − <i>y</i><sub>0</sub>),
+</blockquote>
+<p>
+  where
+  <i>m<sub>x</sub></i> = <i>f<sub>x</sub></i>(<i>x</i><sub>0</sub>, <i>y</i><sub>0</sub>)
+  and
+  <i>m<sub>y</sub></i> = <i>f<sub>y</sub></i>(<i>x</i><sub>0</sub>, <i>y</i><sub>0</sub>).  In other words, note that we want the specific slopes found by evaluating the partial derivatives at the point of interest.  (Some students simply substitute the partial derivatives themselves into the equation, often obtaining something that isn’t even linear!  Don’t do that.)
+</p>
+<p>
+  As for the linearization <i>L</i>, observe that it is simply the tangent plane equation solved for <i>z</i>—you don’t have to learn anything additional!  The tangent plane is itself a linear approximation to the surface at the point in question.
+</p>
+<p>
+  We don’t expect you to apply Definition 7 directly, so don’t fret if you find the notation confusing.  However, it is important to be aware that, as we saw with continuity in § 14.2, differentiability is somewhat more complex with multivariate functions.  As the text shows, the partial derivatives can exist without the function being differentiable; only when those partials are also <em>continuous</em> at the point of interest are we guaranteed differentiability by Theorem 8.
+</p>
+<p>
+  Differentials provide an alternate approach to linear approximation; sometimes they are easier to apply than the tangent plane/linearization method, and sometimes the reverse.  Frequently, they are roughly equal in effect, and your choice of method may be one of personal preference.  Learn and practice both, and observe their respective features during your work on the exercises.
+</p>
+<p>
+  I work through an example of applying all the major techniques of this section in “§ 14.4: Tangent plane and linear approximation” (<a href="https://www.youtube.com/watch?v=z9sig1O9ZC8">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c5e1c460-d0c0-4548-81ed-ac6000f008b7">Panopto</a>).
+</p>
+<p>
+  A final note:
+  We often discuss linear approximations in the context of making a computation quicker and easier, with examples that emphasize bringing a problem within the grasp of mental calculation.
+  This may seem strange to some of you, since in modern times, computing power is relatively cheap, and most of us have small, portable computers (also known as smartphones) within our reach almost constantly.
+  However, while the examples use very simple functions and very simple numbers, in practical applications, the situation is very different.
+  It is not uncommon for a computation in applied mathematics, science, or engineering to require many millions of evaluations of a function that might be computationally “expensive” to evaluate precisely.
+  A simulation can easily take days or weeks to complete on even a powerful workstation.
+  If a linear approximation is “good enough” for your particular application, it may be worth a slight loss of accuracy if that allows you to cut the runtime down to mere minutes.
+  Or, if a linear approximation is <em>not</em> good enough, but a quadratic or cubic approximation might be, the groundwork of this section can form a first step toward multivariate Taylor series!
+  As computing technology advances, so too do the demands placed upon it, so methods of speeding and simplifying calculations tend to become <em>more</em> important, not less.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–10, 15–25, 31–34
+</p>
+<p>
+  I also suggest you read through #41–50 and work through <em>at least one</em> of them.
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>

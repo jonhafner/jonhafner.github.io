@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 14.7</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 14.7: Maximum and Minimum Values</h2>
+<p>
+  This section is roughly analogous to § 4.1 and portions of § 4.3 from Calculus I.  If you remember those principles and methods, that can help.  However, as we saw in § 14.2 with limits and continuity, functions of more than one variable can require some extra care.  Here are some of the similarities and differences; I recommend you refer back to this frequently as you read through this section.
+</p>
+
+<h3>Critical Points</h3>
+<p>
+  Whether we are looking for local or global extrema, we need to locate the critical points of the objective function.  These aren’t <em>necessarily</em> extrema, but they are the primary candidates.
+</p>
+<p>
+  In Calculus I, we said that a value <i>a</i> in the domain of <i>f</i> is a critical number if <i>f′</i>(<i>a</i>) = 0 or does not exist.  Here, we have a similar statement involving the partial derivatives, which can be expressed compactly by saying that (<i>a</i>,<i>b</i>) in the domain of <i>f</i> is a critical point if ∇<i>f</i>(<i>a</i>,<i>b</i>) = <b>0</b> or does not exist.  (This is one of many ways the gradient vector is roughly analogous to “the derivative” of a multivariate function.)
+</p>
+<p>
+  Hence, to find critical points, we find the partial derivatives, note where they may be undefined, set them equal to zero, and solve for all possible solutions of the resulting system.  (Be careful with the algebra!  This is where students typically make the most mistakes.)
+</p>
+
+<h3>Local Extrema</h3>
+<p>
+  In Calculus I, we had two options for classifying critical points as being local minima, maxima, or neither.  The first of these was the First Derivative Test; since the critical points of a univariate function divide its domain into distinct intervals, you could simply test the first derivative on those intervals to determine whether it was increasing or decreasing there, and thereby deduce whether the critical points were local extrema, and if so, which type.  However, that won’t work for multivariate functions, since the critical points don’t divide <em>anything</em>—they’re surrounded by regions!  Trying to use only first derivatives to classify critical points would be <em>very</em> difficult in this setting.
+</p>
+<p>
+  The second option in Calculus I was the Second Derivative Test, in which we used the second derivative to determine the concavity of the function at the critical point.  This is our best option here, though it’s a bit more complicated, since we have <em>four</em> second-order partial derivatives to consider, and they can interact in peculiar ways.
+</p>
+<p>
+  The Second Derivatives Test (Theorem 3) may look confusing and overwhelming the way it’s stated in the textbook, but there are a couple things we can do to help.  First, look ahead to Note 2, which points out that the discriminant <i>D</i> can be written as a determinant of a particular matrix.  The matrix shown there isn’t just any random thing: it’s called the <a href="https://en.wikipedia.org/wiki/Hessian_matrix">Hessian</a>, and it tells us a great deal about the curvature of a function at a point.  Note the relatively simple structure of that matrix, and how the formula given for <i>D</i> follows from Clairaut’s Theorem.  I recommend thinking of that determinant instead of trying to memorize the formula directly.
+</p>
+<p>
+  Second, let’s talk a bit about those criteria.  While the conditions for functions of three or more variables are much more complicated—don’t worry, we won’t ask you to use this method on such functions in this class—they can be neatly condensed in the case of a function of only two variables.  In particular, if <i>D</i> < 0, the function has what’s called “negative curvature”, bending in different directions along different paths, like a saddle or a Pringles chip.  Such a critical point is called a “saddle point”, and it is not a local extremum.
+</p>
+<p>
+  On the other hand, if <i>D</i> > 0, the function has what’s called “positive curvature”, bending in the same direction along different paths, like a cap, a bowl, or the surface of a sphere.  In this case, the critical point will be some sort of local extremum.  To determine whether it is a maximum or minimum, we check whether it is concave up or concave down at that point, much like we did in the Second Derivative Test in Calculus I.  If <i>f<sub>xx</sub></i> > 0, the function is concave upward, and thus we have a local minimum; if <i>f<sub>xx</sub></i> < 0, the function is concave downward, and thus we have a local maximum.  (If you wanted, you could instead test <i>f<sub>yy</sub></i>, but <i>f<sub>xx</sub></i> is customary, so stick with that unless you have a strong reason to switch.)
+</p>
+<p>
+  So, in summary, to test a critical point, evaluate the discriminant <i>D</i> there.  If <i>D</i> is negative, you have a saddle point, and you are done.  If <i>D</i> is positive, you have some sort of extremum; check the concavity with <i>f<sub>xx</sub></i> to determine which kind.
+</p>
+<p>
+  With this in mind, review the statement of the Second Derivatives Test in the textbook, and see if it makes a bit more sense!  I work through an example of finding critical points and applying the Second Derivatives Test in “§ 14.7a: Local extrema” (<a href="https://www.youtube.com/watch?v=JJQzYeWc7vA">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6de4f105-7073-4510-b371-ac6900df18e3">Panopto</a>).
+</p>
+<p>
+  I mentioned above that we won’t ask you to apply the Second Derivatives Test to a function with more than two variables.  This <em>does not</em> mean that you won’t be asked to optimize such functions!  Examples 5 and 6 show how we can use some constraint or other condition to effectively reduce the number of variables in our function and make the problem approachable.
+</p>
+
+<h3>Absolute Extrema</h3>
+<p>
+  In Calculus I, seeking absolute extrema on a closed interval could be most easily done by finding all critical points of the function within that interval, then evaluating the function at those points, as well as at the endpoints of the interval—i.e., the boundary of the region of interest.  The locations with the greatest function value are absolute maxima, and the locations with the least function value are absolute minima.
+</p>
+<p>
+  Our method here is basically the same in those broad strokes, but somewhat complicated by the fact that our boundaries are no longer just a couple of points, but are instead shapes built out of curves and line segments!  Finding extrema on the boundary of a region often reduces to one or more Calculus I–style optimization problems.  The general idea remains the same, however: find all candidates in the region or on its boundary, then evaluate the function to find the extrema.  I illustrate the technique for a common sort of situation in “§ 14.7b: Absolute extrema (Exercise #34)” (<a href="https://www.youtube.com/watch?v=eZHyEPpSi-I">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=af89b30c-7949-4dd0-b575-ac6900df1eea">Panopto</a>).
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–20, 23, 33–40, 43–46
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>

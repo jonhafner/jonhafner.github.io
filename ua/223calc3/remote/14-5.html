@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 14.5</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 14.5: The Chain Rule</h2>
+<p>
+  This entire section is important, but I do not recommend trying to memorize every possible form of the Chain Rule; instead, most of us find it much easier to construct the appropriate form of the Chain Rule on the spot using “tree diagrams” showing the dependencies between the variables.  These are described and illustrated in the latter half of the subsection on “Case 2”.  I suggest you skip ahead to read that material and watch the video in the eBook, then return to the beginning of the section to follow along with that technique in mind.
+  I illustrate the technique more explicitly and explain some of the conceptual justification behind it in my video “§ 14.5a: Introduction to the Chain Rule” (<a href="https://www.youtube.com/watch?v=akVVoYcQHxc">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b3141f50-4b58-415c-835e-ac6300dd410b">Panopto</a>).
+  For a more elaborate example, see “§ 14.5b: Exercise #30” (<a href="https://www.youtube.com/watch?v=Bp89lnHx2JU">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=47ad193a-3958-48e5-9789-ac6300dce0c9">Panopto</a>).
+</p>
+
+<h3>Implicit Differentiation</h3>
+<p>
+  The last subsection provides some theory to support the technique of implicit differentiation, and also supplies some formulae that can be especially useful when automating the process in computer algorithms.  There are a couple exercises that reference it, but you won’t be responsible for it otherwise.  However, if you struggle with implicit differentiation normally, you might find it worthwhile to give this subject more attention.  I personally would rather memorize as little as possible, but some students find these formulae to be an easier and/or more reliable way to differentiate implicitly.
+</p>
+
+<h3>A note on partial and ordinary derivatives</h3>
+<p>
+  Once you have mastered the content of this section, you can see one of the reasons why it’s essential to use different symbols for partial vs. ordinary derivatives, which I like to illustrate with this simple example:
+  Consider a situation in which <i>z</i> depends on the variables <i>x</i>, <i>y</i>, and <i>t</i>.
+  (For example, perhaps <i>z</i> is the temperature of a metal plate at location (<i>x</i>,<i>y</i>) and time <i>t</i>.)
+  We can take three possible partial derivatives of <i>z</i>, one with respect to each of the three independent variables.
+  Now suppose that <i>x</i> and <i>y</i> are themselves functions of <i>t</i>.
+  (For example, perhaps a particle moves across the plate along some path, and we want to calculate the rate of change of temperature of the particle.)
+  Draw a tree diagram of this situation to see that <i>z</i> ultimately depends only on <i>t</i>.  Applying the Chain Rule, then, we find that
+</p>
+<blockquote>
+  <i>dz/dt</i> = (<i>∂z/∂x</i>)(<i>dx/dt</i>) + (<i>∂z/∂y</i>)(<i>dy/dt</i>) + <i>∂z/∂t</i>.
+</blockquote>
+<p>
+  In particular, observe that the <i>dz/dt</i> on the left and the <i>∂z/∂t</i> at the right end both have meaning in this problem, but they mean different things!
+  If you neglected to follow my earlier advice, make sure that you now begin to exercise great care to distinguish between partial and ordinary derivatives.
+  Using the wrong one is not merely poor style—in most cases, it’s actually incorrect in substance.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–40, 42–51
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>

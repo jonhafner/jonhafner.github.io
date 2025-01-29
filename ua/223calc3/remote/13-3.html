@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculus III - § 13.3</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h1>Calculus III</h1>
+
+<h2>§ 13.3: Arc Length and Curvature</h2>
+
+<h3>Arc Length</h3>
+<p>
+  Recall from Calculus II that we had three (or four, depending on how you count) different formulae for the length of a curve.  The details varied depending on how the curve was represented—<i>y</i> or <i>x</i> as a function of the other, <i>x</i> and <i>y</i> as functions of a parameter <i>t</i>, or <i>r</i> as a function of <i>θ</i> in polar—but they all had certain high-level structural similarities.  We can compute the length of a curve <i>C</i> by the abstract formula <i>L</i> = ∫<sub><small><i>C</i></small></sub> <i>ds</i>, where
+</p>
+<blockquote>
+  <i>ds</i>² = <i>dx</i>² + <i>dy</i>²
+</blockquote>
+<p>
+  by the Pythagorean Theorem, and we perform appropriate manipulations to find an equation giving <i>ds</i> as a square root of some expression times some other differential.  The parametric version of this is reproduced in this section, as formula 1.  In three dimensions, the situation is similar, but of course we have
+</p>
+<blockquote>
+  <i>ds</i>² = <i>dx</i>² + <i>dy</i>² + <i>dz</i>².
+</blockquote>
+<p>
+  Factoring <i>dt</i> out of the RHS and solving for <i>ds</i> yields formula 2 in the text.
+</p>
+<p>
+  Note that vector notation allows us to express the parametric arc length formula for <em>any</em> number of dimensions in the compact form of formula 3.  The note immediately preceding Example 1 ties this into what I mentioned in the previous section, that the tangent vector can be thought of as a velocity.
+</p>
+<p>
+  For an example of computing arc length, see “§ 13.3a: Arc length (Exercise #6)” (<a href="https://www.youtube.com/watch?v=fZwDLPiiB1E">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=13fbca33-af98-42c8-b6c4-ac4b00ea2df5">Panopto</a>).
+</p>
+
+<h3>The Arc Length Function</h3>
+<p>
+  This can be thought of as simply the length along the curve from a fixed anchor point to an arbitrary, nonspecific point determined by <i>t</i>.  Note that this contains a sense of direction, measuring in the direction of increasing <i>t</i>; moving in the opposite direction will produce a negative value.  Compare to the arc length functions in § 8.1 and § 10.2.
+</p>
+<p>
+  For an example, including reparametrizing by arc length, see “§ 13.3b: Arc length function (Exercise #16)” (<a href="https://www.youtube.com/watch?v=312ButyRsQs">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3d615941-97ff-4644-bf79-ac4b00ea6427">Panopto</a>).
+</p>
+
+<h3>Curvature</h3>
+<p>
+  Note that the symbol used for curvature is the lowercase Greek letter kappa, <em>not</em> the Latin letter K.
+</p>
+<p>
+  Curvature is a scalar (not vector) value that measures the rate of change of direction of a curve, as radians per unit of arc length.  A more geometric interpretation comes via Example 3.
+</p>
+<p>
+  Several expressions for curvature are stated in this subsection.  For <em>theoretical</em> purposes, Definition 8 is primary, but in general, the most useful formula for computation is given by Theorem 10<!-- , which should be commited to memory [in a normal course] -->.  It’s good to be aware of the others, as they can be handy from time to time, but for practical purposes they can be considered auxiliary.
+</p>
+<p>
+  For an example, see “§ 13.3c: Curvature (Exercise #32)” (<a href="https://www.youtube.com/watch?v=QSp0S4hpsJg">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=82c33008-93f2-4d7a-a793-ac4b00ead9a8">Panopto</a>).
+</p>
+
+<h3>The Normal and Binormal Vectors</h3>
+<p>
+  I don’t have much to add here; in particular, the textbook’s illustrations should be more helpful than anything I would be able to produce myself.  For an example of computation, see “§ 13.3d: TNB (Exercise #52)” (<a href="https://www.youtube.com/watch?v=a1nOgMoRABI">YouTube</a> | <a href="https://uakron.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1f6b93d7-d97e-47cd-9bc3-ac4b00eb4d30">Panopto</a>).
+</p>
+
+<h3>Torsion</h3>
+<p>
+  This is a minor, optional topic.  It is a useful concept I encourage you to explore if you’re interested, but we don’t usually put much emphasis on it.
+</p>
+
+<h3>Exercises</h3>
+<p>
+  Departmental suggestions: #1–8, 15–29, 31–37, 42–43
+</p>
+<p>
+  For some practice with the normal and binormal vectors and osculating circles, I recommend #51–56.  And as always, read the other exercises and try any you find interesting.
+</p>
+
+<footer>
+  <p><nav><a href="..">Main</a> | <a href=".">Calc 3</a></nav></p>
+</footer>
+</body>
+
+</html>
